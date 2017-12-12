@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="iscroll.js"></script>
+		<script src="iscroll-probe.js"></script>
+		<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			list-style: none;
+		}
+			#scroller{
+				height: 300px;
+				border: 1px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="scroller">
+			<ul>
+				<li>项目1</li>
+				<li>项目2</li>
+				<li>项目3</li>
+				<li>项目4</li>
+				<li>项目5</li>
+				<li>项目6</li>
+				<li>项目7</li>
+				<li>项目8</li>
+				<li>项目1</li>
+				<li>项目2</li>
+				<li>项目3</li>
+				<li>项目4</li>
+				<li>项目5</li>
+				<li>项目6</li>
+				<li>项目7</li>
+				<li>项目8</li>
+				<li>项目8</li>
+				<li>项目1</li>
+				<li>项目2</li>
+				<li>项目3</li>
+				<li>项目4</li>
+				<li>项目5</li>
+				<li>项目6</li>
+				<li>项目7</li>
+				<li>项目8</li>
+			</ul>
+					<div id="indicator"></div>
+
+		</div>
+		
+	</body>
+	<script src="zepto.min.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			setTimeout(function(){
+				var ms = new IScroll("#scroller",{
+					scrollbars:true,
+					freeScroll:true,
+					scrollX:true,
+					tap:"tapEvent",
+					resizeScrollbars: true,
+					snap:"li",
+					zoom:true,
+					probeType:3,
+					
+				})
+				
+				ms.on("scrollEnd",function(){
+					console.log(this.x + "和" + this.y)
+					console.log(ms.directionX + "和" + this.directionY)
+//					console.log(this.currentPage)
+
+				})
+				ms.on("scroll",function(){
+					console.log(this.y)
+				})
+				
+				$("#scroller").on("tapEvent",function(){
+			
+					console.log("点击")
+
+				})
+				
+			},100)
+		}
+		
+		
+	</script>
+</html>
