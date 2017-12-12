@@ -1,0 +1,104 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+.All-head {
+	height: 40px;
+	position: relative;
+	background: #f8f8f8;
+	width: 100%;
+	position: relative;
+}
+.All-head h1{color:black;text-align: center;width: 100%;line-height: 40px;text-align: center;font-size: 0.35rem;}
+.All-head .imagg1{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left:6px;
+	top: 10px;
+	
+}
+.All-head .imga{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right:6px;
+	top: 10px;
+	
+}
+.head-list{background: rgba(0,0,0,0.6);width: 40%;position: absolute;top: 1.5rem;right: 0;z-index: 9999;}
+.head-list li{height: 2rem;width:100% ;border-bottom: 1px solid white;list-style: none;text-align: center;line-height: 2rem;}
+.head-list li a{color: white;display: block;}
+.head-list li img{height: 20px;width: 20px;margin-left: 0.1rem;font-size: 0.1rem;}
+.head-list li span{margin-left: 0.3rem;font-size: 0.3rem;line-height: 2rem;}
+/*.head-list{display: none;}*/
+.imga{float: right;cursor: pointer;}
+.Vip-banner{width: 100%;margin:0 0 0 0;height: 4rem;background: red;}
+.Vip-banner img{width: 100%;height: 100%;}
+
+.Vip-list{width: 100%;position: relative;}
+.Vip-list img{width: 100%;height: 2rem;}
+.Vip-list p{position: absolute;width: 100%;left: 0;top:0px;height: 2rem;}
+.Vip-list p a{float: left;width: 23%;height: 1rem;text-align: center;line-height: 1rem;font-size: 0;margin-right: 5px;}
+
+
+
+
+
+.Vip-page{width: 100%;margin-top: 0.15rem;background: white;height: 1.8rem;padding: 0.1rem;padding: 0.2rem;}
+.Vip-page h3{color:#00BFFF;width: 30%;font-size: 0.27rem;text-align: center;float: left;font-size: 0.7rem;font-weight: bolder;}
+.Vip-page p{width: 60%;float: right;text-align: center;color: gray;font-size: 0.2rem;}
+
+.Vip-banner2{width: 100%;display: block;margin-bottom: 0.2rem;}
+.Vip-banner2 img{width: 100%;height: 2.41rem;}
+
+
+.Vip-main{width: 100%;}
+.Vip-main-cont h2{width: 100%;height: 2rem;background:url(../img/show2_02.jpg) no-repeat ;background-size: 100% 100%;}
+.Vip-main-cont p{width: 100%;height:6rem;background: url(../img/show2_03.jpg) no-repeat;background-size: 100% 100%;position: relative;position: relative;}
+.Vip-main-cont p a{display: block;width:45%;height:45% ;margin: 0 20px 20px 0;position: absolute;}
+.Vip-main-cont p .a1{left: 0;}
+.Vip-main-cont p .a2{left: 45%;}
+.Vip-main-cont p .a3{left: 0;top: 45%;}
+.Vip-main-cont p .a4{left: 45%;top: 45%;}
+.Vip-main .bg1 h2{width: 100%;height: 2rem;background: url(../img/show2_04.jpg) no-repeat;background-size: 100% 100%;}
+.Vip-main .bg1 h2 p{width: 100%;height:6rem;background: url(../img/show2_05.jpg) no-repeat;background-size: 100% 100%;}
+.Vip-main .bg2 h2{width: 100%;height: 2rem;background: url(../img/show2_06.jpg) no-repeat;background-size: 100% 100%;}
+.Vip-main .bg2 h2 p{width: 100%;height:6rem;background: url(../img/show2_07.jpg) no-repeat;background-size: 100% 100%;}
+
+.Vip-footer{width: 25%;height: 1rem;margin: auto;margin-bottom: 0.7rem;}
+.Vip-footer img{width: 2rem; height: 2rem;}
+
+ .container{ display:inline-block;    font-family:"Microsoft YaHei";font-size: 0.22rem; float: right;}
+ .container .li-box{ overflow:hidden; height: 44px;width:8rem;}
+ .container ul{ position:relative; animation: moveUp 12s 0.6s infinite; -webkit-animation: moveUp 12s 0.6s infinite; }
+ @keyframes moveUp
+ {
+ 0% {top:0px;}
+ 18% {top:0px;}
+ 20% {top:-30px;}
+ 38% {top:-30px;}
+ 40% {top:-58px;}
+ 58% {top:-58px;}
+ 60% {top:-86px;}
+ 78% {top:-86px;}
+ 80% {top:-114px;}
+ 98% {top:-114px;}
+ }</p> <p> @-webkit-keyframes moveUp /*Safari and Chrome*/
+ {
+ 0% {top:0px;}
+ 18% {top:0px;}
+ 20% {top:-28px;}
+ 38% {top:-28px;}
+ 40% {top:-56px;}
+ 58% {top:-56px;}
+ 60% {top:-84px;}
+ 78% {top:-84px;}
+ 80% {top:-112px;}
+ 98% {top:-112px;}
+ }
+ .container li{ line-height:28pz; color:#666; }

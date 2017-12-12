@@ -1,0 +1,74 @@
+
+<div class="classify_">
+	
+	<div class="header">
+		<h2>全部分类</h2>
+	</div>
+	<div class="main">
+		<div class="nav">
+			<ul>
+				<li class="btn" ng-click="hidden()"><a href="javascript:void(0)">推荐分类</a></li>
+				<li class="btn" ng-click="doc()" ng-style="myColor"><a href="javascript:void(0)">中西药品</a></li>
+				<li class="btn" ng-click="toggle()"><a href="javascript:void(0)">成人药品</a></li>
+				<li ><a href="#">家庭药箱</a></li>
+				<li><a href="#">健康体检</a></li>
+				<li><a href="#">医疗器械</a></li>
+				<li><a href="#">营养保健</a></li>
+				<li><a href="#">中药饮片</a></li>
+				<li><a href="#">隐形眼镜</a></li>
+				<li><a href="#">家庭电器</a></li>
+			</ul>
+		</div>
+		<div class="section"  >
+			<div class="myclass" >
+				<h3>
+					{{classFirstData}}
+				</h3>
+				
+				<a href="#/ganmao">
+					<figure ng-repeat="x in classMainData">
+						<img ng-src="{{x.WebChannelImg}}"/>
+						<figcaption>
+							{{x.WebChannelName}}
+						</figcaption>
+					</figure>
+				</a>
+				
+			</div>
+			<div  class="sex container" id="sex" ng-show="mysex" >
+				<div ng-repeat = "x in datahead">
+					
+					<h3 >
+						{{x.WebChannelName}}
+					</h3>
+				
+					<figure ng-repeat = "x in datamain" class="wrap">
+						<img lazy-src="{{x.WebChannelImg}}"  animate-visible="true" animate-speed="2s" />
+						<figcaption>
+							{{x.WebChannelName}}
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			
+			
+			<div class="doc"  ng-show="mydoc">
+				<div ng-repeat = "x in datadoc">
+					
+					<h3 >
+						{{x.WebChannelName}}
+					</h3>
+				
+					<figure ng-repeat = "x in datadocMain">
+						<img lazy-src="{{x.WebChannelImg}}"/>
+						<figcaption>
+							{{x.WebChannelName}}
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+</div>

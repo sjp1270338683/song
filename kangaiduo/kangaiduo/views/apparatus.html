@@ -1,0 +1,82 @@
+<link rel="stylesheet" type="text/css" href="./css/apparatus.css"/>
+
+<header class="All-head" >
+	
+	<h1><img src="./img/小于号.svg"  class="imagg1"/>健康器械<img src="./img/省略号.svg" class="imga" ng-click="dis()"  /></h1>
+	
+	<ul class="head-list" ng-show="myVar2" ng-click="dis2()" >
+		<li><a href="#"><img src="./img/搜索.svg"/><span>搜索</span></a></li>
+		<li><a href="#"><img src="./img/首页-首页.svg"/><span>首页</span></a></li>
+		<li><a href="#"><img src="./img/消息.svg"/><span>消息</span></a></li>
+	</ul>
+</header>
+<!-----------------------//轮播--------------------------->
+<div class="lunbo1">
+	
+
+<div class="swiper-container swiper-container1">
+    <div class="swiper-wrapper ">
+        <div class="swiper-slide"><img src="http://image.360kad.com/group1/M00/4B/93/CgAgEFfPbYWAZzn3AAE3FoGD2wA941.jpg"/></div>
+         <div class="swiper-slide"><img src="http://image.360kad.com/group1/M00/46/1D/CgAgEFe0K56Ae9m_AAHth72_-5g856.png"/></div>
+          <div class="swiper-slide"><img src="http://image.360kad.com/group1/M00/4B/93/CgAgEFfPbQGAZ1BmAAE03ic2F-M127.jpg"/></div>
+           <div class="swiper-slide"><img src="http://image.360kad.com/group1/M00/47/AD/CgAgEFe7-WyABThPAAFAkb1AP48605.jpg"/></div>
+            <div class="swiper-slide"><img src="http://image.360kad.com/group1/M00/4B/93/CgAgEFfPbYWAZzn3AAE3FoGD2wA941.jpg"/></div>
+        
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- 如果需要导航按钮 -->
+   
+    
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+</div>
+
+
+			<div class="main">
+			<!--//列表-->
+			<ul class="list-pic">
+				<li ><img src="http://res.360kad.com/theme/mobile/img/promotion/channel/img/ad_secKill.jpg"/></li>
+				<li ><img src="http://res2.360kad.com/theme/mobile/img/promotion/channel/img/ad_brand.jpg"/>
+					<img src="http://res3.360kad.com/theme/mobile/img/promotion/channel/img/ad_half.jpg"/>	
+				</li>
+			</ul>
+			
+		<!--	//列表2-->
+			<div class="list2">
+				<a href="#"><h3>鱼跃制氧机 7F-</h3>
+					<img src="http://image.360kad.com/group1/M00/07/F0/CgAgEFWKRgiAYglxAAAlgxwt180853.jpg" />
+				</a>
+				<a href="#"><h3>超声波胎心仪 H...</h3>
+					<img src="http://image.360kad.com/group1/M00/08/64/CgAgEVWKSHiAbUwMAAA1b2B0VK0606.jpg" />
+				</a>
+				
+				<a href="#"><h3>欧姆龙 上臂式...</h3>
+					<img src="http://image.360kad.com/group1/M00/1F/13/CgAgEFbKwbKAVjzZAAAgABgL7hg04.jpeg" />
+				</a>
+			</div>
+			
+		<div class="lunbo2">
+			
+		
+		<div class="swiper-container swiper-container2 ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="x in data2">{{x}}</div>
+            
+        </div>
+       </div>
+       </div>
+      <!-- //商品列表-->
+       <div class="shopList">
+       	<ul>
+       		<li ng-repeat="x in data3" ><img lazy-src="{{x.Pic800}}" animate-visible="true" animate-speed="2s" /><p>{{x.WareName}}</p><div><span>{{"￥"+x.MarketPrice}}</span></div></li>
+       	</ul>
+       </div>
+       
+   </div><br />
+   <script type="text/javascript">
+   	
+   </script>

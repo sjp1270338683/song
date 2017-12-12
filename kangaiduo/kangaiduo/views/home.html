@@ -1,0 +1,121 @@
+<div class="home_">
+	<!--顶部搜索框-->
+	<div class="head">
+		<a href="javascript:void(0)">
+			<p class="iconfont">&#xe606;</p>
+			<div>主页</div>
+		</a>
+		<a href="#/search">
+			<span class="iconfont">&#xe604;</span>
+			<span>搜索药品/器械/中药饮片</span>
+			<span></span>
+		</a>
+		<a href="javascript:void(0)">
+			<p class="iconfont">&#xe607;</p>
+			<div>消息</div>
+		</a>
+	</div>
+	<!--轮播图-->
+	<div class="slidePic">
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide" ng-repeat="x in lunbo">
+		        	<img ng-src ="{{x.Pic}}"  />
+		        </div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+	    	<div class="swiper-pagination">
+	    		
+	    	</div>
+		</div>
+	</div>
+	<!--选择按钮-->
+	<div class="choose">
+		<ul>
+			<li ng-repeat = "x in choose">
+				<a href="#interest">
+					<p>
+						<img src="{{x.Pic}}"/>
+					</p>
+					<div ng-bind="x.Name"></div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!--滑动广告--超级秒杀-->
+	<div class="seckill">
+		<div class="top">
+			<a href="#/skill">
+				<p>超级秒杀</p>
+				<div><span>距结束</span><span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span><span><img src="img/right.png"/></span></div>
+			</a>
+		</div>
+		<a href="#/skill">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+		    		<div class="swiper-slide" ng-repeat = "x in imgs">
+			        	<img src="{{x.Pic180}}"/>
+			        	<div>
+			        		<span></span>
+			        		<span>{{x.Discount}}折</span>
+			        	</div>
+			        	<p>&yen;{{x.SeckillPrice}}</p>
+			        	<p>&yen;{{x.Price}}</p>
+			        </div>
+			    </div>
+			</div>
+		</a>
+	</div>
+	<!--包邮专区-->
+	<div class=" Pinkage">
+		<a href="#/Share" ng-repeat= "x in pinkage">
+			<img ng-src="{{x.Pic}}" />
+		</a>
+	</div>
+	<div class="clearfix"></div>
+	<!--热门科室-->
+	<div class="departments">
+		<div class="title">
+			<p>热门科室</p>
+		</div>
+		<div class="bottom">
+			<a href="#/Vip" ng-repeat = "x in dep">
+				<img ng-src="{{x.Pic}}" alt="" />
+			</a>
+			
+		</div>
+		
+	</div>
+	<!--猜你喜欢-->
+	
+	<div class="like">
+		<p class="header">
+			<span><img src="img/heart.png"/></span>
+			<span>猜你喜欢</span>
+		</p>
+		<div class="product">
+			<a href="#/buy" ng-repeat="x in data">
+				<i>{{x.WareSkuCode}}{{add()}}</i>
+				<img ng-src="{{x.Pic800}}"/>
+				<p>{{x.WareName}}</p>
+				<div>
+					<span>&yen;{{x.SalePrice}}</span>
+					<span>&yen;{{x.MarketPrice}}</span>
+				</div>
+			</a>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+</div>
+

@@ -1,0 +1,78 @@
+{
+    "TotalCount": 7434,
+    "Url": "http://m.360kad.com/zhuanti/app_new_seckill.shtml",
+    "ServerTime": "/Date(1474540372423)/",
+    "EndTime": "/Date(1474549200000)/",
+    "SeckillWares": [
+        {
+            "WareCode": "杜蕾斯 LOVE大胆爱吧 避孕套 3只",
+            "Pic180": "http://image.360kad.com/group1/M00/0F/52/CgAgEVZ6ACmAMh15AAAgAKpAXSw31.jpeg",
+            "Price": 19.9,
+            "SeckillPrice": 4.9,
+            "Discount": 2.5
+        },
+        {
+            "WareCode": "科瑞 红梅素软膏1%:10g",
+            "Pic180": "http://image.360kad.com/group1/M00/07/D2/CgAgEFWKRYaARb_yAAA0lpnjQB0020.jpg",
+            "Price": 18.5,
+            "SeckillPrice": 5.9,
+            "Discount": 3.2
+        },
+        {
+            "WareCode": "飞哥牌可口的红糖姜茶",
+            "Pic180": "http://image.360kad.com/group1/M00/4A/09/CgAgEVfHl4qAaa5IAAHgawWF6Ro022.jpg_180x180.jpg",
+            "Price": 15.9,
+            "SeckillPrice": 6.8,
+            "Discount": 4.3
+        },
+        {
+            "WareCode": "聚成优品蒸馏水",
+            "Pic180": "http://image.360kad.com/group1/M00/27/52/CgAgEVcMb8qAaglUAAHZ-_Pwiek401.jpg_180x180.jpg",
+            "Price": 25.9,
+            "SeckillPrice": 8.8,
+            "Discount": 3.4
+        },
+        {
+            "WareCode": "大宝SOD密,年轻的首选",
+            "Pic180": "http://image.360kad.com/group1/M00/0E/2D/CgAgEFZW-i2AXsY-AAAgALno4E460.jpeg",
+            "Price": 16.9,
+            "SeckillPrice": 8.8,
+            "Discount": 5.2
+        },
+        {
+            "WareCode": "芦荟面膜韩国代购",
+            "Pic180": "http://image.360kad.com/group1/M00/08/37/CgAgEVWKR22AITQcAAAmpKFtKdI199.jpg",
+            "Price": 9.9,
+            "SeckillPrice": 1,
+            "Discount": 1
+        },
+        {
+            "WareCode": "高效医用棉签",
+            "Pic180": "http://image.360kad.com/group1/M00/11/5C/CgAgEVaJ33qAPB2XAAAgAPB5vKQ84.jpeg",
+            "Price": 3.5,
+            "SeckillPrice": 1,
+            "Discount": 2.9
+        },
+        {
+            "WareCode": "高洁牌面巾纸",
+            "Pic180": "http://image.360kad.com/group1/M00/0A/4B/CgAgEFXS47uALKnuAAAPXAFXr7463.jpeg",
+            "Price": 4.5,
+            "SeckillPrice": 1.9,
+            "Discount": 4.2
+        },
+        {
+            "WareCode": "高档蕾丝女士短裤",
+            "Pic180": "http://image.360kad.com/group1/M00/10/A8/CgAgEVaEpj6AWhIKAAAgAM14SZs16.jpeg",
+            "Price": 28,
+            "SeckillPrice": 3.9,
+            "Discount": 1.4
+        },
+        {
+            "WareCode": "首选黑金刚染发",
+            "Pic180": "http://image.360kad.com/group1/M00/10/C5/CgAgEFaIgKeARayLAABAANIaWmw32.jpeg",
+            "Price": 16.5,
+            "SeckillPrice": 4.8,
+            "Discount": 2.9
+        }
+    ]
+}

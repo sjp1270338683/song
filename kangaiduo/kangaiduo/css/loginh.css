@@ -1,0 +1,274 @@
+.login_box {
+  width: 100%;
+  height: 100%;
+  background: #D3D3D3;
+  overflow-x: hidden;
+}
+.login_box .login_header {
+  height: 1.2rem;
+  background: white;
+  padding: 0 10px 0 0;
+  border-bottom: 1px solid #9D9D9D;
+}
+.login_box .login_header p {
+  font-size: .4rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 1.2rem;
+}
+.myback{
+	display: block;
+	z-index: 1;
+	padding-left: .5rem;
+	width:2rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background: url(../img/backIcon.png)no-repeat .2rem center;
+	background-size:8px 15px;
+}
+.myshouye{
+	font-size: .5rem;
+  display: block;
+	z-index: 1;
+	width:2rem;
+	line-height: 1.2rem;
+	height: 1rem;
+	padding: .1rem 0;
+	background: url(../img/shouye.png) no-repeat right center;
+	background-size:.8rem .8rem;
+}
+
+
+.login_box .login_header p .login_header_left {
+  display: inline-block;
+  color: #808080;
+  text-indent: 15px;
+  font-size: .5rem;
+}
+.login_box .login_header p .login_header_right {
+  font-size: .8rem;
+}
+.login_box .login_header p .login_header_midlle {
+  font-size: .6rem;
+}
+//=====
+@font-face {font-family: "iconfont";
+  src: url('myiconfont.eot?t=1474804793'); /* IE9*/
+  src: url('myiconfont.eot?t=1474804793#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('myiconfont.woff?t=1474804793') format('woff'), /* chrome, firefox */
+  url('myiconfont.ttf?t=1474804793') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('myiconfont.svg?t=1474804793#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:1rem;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-shouye:before { content: "\e630"; }
+.icon-zuojiantou:before { content: "\e6c2"; }
+.icon-yonghu:before { content: "\e678"; }
+.icon-mima:before { content: "\e61e"; }
+
+
+.login_denglu {
+  margin-top: 0.32rem;
+}
+.login_denglu .login_span1,
+.login_denglu .login_span2 {
+  float: left;
+  display: block;
+  width: 1.44rem;
+  height: 1.44rem;
+  font-size: 1rem;
+  color: #ADADAD;
+}
+.login_span1{
+	background:white url(../img/l_UserName.png) no-repeat left center;
+	background-size:2rem 2rem;
+}
+.login_span2{
+	background:white url(../img/l_PassWord.png) no-repeat left center;
+	background-size:2rem 2rem;
+}
+.login_denglu .login_div1,
+.login_denglu .login_div2 {
+  border-bottom: 1px solid #EBEBEB;
+  height: 1.44rem;
+  padding-left: 1.44rem;
+}
+.login_denglu .login_div1 input,
+.login_denglu .login_div2 input {
+  border: none;
+  text-indent: 10px;
+  line-height: normal;
+  width: 100%;
+  height: 100%;
+  font-size: .4rem;
+  outline: none;
+}
+.login_denglu .login_div3 {
+  background: white;
+  text-align: center;
+  padding-top: 0.2rem;
+}
+.login_denglu .login_div3 input {
+  border-radius: 5px;
+  background: #f03030;
+  height: 1.44rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  padding: 0px 0.809rem;
+  width: 95%;
+  outline: none;
+}
+.login_zhuce {
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding-top:0.509rem;
+  padding-bottom: 1.54rem;
+}
+.login_zhuce .login_zhuce1 {
+  padding:0 0.2rem 0 0.409rem;
+  font-size: .4rem;
+  height: 0.5rem;
+  float: left;
+}
+.login_zhuce .login_zhuce2 {
+  padding-right: 0.302rem;
+  font-size: .4rem;
+  float: right;
+}
+.login_huo {
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding-top: 0.302rem;
+  padding-bottom: 0.302rem;
+  clear: both;
+  margin-bottom: 0.302rem;
+}
+.pa{
+	font-size: .5rem;
+  display: block;
+	z-index: 1;
+	width:2rem;
+	line-height: 1.2rem;
+	height: 1rem;
+	padding: .1rem 0;
+	background: url(../img/shouye.png) no-repeat right center;
+	background-size:.8rem .8rem;
+}
+.login_huo p {
+  padding-left: 0.302rem;
+  font-size: .4rem;
+}
+.login_huo a img{
+	width: 2.1rem;
+}
+.coo_site {
+  padding: 0.302rem 0 0 0.302rem;
+}
+.coo_site a {
+  display: block;
+  padding: 0.256rem;
+  float: left;
+  border: 1px solid #D3D3D3;
+  border-radius: 50%;
+  margin-right: 0.224rem;
+  overflow: hidden;
+}
+.search_footer {
+  padding: 0rem;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #D3D3D3;
+  background: white;
+}
+.search_footer .search_denglu{
+	margin-left: 0.3rem;
+}
+.search_footer .userloginf {
+  font-size: .5rem;
+  float: left;
+}
+.search_footer .search_first {
+  float: right;
+  font-size: 0.5rem;
+  margin-right: .5rem;
+  color: #9D9D9D;
+}
+.search_footer .search_first span {
+  padding: 0 0.2rem;
+  color: #9D9D9D;
+}
+.search_footer .fot_btn {
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0.3rem;
+  line-height: 200%;
+  height: .8rem;
+}
+.search_footer .fot_btn ul {
+  width: 80%;
+  margin: 0 auto;
+}
+.search_footer .fot_btn ul li {
+  float: left;
+  padding: 0 .1rem;
+  text-align: center;
+  cursor: pointer;
+}
+.search_footer .fot_btn ul li span {
+  padding-left: .2rem;
+}
+.search_footer .search_phone {
+  width: 100%;
+  padding-left: 0rem;
+  height: 2.8rem;
+  margin: auto;
+  cursor: pointer;
+  text-align: center;
+}
+.search_footer .search_phone img {
+  margin: auto;
+  display: inline-block;
+  margin: 0.1rem 0;
+}
+.search_footer .search_footer_p {
+  height: .5rem;
+  width: 30%;
+  margin: 0 auto;
+  color: red;
+  margin-bottom: .5rem;
+}
+.search_footer .search_footer_mess {
+  height: .8rem;
+  margin: 0 0 0 7%;
+}
+.search_footer .search_footer_mess li {
+  float: left;
+  width: 21%;
+  padding-left: .1rem;
+  text-align: center;
+}
+.search_footer .search_footer_mess li span {
+  padding: 0 0.096rem;
+  margin-right: 0.096rem;
+  color: white;
+  background: #007AFF;
+  border-radius: 50%;
+}
+footer .search_footer_banquan {
+  width: 74%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}

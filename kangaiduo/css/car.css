@@ -1,0 +1,147 @@
+.car {
+  width: 100%;
+  padding: 0 0 5rem 0;
+}
+.car a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.car .head {
+  width: 100%;
+  height: 1.5rem;
+  background: #f8f8f8;
+  text-align: center;
+  line-height: 1.5rem;
+  border-bottom: 2px solid #cbcbcb;
+}
+.car .head span {
+  margin-left: 1.4rem;
+  display: inline-block;
+  color: #222222;
+  font-size: 0.6rem;
+}
+.car .head a {
+  float: right;
+  margin: 0 0.5rem 0 0;
+  color: #222222;
+  font-size: 0.5rem;
+}
+.car .Settlement {
+  width: 100%;
+}
+.car .Settlement > p {
+  width: 90%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  margin: auto;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 0.6rem;
+}
+.car .Settlement > p span:first-child img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.car .Settlement ul {
+  width: 90%;
+  margin: auto;
+}
+.car .Settlement ul li {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0.5rem 0;
+}
+.car .Settlement ul li a span img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.car .Settlement ul li a > img {
+  margin: 0 0.1rem;
+  border: 1px solid #e8e8e8;
+  width: 3rem;
+  height: 3rem;
+}
+.car .Settlement ul li a div {
+  width: 60%;
+  float: right;
+  display: inline-block;
+}
+.car .Settlement ul li a div p:first-child {
+  height: 1.7rem;
+  color: #222222;
+  font-size: 0.55rem;
+}
+.car .Settlement ul li a div p:nth-child(2) {
+  color: #ea4529;
+  font-size: 0.55rem;
+}
+.car .Settlement ul li a div p:nth-child(3) span {
+  text-align: center;
+  float: left;
+  display: inline-block;
+  height: 0.7rem;
+  width: 0.7rem;
+  color: #222222;
+  font-size: 0.5rem;
+}
+.car .Settlement ul li a div p:nth-child(3) span:nth-child(1) {
+  border: 1px solid #9c9c9c;
+}
+.car .Settlement ul li a div p:nth-child(3) span:nth-child(2) {
+  border-bottom: 1px solid #9c9c9c;
+  border-top: 1px solid #9c9c9c;
+}
+.car .Settlement ul li a div p:nth-child(3) span:nth-child(3) {
+  border: 1px solid #9c9c9c;
+}
+.car .submitIndent {
+  width: 100%;
+  height: 1.8rem;
+  position: fixed;
+  left: 0;
+  bottom: 1.8rem;
+  background: white;
+  border-top: 1px solid #e8e8e8;
+}
+.car .submitIndent > span {
+  float: left;
+  display: inline-block;
+  margin: 0rem 0.2rem 0 5%;
+  line-height: 1.8rem;
+}
+.car .submitIndent > span img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.car .submitIndent #allChecked {
+  display: none;
+  margin-left: -0.05rem;
+  font-size: 0.6rem;
+}
+.car .submitIndent div {
+  display: inline-block;
+  margin: 0.1rem 0 0 0;
+}
+.car .submitIndent div p:first-child span:first-child {
+  color: #222222;
+  font-size: 0.6rem;
+}
+.car .submitIndent div p:first-child span:last-child {
+  color: #ea4529;
+  font-size: 0.6rem;
+}
+.car .submitIndent div p:last-child span {
+  color: #898989;
+  font-size: 0.45rem;
+}
+.car .submitIndent > a {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  font-size: 0.5rem;
+  color: white;
+  line-height: 1.8rem;
+  display: inline-block;
+  width: 4rem;
+  height: 100%;
+  background: #ea4529;
+}
+/*# sourceMappingURL=car.css.map */

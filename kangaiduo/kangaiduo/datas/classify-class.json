@@ -1,0 +1,111 @@
+{
+    "Code": 0,
+    "Message": "成功",
+    "Data": {
+        "TopChannel": {
+            "ParentCode": "",
+            "WebChannelCode": "app00",
+            "WebChannelName": "",
+            "WebChannelImg": "",
+            "WebChannelDesc": "",
+            "WebChannelAdUrl": "",
+            "WebChannelAdImgUrl": ""
+        },
+        "Items": [
+            {
+                "FirstChannel": {
+                    "ParentCode": "",
+                    "WebChannelCode": "app51",
+                    "WebChannelName": "热门分类",
+                    "WebChannelImg": "http://res.360kad.com/theme/app/img/channellogo/logo_app51.png?2016092211",
+                    "WebChannelDesc": "",
+                    "WebChannelAdUrl": "",
+                    "WebChannelAdImgUrl": ""
+                },
+                "SecChannel": [
+                    {
+                        "ParentCode": "",
+                        "WebChannelCode": "app2207",
+                        "WebChannelName": "感冒发烧",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D8/CgAgEVbdRCSAFmLRAAAmb10V-Oo961.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "",
+                        "WebChannelCode": "app2156",
+                        "WebChannelName": "血压计",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D8/CgAgEFbdRIyAfEoIAAAjzZRq9jE706.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "",
+                        "WebChannelCode": "app2125",
+                        "WebChannelName": "参茸滋补",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D8/CgAgEVbdRQSAMyLlAAAgAKDkpZ4033.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "",
+                        "WebChannelCode": "app1142",
+                        "WebChannelName": "温肾壮阳",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D2/CgAgEVbdJGGAT3l2AAAgANgxp2w463.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "",
+                        "WebChannelCode": "app759",
+                        "WebChannelName": "阳痿早泄",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEFbdJ_KAFnSsAAAgAANm9qI441.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "",
+                        "WebChannelCode": "app830",
+                        "WebChannelName": "气血双补",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D2/CgAgEFbdJBmAFluUAAAgtcmZUlQ232.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "",
+                        "WebChannelCode": "app821",
+                        "WebChannelName": "风湿病",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/DA/CgAgEVbdT9-AFdvgAAAgABZVxbM798.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "",
+                        "WebChannelCode": "app836",
+                        "WebChannelName": "皮炎湿疹",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/DA/CgAgEFbdUHWAM94TAAAgADmKg80100.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "",
+                        "WebChannelCode": "app819",
+                        "WebChannelName": "痤疮（青春痘）",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/DA/CgAgEFbdUVCAfx2FAAAgAKr9Iv8827.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    }
+                ]
+            }
+        ]
+    }
+}

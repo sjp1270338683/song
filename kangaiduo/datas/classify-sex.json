@@ -1,0 +1,204 @@
+{
+    "Code": 0,
+    "Message": "成功",
+    "Data": {
+        "TopChannel": {
+            "ParentCode": "app15446851",
+            "WebChannelCode": "app540",
+            "WebChannelName": "成人用品",
+            "WebChannelImg": "",
+            "WebChannelDesc": "",
+            "WebChannelAdUrl": "",
+            "WebChannelAdImgUrl": ""
+        },
+        "Items": [
+            {
+                "FirstChannel": {
+                    "ParentCode": "app540",
+                    "WebChannelCode": "app1112",
+                    "WebChannelName": "计生用品",
+                    "WebChannelImg": "http://res.360kad.com/theme/app/img/channellogo/logo_app1112.png?2016092214",
+                    "WebChannelDesc": "",
+                    "WebChannelAdUrl": "",
+                    "WebChannelAdImgUrl": ""
+                },
+                "SecChannel": [
+                    {
+                        "ParentCode": "app1112",
+                        "WebChannelCode": "app2160",
+                        "WebChannelName": "安全套",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEVbdKd-AElnWAABtOGcjgQA831.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app1112",
+                        "WebChannelCode": "app543",
+                        "WebChannelName": "润滑剂",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEVbdKguAcaQzAAAgAKbj7js921.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    }
+                ]
+            },
+            {
+                "FirstChannel": {
+                    "ParentCode": "app540",
+                    "WebChannelCode": "app2102",
+                    "WebChannelName": "男用器具",
+                    "WebChannelImg": "http://res.360kad.com/theme/app/img/channellogo/logo_app2102.png?2016092214",
+                    "WebChannelDesc": "",
+                    "WebChannelAdUrl": "",
+                    "WebChannelAdImgUrl": ""
+                },
+                "SecChannel": [
+                    {
+                        "ParentCode": "app2102",
+                        "WebChannelCode": "app15528091",
+                        "WebChannelName": "充气娃娃",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEVbdKlGAU4RWAAAgADUxKjA548.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2102",
+                        "WebChannelCode": "app2168",
+                        "WebChannelName": "飞机杯",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEVbdKqeAflBnAAAm6C2MoVg038.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2102",
+                        "WebChannelCode": "app15528111",
+                        "WebChannelName": "助勃器",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEFbdKymAKq8HAAAkyYzK1-A490.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2102",
+                        "WebChannelCode": "app15528101",
+                        "WebChannelName": "名器倒模",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEVbdKvaASgkXAAAmO9Icrfc070.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2102",
+                        "WebChannelCode": "app15528121",
+                        "WebChannelName": "新型包皮阻复环",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEFbdK1iAHW07AABHUX_86oI211.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    }
+                ]
+            },
+            {
+                "FirstChannel": {
+                    "ParentCode": "app540",
+                    "WebChannelCode": "app2103",
+                    "WebChannelName": "女用器具",
+                    "WebChannelImg": "http://res.360kad.com/theme/app/img/channellogo/logo_app2103.png?2016092214",
+                    "WebChannelDesc": "",
+                    "WebChannelAdUrl": "",
+                    "WebChannelAdImgUrl": ""
+                },
+                "SecChannel": [
+                    {
+                        "ParentCode": "app2103",
+                        "WebChannelCode": "app2172",
+                        "WebChannelName": "G点刺激",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEVbdK_WAVTG7AAB1Y5SIy2U012.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2103",
+                        "WebChannelCode": "app2170",
+                        "WebChannelName": "缩阴球",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEVbdK6iAAjDHAAAgALaeCRI295.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2103",
+                        "WebChannelCode": "app2173",
+                        "WebChannelName": "震动跳蚤",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEVbdK3yAW41oAAAiQnd9P9s586.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2103",
+                        "WebChannelCode": "app2174",
+                        "WebChannelName": "多功能按摩棒",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEVbdK8qAScoFAAAmQpRMKFg251.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    }
+                ]
+            },
+            {
+                "FirstChannel": {
+                    "ParentCode": "app540",
+                    "WebChannelCode": "app4039",
+                    "WebChannelName": "情趣用品",
+                    "WebChannelImg": "http://res.360kad.com/theme/app/img/channellogo/logo_app4039.png?2016092214",
+                    "WebChannelDesc": "",
+                    "WebChannelAdUrl": "",
+                    "WebChannelAdImgUrl": ""
+                },
+                "SecChannel": [
+                    {
+                        "ParentCode": "app4039",
+                        "WebChannelCode": "app4040",
+                        "WebChannelName": "延时用品",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEFbdLG2AfFzeAAAgAPWWkPw720.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app4039",
+                        "WebChannelCode": "app4050",
+                        "WebChannelName": "延时助兴",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEFbdLKKAQKHIAABzLZY_Rp0798.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app4039",
+                        "WebChannelCode": "app2135",
+                        "WebChannelName": "消毒杀菌",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEVbdLESAOru6AAAdr60RVyQ857.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app4039",
+                        "WebChannelCode": "app2105",
+                        "WebChannelName": "情趣内衣",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D3/CgAgEFbdLCOAb45RAAAgAJHL6cU993.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+<link rel="stylesheet" type="text/css" href="./css/Share.css"/>
+
+<header class="All-head" >
+	
+	<h1><img src="./img/小于号.svg"  class="imagg1"/>分享有礼<img src="./img/省略号.svg" class="imga" ng-click="dis()"  /></h1>
+	
+	<ul class="head-list" ng-show="myVar2" ng-click="dis2()" >
+		<li><a href="#"><img src="./img/搜索.svg"/><span>搜索</span></a></li>
+		<li><a href="#"><img src="./img/首页-首页.svg"/><span>首页</span></a></li>
+		<li><a href="#"><img src="./img/消息.svg"/><span>消息</span></a></li>
+	</ul>
+</header>
+<div class="Share-banner">
+	<img src="http://res.360kad.com/theme/mobile/img/promotion/share_prize/images/share1.jpg"/>
+</div>
+
+<a href="#/login" class="Share-YQ">
+	邀请
+	<span>TA</span>
+	领取十元>>
+</a>
+<b class="Share-now" ng-click="toggle()">活动说明？</b>
+<img class="Share-img" src="http://res.360kad.com/theme/mobile/img/promotion/share_prize/images/share2.jpg"/>
+
+<a href="#/login" class="Share-see">查看我的奖励</a>
+<img  class="Share-footer" src="http://res.360kad.com/theme/mobile/img/promotion/share_prize/images/share3.jpg"/>
+
+<p class="Share-end">本活动最终解释权归康爱多公司所有</p>
+
+<div class="Share-M" ng-show="myVar">
+	<div class="Share-Coent">
+		<p class="huodomg" >-活动说明-</p>
+		<ul class="Share-Sm">
+			<span class="MyX" ng-click="toggleX()" style="display: block;background: yellow;text-align: center;width: 40px;height: 40px;padding: 10px;font-size: 20px;position: absolute;top:-1rem;left: 95%;">X</span>
+			<li><span>1</span>本活动适用于“康爱多掌上药店”客户端；</li>
+			<li><span>2</span>好友通过您分享的邀请页面输入手机号，可获得10元现金券；</li>
+			<li><span>3</span>好友首次成功消费现金券后（好友确认收货后），您可获得10元现金券，记得让好友去订单中心点确认收货哦；</li>
+			<li><span>4</span>分享活动不设次数限制，但每位好友只能领取1次现金券；</li>
+			<li><span>5</span>所有赠送的现金券在领取之日起15天内有效；</li>
+			<li><span>6</span>本活动最终解释权归康爱多所有，非正常途径获得的奖励无效哦。</li>
+			
+		</ul>
+	</div>
+</div>

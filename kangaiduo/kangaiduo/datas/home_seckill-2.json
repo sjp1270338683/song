@@ -1,0 +1,78 @@
+{
+    "TotalCount": 7434,
+    "Url": "http://m.360kad.com/zhuanti/app_new_seckill.shtml",
+    "ServerTime": "/Date(1474540372423)/",
+    "EndTime": "/Date(1474549200000)/",
+    "data": [
+        {
+            "WareCode": "牛黄解毒片3片",
+            "Pic180": "http://image.360kad.com/group1/M00/49/47/CgAgEVfD0UqAZ52WAAG3Jjyuhoc223.jpg_180x180.jpg",
+            "Price": 19.9,
+            "SeckillPrice": 4.9,
+            "Discount": 2.5
+        },
+        {
+            "WareCode": "科瑞 红梅素软膏1%:10g",
+            "Pic180": "http://image.360kad.com/group1/M00/0B/47/CgAgEVX3mQeAFEn5AAAgAIFvtOg03.jpeg",
+            "Price": 18.5,
+            "SeckillPrice": 5.9,
+            "Discount": 3.2
+        },
+        {
+            "WareCode": "豪哥牌避孕套",
+            "Pic180": "http://image.360kad.com/group1/M00/10/9F/CgAgEFaDiGmAI-fwAABAAOaEFnQ29.jpeg",
+            "Price": 15.9,
+            "SeckillPrice": 6.8,
+            "Discount": 4.3
+        },
+        {
+            "WareCode": "聚成优品蒸馏水",
+            "Pic180": "http://image.360kad.com/group1/M00/0E/FB/CgAgEFZuf0eAAhClAAAgAMqprKU81.jpeg",
+            "Price": 25.9,
+            "SeckillPrice": 8.8,
+            "Discount": 3.4
+        },
+        {
+            "WareCode": "大宝SOD密,年轻的首选",
+            "Pic180": "http://image.360kad.com/group1/M00/4B/FF/CgAgEFfRKgaAKYEfAAGehf-eajM659.jpg_180x180.jpg",
+            "Price": 16.9,
+            "SeckillPrice": 8.8,
+            "Discount": 5.2
+        },
+        {
+            "WareCode": "芦荟面膜韩国代购",
+            "Pic180": "http://image.360kad.com/group1/M00/08/37/CgAgEVWKR22AITQcAAAmpKFtKdI199.jpg",
+            "Price": 9.9,
+            "SeckillPrice": 1,
+            "Discount": 1
+        },
+        {
+            "WareCode": "高效医六味地黄丸",
+            "Pic180": "http://image.360kad.com/group1/M00/4B/FF/CgAgEFfRKgaAKYEfAAGehf-eajM659.jpg_180x180.jpg",
+            "Price": 3.5,
+            "SeckillPrice": 1,
+            "Discount": 2.9
+        },
+        {
+            "WareCode": "见者有风",
+            "Pic180": "http://image.360kad.com/group1/M00/08/97/CgAgEVWKSbKAQ2dPAABUcXsnvSs154.jpg",
+            "Price": 4.5,
+            "SeckillPrice": 1.9,
+            "Discount": 4.2
+        },
+        {
+            "WareCode": "龙母开打",
+            "Pic180": "http://image.360kad.com/group1/M00/34/EF/CgAgEFdWbLiAF10TAAGm6PvJVDE763.jpg_180x180.jpg",
+            "Price": 28,
+            "SeckillPrice": 3.9,
+            "Discount": 1.4
+        },
+        {
+            "WareCode": "乃是纳雍骗",
+            "Pic180": "http://image.360kad.com/group1/M00/37/11/CgAgEVdiZqqAdw19AAGWNp8ChAY602.jpg_180x180.jpg",
+            "Price": 16.5,
+            "SeckillPrice": 4.8,
+            "Discount": 2.9
+        }
+    ]
+}

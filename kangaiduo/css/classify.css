@@ -1,0 +1,111 @@
+@charset "utf-8";
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "微软雅黑";
+}
+div.classify_ {
+  width: 100%;
+  height: 100%;
+}
+div.classify_ a {
+	color: #666;
+  text-decoration: none;
+}
+div.classify_ .header {
+  width: 100%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  text-align: center;
+  background: #f8f8f8 ;
+  font-size: 0.5rem;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4 ;
+}
+div.classify_ .main {
+  width: 100%;
+  height: 100%;
+}
+div.classify_ .main .nav {
+  width: 22%;
+  background: #f8f8f8;
+  text-align: center;
+  float: left;
+}
+div.classify_ .main .nav ul {
+  width: 100%;
+  height: 18.5rem ;
+}
+div.classify_ .main .nav ul li {
+  width: 100%;
+  line-height: 1.6rem;
+  height: 1.6rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+div.classify_ .main .nav ul li a {
+  color: #666;
+  font-size: 0.35rem;
+}
+div.classify_ .main .nav ul li:first-child {
+  background: #fff;
+}
+div.classify_ .main .section {
+  float: left;
+  width: 78%;
+  position: relative;
+}
+div.classify_ .main .section .myclass {
+  width: 100%;
+  display: block;
+}
+div.classify_ .main .section .myclass h3 {
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.3rem;
+  color: #9b9b9b;
+  padding: 0 0 0 0.3rem;
+}
+div.classify_ .main .section .myclass figure {
+  width: 33.33333%;
+  float: left ;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+}
+div.classify_ .main .section .myclass figure img {
+  width: 60%;
+}
+div.classify_ .main .section .myclass figure figcaption {
+  font-size: 0.3rem;
+}
+div.classify_ .main .section .doc,
+div.classify_ .main .section .sex {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  background: #fff;
+}
+div.classify_ .main .section .doc h3,
+div.classify_ .main .section .sex h3 {
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.3rem;
+  color: #9b9b9b;
+  padding: 0 0 0 0.3rem;
+}
+div.classify_ .main .section .doc figure,
+div.classify_ .main .section .sex figure {
+  width: 33.33333%;
+  float: left ;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+}
+div.classify_ .main .section .doc figure img,
+div.classify_ .main .section .sex figure img {
+  width: 60%;
+}
+div.classify_ .main .section .doc figure figcaption,
+div.classify_ .main .section .sex figure figcaption {
+  font-size: 0.3rem;
+}

@@ -1,0 +1,239 @@
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+.search_header_box {
+  min-width: 320px;
+  height: 1.5rem;
+  padding: 0.179rem 0.08rem 0.179rem 0.179rem;
+  border-bottom: 1px solid #d3d3d3;
+  text-align: center;
+  background: white;
+  position: relative;
+}
+.search_header {
+  float: left;
+}
+.search_header h3 {
+  background: url(../img/kad_logo.png) no-repeat;
+  background-size: 100%;
+  width: 3rem;
+  height: 1.6rem;
+  line-height: 0.8rem;
+  font-size: 0;
+}
+.search_top {
+  font-size: .6rem;
+  bottom: .2rem;
+  left: 47%;
+  position: absolute;
+  font-weight: bold;
+}
+.search_header_right {
+  position: absolute;
+  bottom: .4rem;
+  right: .5rem;
+}
+.search_header_right img {
+  width: 1.2rem;
+  height: 1rem;
+}
+.search_header_right span {
+  position: absolute;
+  top: -0.1rem;
+  right: -0.1rem;
+  width: .5rem;
+  height: .5rem;
+  line-height: .5rem;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  text-align: center;
+}
+.search_sec {
+  margin: 10px 5px;
+  width: 100%;
+  float: left;
+  position: relative;
+  padding-bottom: 0.179rem;
+  border-bottom: 1px solid #D3D3D3;
+}
+.search_sec input {
+  width: 75%;
+  display: inline-block;
+  outline: none;
+  line-height: normal;
+  overflow: hidden;
+  text-indent: 10px;
+  height: 1rem;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 0.08rem 0 0 0.08rem;
+  font-size: 0.5rem;
+}
+.search_sec_yao {
+  width: 22.2%;
+  height: 1.01rem;
+  float: right;
+  background: #F03030;
+  border-radius: 0 5px 5px 0;
+  font-size: .7rem;
+  margin-right: 2.5%;
+}
+.search_sec_yao span {
+  display: inline-block;
+  color: white;
+  line-height: 1.01rem;
+  height: 100%;
+  width: 100% ;
+  text-align: center;
+}
+.search_msg {
+  clear: both;
+  height: 100%;
+}
+.search_msg .search_ul .max_li {
+	padding-right: 1rem;
+  width: 100%;
+  margin:0 auto;
+  cursor: pointer;
+}
+.search_msg .search_ul .max_li .top {
+	background: url(../img/down_icona.png)no-repeat 11rem center;
+	background-size: .5rem 0.3rem;
+	
+  padding: .2rem;
+  border-bottom: 1px dotted #D3D3D3;
+}
+.search_msg .search_ul .max_li .top h2 {
+  color: #454545;
+  font-size: .5rem;
+}
+.search_msg .search_ul .max_li .top p {
+  font-size: .1rem;
+  color: #acacac;
+}
+.search_msg .search_ul .max_li .top .font {
+  display: block;
+  font-size: 0;
+  height: .5rem;
+}
+.search_msg .search_ul .max_li .bottom {
+  width: 100%;
+  float: left;
+  background: #e3e3e3;
+}
+.search_msg .search_ul .max_li .bottom .bottom_meu li {
+  height: 1rem;
+  float: left;
+  width: 30%;
+  color: #675c62;
+  text-align: center;
+  line-height: 1rem;
+  border: none;
+  background: white;
+  border-radius: 5px;
+  margin: .2rem;
+  cursor: pointer;
+}
+/*.search_msg .search_ul .max_li .arrow {
+	
+  position: absolute;
+  right: .5rem;
+  top: 10%;
+  float: right;
+}*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('ticonfont.eot');
+  src: url('ticonfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('ticonfont.woff') format('woff'), /* chrome、firefox */ url('ticonfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('ticonfont.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.search_footer {
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+}
+.search_footer .userloginf {
+  font-size: .5rem;
+  float: left;
+}
+.search_footer .search_first {
+  float: right;
+  font-size: 0.5rem;
+  margin-right: .5rem;
+  color: #9D9D9D;
+}
+.search_footer .search_first span {
+  padding: 0 0.2rem;
+  color: #9D9D9D;
+}
+.search_footer .fot_btn {
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0.3rem;
+  line-height: 200%;
+  height: .8rem;
+}
+.search_footer .fot_btn ul {
+  width: 80%;
+  margin: 0 auto;
+}
+.search_footer .fot_btn ul li {
+  float: left;
+  padding: 0 .1rem;
+  text-align: center;
+  cursor: pointer;
+}
+.search_footer .fot_btn ul li span {
+  padding-left: .2rem;
+}
+.search_footer .search_phone {
+  width: 250px;
+  height: 2.8rem;
+  margin: 5px auto;
+  cursor: pointer;
+}
+.search_footer .search_phone img {
+  margin: 5px auto;
+}
+.search_footer .search_footer_p {
+  height: .5rem;
+  width: 30%;
+  margin: 0 auto;
+  color: red;
+  margin-bottom: .5rem;
+}
+.search_footer .search_footer_mess {
+  height: .8rem;
+  margin: 0 0 0 7%;
+}
+.search_footer .search_footer_mess li {
+  float: left;
+  width: 21%;
+  padding-left: .1rem;
+  text-align: center;
+}
+.search_footer .search_footer_mess li span {
+  padding: 0 3px;
+  margin-right: 3px;
+  color: white;
+  background: #007AFF;
+  border-radius: 50%;
+}
+footer .search_footer_banquan {
+  width: 74%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}

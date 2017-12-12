@@ -1,0 +1,386 @@
+{
+"Code": "0",
+"Result": true,
+"Message": "展示",
+"Data": {
+"ProductId": "65080",
+"RedirectUrl": "",
+"sata": [
+{
+"WareSkuCode": "1213",
+"WareName": "九芝堂 逍遥丸 200丸",
+"Pic180": "http://image.360kad.com/group1/M00/07/7A/CgAgEVWKQ2iATG-PAABvyd1r5xs784.jpg",
+"Pic800": "http://image.360kad.com/group1/M00/07/7A/CgAgEFWKQ2iAIoIgAAOOA0Malfc432.jpg",
+"SalePrice": 7.8,
+"MarketPrice": 10,
+"Advertisement": "【9月特惠】7.8元/盒！本品疏肝健脾，养血调经，用于肝郁脾虚所致的郁闷不舒，胸胁胀痛，头晕目眩，食欲减退；温馨提示：忌食寒凉，生冷食物，过敏禁用。",
+"IsRx": 0
+},
+{
+"WareSkuCode": "65655",
+"WareName": "早康 随身灸 艾灸盒（黑色） 1盒",
+"Pic180": "http://image.360kad.com/group1/M00/07/F7/CgAgEVWKRhuAXj0_AABFHVbqWDw702.jpg",
+"Pic800": "http://image.360kad.com/group1/M00/07/F7/CgAgEFWKRhuAfZszAAF5TiPJFgs499.jpg",
+"SalePrice": 29,
+"MarketPrice": 58,
+"Advertisement": "【金秋9月】限时特惠，仅需29元。温馨提醒：本品用于温灸艾灸保健。",
+"IsRx": 0
+},
+{
+"WareSkuCode": "9998077",
+"WareName": "同仁堂 加味逍遥丸 6g*10袋",
+"Pic180": "http://image.360kad.com/group1/M00/07/A3/CgAgEFWKRHaAI3ZRAABpdn0jZ9M600.jpg",
+"Pic800": "http://image.360kad.com/group1/M00/49/4C/CgAgEFfD3taAL9YLAAG_dBNWHso603.jpg",
+"SalePrice": 23.5,
+"MarketPrice": 32,
+"Advertisement": "【9月特惠】低至：20元起！本品用于肝郁血虚，肝脾不和，两肋胀痛，头晕目眩，倦怠食少，月经不调，脐腹胀痛；温馨提示：服用期间忌生冷及油腻难消化的食品。",
+"IsRx": 0
+},
+{
+"WareSkuCode": "1185",
+"WareName": "敬修堂 逍遥丸（水丸） 36g",
+"Pic180": "http://image.360kad.com/group1/M00/11/BD/CgAgEVaPn_SAZQvhAAAgAO85xLQ15.jpeg",
+"Pic800": "http://image.360kad.com/group1/M00/11/BD/CgAgEFaPn_SAEhILAAKBYA_9Wb493.jpeg",
+"SalePrice": 7.5,
+"MarketPrice": 10,
+"Advertisement": "【9月特惠】7.5元/盒！用于肝气不舒所致月经不调，胸胁胀痛，头晕目眩，食欲减退。",
+"IsRx": 0
+},
+{
+"WareSkuCode": "65660",
+"WareName": "早康 温灸艾柱 54段装",
+"Pic180": "http://image.360kad.com/group1/M00/0E/12/CgAgEVZTy5mALjvEAAAgAGFCiBg11.jpeg",
+"Pic800": "http://image.360kad.com/group1/M00/0E/12/CgAgEFZTy5iAJY7kAAKCoGoCflQ19.jpeg",
+"SalePrice": 35,
+"MarketPrice": 78,
+"Advertisement": "【金秋9月】限时特惠，仅需35元。温馨提醒：本品用于点燃后放入温灸器中滚动于经络四周。",
+"IsRx": 0
+},
+{
+"WareSkuCode": "1314",
+"WareName": "钙尔奇D 碳酸钙D3咀嚼片（Ⅱ） 300mg*30片",
+"Pic180": "http://image.360kad.com/group1/M00/2D/2C/CgAgEFcqv_KAYUEMAAHCMrvkrK0605.jpg_180x180.jpg",
+"Pic800": "http://image.360kad.com/group1/M00/2D/2C/CgAgEFcqv_KAYUEMAAHCMrvkrK0605.jpg",
+"SalePrice": 22,
+"MarketPrice": 27,
+"Advertisement": "中秋欢乐庆：低至21元/盒起！用于儿童、孕妇和哺乳期妇女、更年期妇女、老年人等的钙补充剂，并帮助防治骨质疏松症。",
+"IsRx": 0
+},
+{
+"WareSkuCode": "73574",
+"WareName": "必利劲 盐酸达泊西汀片 30mg*3片",
+"Pic180": "http://image.360kad.com/group1/M00/4B/6A/CgAgEFfOdEyAFXUZAAG_dnyVmxw199.jpg_180x180.jpg",
+"Pic800": "http://image.360kad.com/group1/M00/4B/6A/CgAgEFfOdEyAFXUZAAG_dnyVmxw199.jpg",
+"SalePrice": 228,
+"MarketPrice": 248,
+"Advertisement": "本月钜惠：10元券即领即用，原价为248元下单立减20元+10优惠券到手价218元，25元券即领即用，2盒起用券到手价200元/盒，满2盒加1元即可带走倍耐力 男用喷剂",
+"IsRx": 1
+},
+{
+"WareSkuCode": "10000208810",
+"WareName": "龙抬头 复方手参丸 0.3g*150粒",
+"Pic180": "http://image.360kad.com/group1/M00/22/12/CgAgEFboEumACpUTAAKBYMB5dNY55.jpeg_180x180.jpg",
+"Pic800": "http://image.360kad.com/group1/M00/22/12/CgAgEFboEumACpUTAAKBYMB5dNY55.jpeg",
+"SalePrice": 498,
+"MarketPrice": 623,
+"Advertisement": "本月钜惠：满2盒加0.1元获取冯了性 知柏地黄丸，满3盒加0.1元获取腰肾膏",
+"IsRx": 1
+},
+{
+"WareSkuCode": "999154",
+"WareName": "999 小儿感冒颗粒 6g*10袋",
+"Pic180": "http://image.360kad.com/group1/M00/1D/D6/CgAgEVapv0uAZSJJAAAgAJWAbuA94.jpeg",
+"Pic800": "http://image.360kad.com/group1/M00/41/27/CgAgEFeaLPmAN-SUAAJ6gFKUeK073.jpeg",
+"SalePrice": 11.8,
+"MarketPrice": 16,
+"Advertisement": "中秋欢乐庆：低至11.8元/盒，用于小儿风热感冒，症见发热、咳嗽痰黏、咽喉肿痛。儿童感冒发热医院常搭配：小林冰宝贴 医用退热贴（儿童）。",
+"IsRx": 0
+},
+{
+"WareSkuCode": "1286",
+"WareName": "力度伸 维生素C泡腾片(柠檬味) 1g*10片",
+"Pic180": "http://image.360kad.com/group1/M00/0B/DB/CgAgEVYKbt2ADIVYAAAgAOawhYY99.jpeg",
+"Pic800": "http://image.360kad.com/group1/M00/0B/DB/CgAgEFYKbt2AExBPAAJ54GBhPOk63.jpeg",
+"SalePrice": 25,
+"MarketPrice": 29,
+"Advertisement": "【9月金秋活动】限量回馈，仅需25元。增强机体抵抗力，用于预防和治疗各种急、慢性传染性疾病或其他疾病。",
+"IsRx": 0
+}
+],
+"lunbo":[
+	"http://image.360kad.com/group1/M00/4B/93/CgAgEFfPbYWAZzn3AAE3FoGD2wA941.jpg",
+	"http://image.360kad.com/group1/M00/46/1D/CgAgEFe0K56Ae9m_AAHth72_-5g856.png",
+	"http://image.360kad.com/group1/M00/4B/93/CgAgEFfPbQGAZ1BmAAE03ic2F-M127.jpg",
+	"http://image.360kad.com/group1/M00/47/AD/CgAgEFe7-WyABThPAAFAkb1AP48605.jpg",
+	"http://image.360kad.com/group1/M00/4B/93/CgAgEFfPbYWAZzn3AAE3FoGD2wA941.jpg"
+],
+"PicList": [
+"http://image.360kad.com/group1/M00/48/5E/CgAgEFe-_MCANiiHAAF1Ru_zcfg248.jpg",
+"http://image.360kad.com/group1/M00/07/F1/CgAgEFWKRgqAHx6tAADzbYPozqU848.jpg",
+"http://image.360kad.com/group1/M00/07/F1/CgAgEVWKRgqAeRuIAAEcnlGykD8969.jpg",
+"http://image.360kad.com/group1/M00/07/F1/CgAgEFWKRgqAEcw8AAEYWMjfknQ948.jpg",
+"http://image.360kad.com/group1/M00/07/F1/CgAgEFWKRgqAKLmYAAE0TI_EJrs504.jpg"
+],
+"item":[
+	
+
+],
+"list":[
+"http://res.360kad.com/theme/mobile/img/promotion/channel/img/ad_secKill.jpg",
+"http://res2.360kad.com/theme/mobile/img/promotion/channel/img/ad_brand.jpg",
+"http://res3.360kad.com/theme/mobile/img/promotion/channel/img/ad_half.jpg"
+],
+"navList":[
+	"血量计","血糖仪","制氧机","体温计","雾化器","轮椅","颈椎护理","洗鼻器","针灸/拔罐","拐杖/助行","按摩椅"
+],
+"TitleInfo": {
+"Title": "九安 MINI 腕式电子血压计KD-797 1台",
+"Adv": "【金秋9月】限时特惠，仅需125元！下单即送价值39元菊花饮片！加【9.9元换购】价值61.9元健康礼包！温馨提示：本品小巧带语音，更受长辈青睐！",
+"ProducerName": "天津九安医疗电子股份有限公司",
+"StockStatus": "现在有货"
+},
+"PriceInfo": {
+"Style": "CommonStyle",
+"StyleInfo": {
+"Price": 125,
+"OriginalPrice": 157,
+"IsAppPrivate": false,
+"AppPrivateIcon": null,
+"SaveDesc": "立省32.00元"
+},
+"ActivityStock": null
+},
+"Promises": [
+{
+"Title": "正品保证",
+"Pic": "http://res3.360kad.com/theme/mobile/image/details3.0/zheng.png",
+"Content": "康爱多是全国首批获国家食药监局批准的合法网上药店，专供正规厂家优质药品！"
+},
+{
+"Title": "满39包邮",
+"Pic": "http://res3.360kad.com/theme/mobile/image/details3.0/you.png",
+"Content": "买满包邮，优惠多多。全场订单金额满39元即享受免邮费优惠！"
+},
+{
+"Title": "隐私配送",
+"Pic": "http://res3.360kad.com/theme/mobile/image/details3.0/shi.png",
+"Content": "购物无忧，隐私配送。您在康爱多网上药店注册时产生的所有个人信息将被保密，快递包装上也不会出现您的购物内容和“康爱多”字样。"
+},
+{
+"Title": "货到付款",
+"Pic": "http://res3.360kad.com/theme/mobile/image/details3.0/sevice_icon.png",
+"Content": "支持货到付款服务！覆盖全国大部分城市！不需要繁琐的在线支付流程，不用担心货不对板，享受先收货后付款的便捷体验，让您购药更放心！"
+}
+],
+"ActivityList": [
+{
+"ID": "12956670",
+"Icon": "http://res.360kad.com/theme/app/img/productDetail/actIcon/manzeng.png",
+"Title": "本商品满1件，即可获得：草晶华 破壁草本 菊花破壁饮片(体验装) 1g*4袋1件",
+"CouponList": null
+}
+],
+"ColorSpec": {
+"PropertyName": null,
+"IsShow": false,
+"IsVirtualMainWareSku": false,
+"PropertyList": null,
+"PropertyGroupList": null
+},
+"Treatments": [],
+"Packages": [
+{
+"PackageId": "13198110",
+"Title": "套餐1",
+"PackageTitle": "9.9元换购：九安 血压计1台+VC 1盒+西洋参1盒",
+"PackageReason": "通常患有高血压的中老年人，日常容易出现头晕目眩，免疫力低下。西洋参含片，适用于易疲劳者；每天一片VC，补充日常所需维生素。原价61.9元健康大礼包，限时特惠9.9元，即可轻松带走。",
+"PackagePrice": 134.9,
+"OriginalPrice": 186.9,
+"SaveDesc": "补充VC，提高机体免疫力！",
+"Items": [
+{
+"Id": "65080",
+"Pic": "http://image.360kad.com/group1/M00/1F/14/CgAgEVbKwrqAKuEIAAAPKLqZDB062.jpeg",
+"Title": "九安 MINI 腕式电子血压计KD-797 1台",
+"Qty": 1,
+"Price": 125
+},
+{
+"Id": "41197",
+"Pic": "http://image.360kad.com/group1/M00/46/85/CgAgEVe2dRCASmh4AAGyx5cc5e8501.jpg_180x180.jpg",
+"Title": "康富来 维生素C咀嚼片 0.5g*50片",
+"Qty": 1,
+"Price": 42
+},
+{
+"Id": "7164",
+"Pic": "http://image.360kad.com/group1/M00/0A/4B/CgAgEFXS4laANc8gAAAgAOnHiX464.jpeg",
+"Title": "斯必利 西洋参含片 1250mg*12片",
+"Qty": 1,
+"Price": 19.9
+}
+],
+"BtnEvent": "buy",
+"Button": "加入购物车"
+},
+{
+"PackageId": "13195410",
+"Title": "套餐2",
+"PackageTitle": "中药调理降压：九安 血压计1台+山楂1盒",
+"PackageReason": "高血压通常伴有肉食积滞、血脂粘稠度偏高的情况。山楂具有消食健胃，化浊降脂的作用，常用于高血脂症。本品采用破壁草本技术，吸收更佳，而且冲泡便捷，更受三高人群的青睐，日常饮用辅助调理血压血脂。",
+"PackagePrice": 168,
+"OriginalPrice": 205,
+"SaveDesc": "健康降压又降脂，心血管病都靠它！",
+
+"Items": [
+{
+"Id": "65080",
+"Pic": "http://image.360kad.com/group1/M00/1F/14/CgAgEVbKwrqAKuEIAAAPKLqZDB062.jpeg",
+"Title": "九安 MINI 腕式电子血压计KD-797 1台",
+"Qty": 1,
+"Price": 125
+},
+{
+"Id": "100918",
+"Pic": "http://image.360kad.com/group1/M00/20/CF/CgAgEFbdGeyADteFAAG26ORKiTA822.jpg_180x180.jpg",
+"Title": "草晶华 破壁草本 山楂破壁饮片 2克/袋*20袋",
+"Qty": 1,
+"Price": 80
+}
+],
+"BtnEvent": "buy",
+"Button": "加入购物车"
+},
+{
+"PackageId": "13023380",
+"Title": "套餐3",
+"PackageTitle": "强壮筋骨：九安 血压计1台+金钙尔奇1盒",
+"PackageReason": "一般人随着年龄的增加，钙也在不断流失。日常通过适当补钙可预防骨质疏松，骨骼变脆，易骨折等情况，增强骨密度，提高骨质韧性，改善骨骼健康。",
+"PackagePrice": 145,
+"OriginalPrice": 172.2,
+"SaveDesc": "日常补钙，预防骨质疏松等症。",
+"Items": [
+{
+"Id": "65080",
+"Pic": "http://image.360kad.com/group1/M00/1F/14/CgAgEVbKwrqAKuEIAAAPKLqZDB062.jpeg",
+"Title": "九安 MINI 腕式电子血压计KD-797 1台",
+"Qty": 1,
+"Price": 125
+},
+{
+"Id": "38734",
+"Pic": "http://image.360kad.com/group1/M00/39/B5/CgAgEFdw1tyABRdoAAGqlSw4Ygs560.jpg_180x180.jpg",
+"Title": "金钙尔奇 碳酸钙维D3元素片(4) 30片",
+"Qty": 1,
+"Price": 47.2
+}
+],
+"BtnEvent": "buy",
+"Button": "加入购物车"
+},
+{
+"PackageId": "13023820",
+"Title": "套餐4",
+"PackageTitle": "测血糖血压：九安 血压计1台+三诺 血糖仪1台+试纸1盒",
+"PackageReason": "通常高血压病人特别是肥胖型人群，随着血粘稠度增加，血管壁受损，容易增加血管阻力，而高血压合并糖尿病的情况也较为常见。三诺 安稳免调码血糖仪，插入试条即可使用，简单易操作，方便日常随时检测，关注健康状况。",
+"PackagePrice": 199,
+"OriginalPrice": 245,
+"SaveDesc": "测量血糖血压方便简单，呵护家人健康",
+"Items": [
+{
+"Id": "65080",
+"Pic": "http://image.360kad.com/group1/M00/1F/14/CgAgEVbKwrqAKuEIAAAPKLqZDB062.jpeg",
+"Title": "九安 MINI 腕式电子血压计KD-797 1台",
+"Qty": 1,
+"Price": 125
+},
+{
+"Id": "1010409990",
+"Pic": "http://image.360kad.com/group1/M00/0D/CE/CgAgEVZJmpuAJMxIAAAgAJ4NZF046.jpeg",
+"Title": "三诺 安稳免调码型血糖仪 1台",
+"Qty": 1,
+"Price": 35
+},
+{
+"Id": "82211",
+"Pic": "http://image.360kad.com/group1/M00/08/9D/CgAgEVWKScSAP0hgAABVQ6-xVCs050.jpg",
+"Title": "三诺 安稳免调码血糖试条（独立装） 50支独立试条+50个针头",
+"Qty": 1,
+"Price": 85
+}
+],
+"BtnEvent": "buy",
+"Button": "加入购物车"
+},
+{
+"PackageId": "13239790",
+"Title": "套餐5",
+"PackageTitle": "预防缺氧：九安 血压计1台+力康 血氧仪1台",
+"PackageReason": "通常心脑血管人群由于血液粘稠，加上冠状动脉硬化，血管腔会变得狭窄，从而产生供血不畅，摄氧不足的情况。通过脉搏血氧仪来监测氧合情况，随时了解血氧饱和度，减少因缺氧引发的突发危害。",
+"PackagePrice": 218,
+"OriginalPrice": 264,
+"SaveDesc": "日常监测血氧浓度、脉率和脉搏。",
+"Items": [
+{
+"Id": "65080",
+"Pic": "http://image.360kad.com/group1/M00/1F/14/CgAgEVbKwrqAKuEIAAAPKLqZDB062.jpeg",
+"Title": "九安 MINI 腕式电子血压计KD-797 1台",
+"Qty": 1,
+"Price": 125
+},
+{
+"Id": "69781",
+"Pic": "http://image.360kad.com/group1/M00/08/1B/CgAgEFWKRvuAHqlqAAAlcsNP82I668.jpg",
+"Title": "力康 脉搏血氧饱和度仪 POD-1 1台",
+"Qty": 1,
+"Price": 139
+}
+],
+"BtnEvent": "buy",
+"Button": "加入购物车"
+},
+{
+"PackageId": "13023120",
+"Title": "套餐6",
+"PackageTitle": "调节血脂：九安 血压计1台+鱼油1瓶",
+"PackageReason": "当血液中脂肪含量偏高，血液变得粘稠，容易阻碍血液的正常流通，甚至堵塞血管，从而使血压升高。深海鱼油中富含EPA、DHA，辅助降血脂。适用于血脂偏高人群。现鱼油软胶囊限时特惠中，联合购买更实惠！",
+"PackagePrice": 178,
+"OriginalPrice": 263,
+"SaveDesc": "降低血液胆固醇水平，辅助降血脂。",
+"Items": [
+{
+"Id": "65080",
+"Pic": "http://image.360kad.com/group1/M00/1F/14/CgAgEVbKwrqAKuEIAAAPKLqZDB062.jpeg",
+"Title": "九安 MINI 腕式电子血压计KD-797 1台",
+"Qty": 1,
+"Price": 125
+},
+{
+"Id": "6346",
+"Pic": "http://image.360kad.com/group1/M00/4E/B1/CgAgEFffRYWAawjAAAG8dpFLEYc908.jpg_180x180.jpg",
+"Title": "汤臣倍健 鱼油软胶囊 1000mg*100粒",
+"Qty": 1,
+"Price": 138
+}
+],
+"BtnEvent": "buy",
+"Button": "加入购物车"
+}
+],
+"ButtonInfo": {
+"IsShowSupport": false,
+"ChatGroupId": null,
+"PhoneNumber": "4008808488",
+"BtnEvent": "buy",
+"Button": "加入购物车/立即购买",
+"HasButton": true,
+"ShowTips": null,
+"IsShowAddRemind": false
+}
+}
+
+
+	
+
+
+}

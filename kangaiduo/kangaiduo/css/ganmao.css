@@ -1,0 +1,94 @@
+.clear:after{
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.ganmao_{
+	width: 100%;
+	height: 1.5rem;
+	background: #f8f8f8;
+}
+.ganmao_ :first-child{
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.ganmao_ :first-child i{
+	width: 100%;
+	height: 100%;
+	font-size: 0.7rem;
+	line-height: 1.5rem;
+	text-align: center;
+}
+.ganmao_ :nth-child(2){
+	width: 60%;
+	height: 100%;
+	text-align: center;
+	font-size: 0.5rem;
+	line-height: 1.5rem;
+	float: left;
+}
+.ganmao_ :last-child{
+	width: 20%;
+	height: 100%;
+	font-size: 1rem;
+	line-height: 1rem;
+	float: left;
+	text-align: center;
+}
+.ganmao_mian{
+	width: 100%;
+	height: 1rem;
+	background: #2d8ff4;
+	text-align: center;
+	color: #fff;
+	line-height: 1rem;
+}
+.ganmao_list{
+	width: 100%;
+	overflow: hidden;
+}
+.ganmao_list figure{
+	width: 100%;
+	height: 2.9rem;
+	border-bottom: 1px solid #DFDFDF;
+}
+.ganmao_list figure img{
+	width: 20%;
+	height: 2.7rem;
+	float: left;
+	margin-left: 0.3rem;
+	overflow: hidden;
+}
+.ganmao_list figure .ganmao_jj{
+	width: 75%;
+	height: 1.7rem;
+	float: left;
+	padding-left: 0.2rem;
+	padding-top: 0.2rem;
+	font-size: 0.45rem;
+	overflow: hidden;
+}
+.ganmao_jj span:nth-child(2){
+	margin-left: 0.4rem;
+}
+.ganmao_list figure .ganmao_rmb{
+	width: 75%;
+	float: left;
+}
+.ganmao_rmb p:first-child{
+	float: left;
+	font-size: 0.5rem;
+	padding-left: 0.2rem;
+	color: darkgoldenrod;
+}
+.ganmao_rmb p:last-child{
+	float: left;
+	font-size: 0.5rem;
+	padding-left: 0.2rem;
+	color: #aaa;
+	text-decoration:line-through
+}

@@ -1,0 +1,78 @@
+{
+"TotalCount": 7434,
+"Url": "http://m.360kad.com/zhuanti/app_new_seckill.shtml",
+"ServerTime": "/Date(1474554737686)/",
+"EndTime": "/Date(1474592400000)/",
+"SeckillWares": [
+{
+"WareCode": "106101",
+"Pic180": "http://image.360kad.com/group1/M00/32/3C/CgAgEVdGsAWAKL1PAAHgHzQI7xc694.jpg_180x180.jpg",
+"Price": 3.9,
+"SeckillPrice": 1,
+"Discount": 2.6
+},
+{
+"WareCode": "1010084840",
+"Pic180": "http://image.360kad.com/group1/M00/0A/1A/CgAgEFXJrbuAacGTAAAgAJmJ_aE58.jpeg",
+"Price": 6.5,
+"SeckillPrice": 1.5,
+"Discount": 2.3
+},
+{
+"WareCode": "4754",
+"Pic180": "http://image.360kad.com/group1/M00/49/47/CgAgEVfD0UqAZ52WAAG3Jjyuhoc223.jpg_180x180.jpg",
+"Price": 3.8,
+"SeckillPrice": 1.8,
+"Discount": 4.7
+},
+{
+"WareCode": "999684",
+"Pic180": "http://image.360kad.com/group1/M00/21/7F/CgAgEVbjiJmAL5GQAAGufNQTFEo426.jpg_180x180.jpg",
+"Price": 10.8,
+"SeckillPrice": 3.9,
+"Discount": 3.6
+},
+{
+"WareCode": "1010249960",
+"Pic180": "http://image.360kad.com/group1/M00/0B/47/CgAgEVX3mQeAFEn5AAAgAIFvtOg03.jpeg",
+"Price": 19.9,
+"SeckillPrice": 4.6,
+"Discount": 2.3
+},
+{
+"WareCode": "1010390060",
+"Pic180": "http://image.360kad.com/group1/M00/10/9F/CgAgEFaDiGmAI-fwAABAAOaEFnQ29.jpeg",
+"Price": 26,
+"SeckillPrice": 4.8,
+"Discount": 1.8
+},
+{
+"WareCode": "33401",
+"Pic180": "http://image.360kad.com/group1/M00/0E/FB/CgAgEFZuf0eAAhClAAAgAMqprKU81.jpeg",
+"Price": 13.5,
+"SeckillPrice": 6.5,
+"Discount": 4.8
+},
+{
+"WareCode": "47494",
+"Pic180": "http://image.360kad.com/group1/M00/4B/FF/CgAgEFfRKgaAKYEfAAGehf-eajM659.jpg_180x180.jpg",
+"Price": 19,
+"SeckillPrice": 6.9,
+"Discount": 3.6
+},
+{
+"WareCode": "37847",
+"Pic180": "http://image.360kad.com/group1/M00/07/C6/CgAgEVWKRPqAH-4gAAAohcWuITM942.jpg",
+"Price": 11.5,
+"SeckillPrice": 7.9,
+"Discount": 6.9
+},
+{
+"WareCode": "75923",
+"Pic180": "http://image.360kad.com/group1/M00/20/48/CgAgEVbX93WAaEZFAABERENZ2Tg068.jpg",
+"Price": 26.9,
+"SeckillPrice": 15.9,
+"Discount": 5.9
+}
+]
+}

@@ -1,0 +1,68 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+.All-head {
+	height: 40px;
+	position: relative;
+	background: #f8f8f8;
+	width: 100%;
+	position: relative;
+}
+.All-head h1{color:black;text-align: center;width: 100%;line-height: 40px;text-align: center;font-size: 0.35rem;}
+.All-head .imagg1{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left:6px;
+	top: 10px;
+	
+}
+.All-head .imga{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right:6px;
+	top: 10px;
+	
+}
+.head-list{background: rgba(0,0,0,0.6);width: 40%;position: absolute;top: 1.5rem;right: 0;z-index: 9999;}
+.head-list li{height: 2rem;width:100% ;border-bottom: 1px solid white;list-style: none;text-align: center;line-height: 2rem;}
+.head-list li a{color: white;display: block;}
+.head-list li img{height: 20px;width: 20px;margin-left: 0.1rem;font-size: 0.1rem;}
+.head-list li span{margin-left: 0.3rem;font-size: 0.3rem;line-height: 2rem;}
+/*.head-list{display: none;}*/
+.imga{float: right;cursor: pointer;}
+.Vip-banner{width: 100%;margin:0 0 0 0;height: 4rem;background: red;}
+.Vip-banner img{width: 100%;height: 100%;}
+
+.Vip-list{width: 100%;position: relative;}
+.Vip-list img{width: 100%;height: 2rem;}
+.Vip-list p{position: absolute;width: 100%;left: 0;top:0px;height: 2rem;}
+.Vip-list p a{float: left;width: 23%;height: 1rem;text-align: center;line-height: 1rem;font-size: 0;margin-right: 5px;}
+
+
+
+.Share-banner{
+	width: 100%;
+	height: 3rem;
+	margin-bottom: 0.7rem;
+}
+.Share-banner img{width: 100%;height: 100%;display: block;}
+.Share-YQ{display: block;width: 6rem;margin:auto;background: red;text-align: center;height: 1.3rem;line-height: 1.3rem;font-size: 0.3rem;color: white;border-radius: 0.66rem;}
+.Share-YQ span{color: yellow;font-size: 0.5rem;}
+.Share-now{display: block;font-size: 0.3rem;color: red;text-decoration: underline;margin: auto;margin-top: 0.7rem;width: 2rem;}
+
+.Share-img{display: block;width: 86%;margin: auto;height: 6rem;margin-top:0.5rem ;}
+.Share-see{display: block;width: 6rem;margin:auto;text-align: center;height: 1.3rem;line-height: 1.3rem;font-size: 0.3rem;border-radius: 0.66rem;border: 1px solid #00BFFF;margin-top: 0.42rem;}
+.Share-footer{display: block;width: 90%;margin: auto;margin-top: 0.66rem;}
+.Share-end{width: 60%;margin: auto;color: gray;margin-bottom: 2rem;text-align: center;margin-top: 0.7rem;}
+.Share-M{width: 100%;height: 100%;background: rgba(0,0,0,0.8);z-index: 9999;position: fixed;top: 40px;padding: 25% 0 0 0;;}
+.Share-M .Share-Coent {width: 70%;height:70%;background: white;margin: auto;}
+.Share-M .Share-Coent ul{list-style: none;font-size: 0.18rem;padding: 0.3rem;position: relative;}
+.Share-M .Share-Coent p{font-size: 0.3rem;font-weight: bolder;color: red;text-decoration: underline;width: 3.5rem;margin: auto;padding: 0.3rem;}
+.Share-M .Share-Coent span{border-radius: 50%;background: red;font-size: 12px;}

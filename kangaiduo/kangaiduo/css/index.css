@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('iconfont.eot?t=1474515739');
+  src: url('iconfont.eot?t=1474515739#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('iconfont.woff?t=1474515739') format('woff'), /* chrome, firefox */ url('iconfont.ttf?t=1474515739') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('iconfont.svg?t=1474515739#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+body.html{width:100%;height: 100%;}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-iconfontsousuo1:before {
+  content: "\e604";
+}
+.icon-home:before {
+  content: "\e605";
+}
+.icon-gouwuche:before {
+  content: "\e601";
+}
+.icon-saoyisao:before {
+  content: "\e606";
+}
+.icon-iconfontxiaoxi1:before {
+  content: "\e607";
+}
+.icon-fenlei:before {
+  content: "\e602";
+}
+.icon-gerenzhongxin:before {
+  content: "\e603";
+}
+.footernav_ {
+  background: white;
+  z-index: 10;
+  width: 100%;
+  height: 1.8rem;
+  position: fixed;
+  border-top: 1px solid #dedede;
+  left: 0;
+  bottom: 0;
+}
+.footernav_ ul {
+  line-height: 0.9rem;
+  width: 90%;
+  margin-left: 7% ;
+  display: flex;
+  justify-content: space-between;
+}
+.footernav_ ul li {
+  margin: 0.15rem 0 0 0;
+  text-align: center;
+}
+.footernav_ ul li a {
+  color: #919191;
+}
+.footernav_ ul li a p {
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+}
+.footernav_ ul li a div {
+  font-size: 0.4rem;
+  line-height: 0.6rem;
+}
+.footernav_ ul li .bounced {
+  box-sizing: border-box;
+  padding: 3rem 0 0 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  left: 0;
+  top: 100%;
+  z-index: 999;
+}
+.footernav_ ul li .bounced .top {
+  text-align: left;
+  width: 100%;
+}
+.footernav_ ul li .bounced .top img {
+  width: 60%;
+  margin-left: 1rem;
+}
+.footernav_ ul li .bounced .cancel {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+}
+.footernav_ ul li .bounced .cancel img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.footernav_ ul li .bounced a {
+  float: left;
+  width: 20%;
+  margin: 18rem 6.5% 0;
+  transition: margin-top 0.6s cubic-bezier(0.74, 0.46, 0.33, 1.48);
+}
+.footernav_ ul li .bounced a p img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.footernav_ ul li .bounced a div {
+  margin: 1.2rem 0 0 0;
+  font-size: 0.5rem;
+  color: black;
+}
+.footernav_ ul li .bounced a:nth-child(4) {
+  transition: margin-top 0.8s cubic-bezier(0.74, 0.46, 0.33, 1.48);
+}
+.footernav_ ul li .bounced a:nth-child(5) {
+  transition: margin-top 1s cubic-bezier(0.74, 0.46, 0.33, 1.48);
+}
+.footernav_ ul li:first-child {
+  margin: 0rem 0 0 0;
+}
+.footernav_ ul li:first-child a {
+  color: #2d8ef3;
+}
+.footernav_ ul li:first-child a p {
+  font-size: 1.05rem ;
+  margin: 0.1rem 0 0.1rem;
+}
+.footernav_ ul li:nth-child(2) {
+  margin: 0.2rem 0 0 0;
+}
+.footernav_ ul li:nth-child(2) div {
+  margin: 0rem 0 0 0;
+}
+.footernav_ ul li:nth-child(3) {
+  margin-left: 0.5rem;
+}
+.footernav_ ul li:nth-child(3) a p {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../img/hushi.jpg) no-repeat left center;
+  background-size: 100% ;
+}
+div.indexBg{width: 100%;height: 100%;position: fixed;left: 0;top: 0;z-index:9999999999;}
+div.indexBg img{width:100%;}
+div.indexBg span{position: absolute;left:3rem;top:11rem;width: 0;height: 1.5rem;background: #fefefe;z-index:999999 ;-webkit-animation: AZ  linear 5s; animation:  AZ linear 5s;}
+@-webkit-keyframes AZ{
+	from{width:6rem ;left:3rem;}
+	to{width: 0 ;left:9rem ;}
+}
+keyframes AZ{
+	from{width:6rem;left:3rem ;}
+	to{width: 0  ;left:9rem ;}
+}

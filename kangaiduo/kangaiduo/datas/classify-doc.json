@@ -1,0 +1,258 @@
+{
+    "Code": 0,
+    "Message": "成功",
+    "Data": {
+        "TopChannel": {
+            "ParentCode": "app15446851",
+            "WebChannelCode": "app122",
+            "WebChannelName": "家庭药箱",
+            "WebChannelImg": "",
+            "WebChannelDesc": "",
+            "WebChannelAdUrl": "",
+            "WebChannelAdImgUrl": ""
+        },
+        "Items": [
+            {
+                "FirstChannel": {
+                    "ParentCode": "app122",
+                    "WebChannelCode": "app2699",
+                    "WebChannelName": "清热消炎",
+                    "WebChannelImg": "http://res.360kad.com/theme/app/img/channellogo/logo_app2699.png?2016092218",
+                    "WebChannelDesc": "",
+                    "WebChannelAdUrl": "",
+                    "WebChannelAdImgUrl": ""
+                },
+                "SecChannel": [
+                    {
+                        "ParentCode": "app2699",
+                        "WebChannelCode": "app269",
+                        "WebChannelName": "湿热上火",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEVbdL3iAMbuFAAAm-_J2PHE582.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2699",
+                        "WebChannelCode": "app2700",
+                        "WebChannelName": "中药消炎",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEVbdLtSATOdPAAAgSQO8wcY233.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2699",
+                        "WebChannelCode": "app2701",
+                        "WebChannelName": "清热解毒",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEFbdL0eAbd2NAAAkKw5Vx_0017.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    }
+                ]
+            },
+            {
+                "FirstChannel": {
+                    "ParentCode": "app122",
+                    "WebChannelCode": "app2209",
+                    "WebChannelName": "日常护理",
+                    "WebChannelImg": "http://res.360kad.com/theme/app/img/channellogo/logo_app2209.png?2016092218",
+                    "WebChannelDesc": "",
+                    "WebChannelAdUrl": "",
+                    "WebChannelAdImgUrl": ""
+                },
+                "SecChannel": [
+                    {
+                        "ParentCode": "app2209",
+                        "WebChannelCode": "app2218",
+                        "WebChannelName": "皮肤护理",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEFbdMFaAFB_pAAAkmQ4cWZo386.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2209",
+                        "WebChannelCode": "app2223",
+                        "WebChannelName": "头发护理",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEFbdMM-AA-wqAABdkaAfRnI750.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2209",
+                        "WebChannelCode": "app2213",
+                        "WebChannelName": "腋臭",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEFbdMUuAAmxXAAAkRAtfknk685.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2209",
+                        "WebChannelCode": "app1164",
+                        "WebChannelName": "脚气",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEVbdMQWAGBOWAABM373NKEw141.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2209",
+                        "WebChannelCode": "app2217",
+                        "WebChannelName": "面部护理",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEVbdL9mAQWa1AAAmqgqGDyI817.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2209",
+                        "WebChannelCode": "app3028",
+                        "WebChannelName": "口腔护理",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEFbdMBeAMvqOAAAgAGPXL9Y536.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    }
+                ]
+            },
+            {
+                "FirstChannel": {
+                    "ParentCode": "app122",
+                    "WebChannelCode": "app2208",
+                    "WebChannelName": "外用常备",
+                    "WebChannelImg": "http://res.360kad.com/theme/app/img/channellogo/logo_app2208.png?2016092218",
+                    "WebChannelDesc": "",
+                    "WebChannelAdUrl": "",
+                    "WebChannelAdImgUrl": ""
+                },
+                "SecChannel": [
+                    {
+                        "ParentCode": "app2208",
+                        "WebChannelCode": "app843",
+                        "WebChannelName": "创口护理",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D5/CgAgEFbdMtCAUQmWAAAcw-yzwac387.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2208",
+                        "WebChannelCode": "app846",
+                        "WebChannelName": "蚊虫叮咬",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D5/CgAgEVbdMhyAeNWUAAAl8Fdo_As110.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2208",
+                        "WebChannelCode": "app847",
+                        "WebChannelName": "晕车晕船",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEFbdMY6AGIiFAABvx8920Bc686.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2208",
+                        "WebChannelCode": "app4345",
+                        "WebChannelName": "药箱",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D5/CgAgEVbdMdqAOCgtAAAR0jTF0eA294.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2208",
+                        "WebChannelCode": "app845",
+                        "WebChannelName": "外用退热",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D5/CgAgEVbdMlOAM4jhAAAn-pPAz9A889.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2208",
+                        "WebChannelCode": "app2212",
+                        "WebChannelName": "口罩",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D5/CgAgEFbdMo-AFU5AAAAgq-XwGy4592.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    }
+                ]
+            },
+            {
+                "FirstChannel": {
+                    "ParentCode": "app122",
+                    "WebChannelCode": "app2207",
+                    "WebChannelName": "感冒发烧",
+                    "WebChannelImg": "http://image.360kad.com/group1/M00/20/D8/CgAgEVbdRCSAFmLRAAAmb10V-Oo961.png",
+                    "WebChannelDesc": "",
+                    "WebChannelAdUrl": "",
+                    "WebChannelAdImgUrl": ""
+                },
+                "SecChannel": [
+                    {
+                        "ParentCode": "app2207",
+                        "WebChannelCode": "app125",
+                        "WebChannelName": "解热镇痛",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEFbdLjOAYOLaAAAmHK0vB7s462.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2207",
+                        "WebChannelCode": "app123",
+                        "WebChannelName": "中暑",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEVbdLOWARnfAAABLBzt0-8E616.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2207",
+                        "WebChannelCode": "app895",
+                        "WebChannelName": "暑湿感冒",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEVbdLV2AArx8AABLazPw1i8440.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2207",
+                        "WebChannelCode": "app268",
+                        "WebChannelName": "风热感冒",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEVbdLleATjVgAAAohcWuITM493.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2207",
+                        "WebChannelCode": "app842",
+                        "WebChannelName": "流行性感冒",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEVbdLgOAOyr4AAAnxWULDCE238.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    },
+                    {
+                        "ParentCode": "app2207",
+                        "WebChannelCode": "app267",
+                        "WebChannelName": "风寒感冒",
+                        "WebChannelImg": "http://image.360kad.com/group1/M00/20/D4/CgAgEFbdLo6AW1NPAAAkp5R0Sqs926.png",
+                        "WebChannelDesc": "",
+                        "WebChannelAdUrl": "",
+                        "WebChannelAdImgUrl": ""
+                    }
+                ]
+            }
+        ]
+    }
+}

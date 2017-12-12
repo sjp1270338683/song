@@ -1,0 +1,337 @@
+.home_ a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.home_ .head {
+  z-index: 5;
+  width: 100%;
+  position: fixed;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(124, 150, 160, 0.2));
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+.home_ .head a {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  margin: 0.1rem 0 0 0;
+}
+.home_ .head a span {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 0.7rem ;
+  line-height: 1.2rem;
+  color: #919191;
+  background: white;
+  border-radius: 50% ;
+}
+.home_ .head a span:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.home_ .head a span:nth-child(2) {
+  font-size: 0.5rem ;
+  width: 7rem;
+  margin: 0 0.6rem;
+  border-radius: 0;
+  background: white;
+}
+.home_ .head a span:nth-child(3) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 50% ;
+  background: white;
+}
+.home_ .head a p {
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+}
+.home_ .head a div {
+  font-size: 0.4rem;
+  line-height: 0.4rem;
+}
+.home_ .slidePic {
+  width: 100%;
+}
+.home_ .slidePic .swiper-slide {
+  cursor: hand;
+  width: 100%;
+}
+.home_ .slidePic .swiper-slide img {
+  width: 100% ;
+}
+.home_ .slidePic .swiper-pagination {
+  text-align: right !important;
+  bottom: 0.5rem;
+  left: -0.7rem;
+}
+.home_ .slidePic .swiper-pagination .swiper-pagination-bullet {
+  width: 0.25rem;
+  height: 0.25rem;
+  margin: 0 0.07rem;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+.home_ .slidePic .swiper-pagination .swiper-pagination-bullet-active {
+  background: #fff;
+}
+.home_ .choose {
+  width: 100%;
+  height: 5.9rem;
+  border-bottom: 1px solid #eaeaea;
+}
+.home_ .choose ul {
+  width: 100%;
+}
+.home_ .choose ul li {
+  float: left;
+  margin: 0.2rem 0.6rem;
+  text-align: center;
+}
+.home_ .choose ul li a {
+  color: #919191 ;
+}
+.home_ .choose ul li a p img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.home_ .choose ul li a div {
+  margin: 0.15rem 0 0 0;
+  font-size: 0.4rem;
+}
+.home_ .seckill .top {
+  width: 100%;
+  height: 1.5rem;
+  border-bottom: 1px solid #eaeaea;
+}
+.home_ .seckill .top a {
+  width: 100%;
+  display: block;
+}
+.home_ .seckill .top a p {
+  border-left: 0.2rem solid #2D8FF4;
+  color: #2d8ff4;
+  margin: 0.3rem 0 0 0;
+  text-indent: 0.5rem;
+  line-height: 0.7rem;
+  font-size: 0.6rem;
+  height: 0.7rem;
+  display: inline-block;
+}
+.home_ .seckill .top a div {
+  line-height: 1.5rem;
+  float: right;
+  color: black;
+  font-size: 0.5rem;
+  display: inline-block;
+}
+.home_ .seckill .top a div img {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+.home_ .seckill .top a div span {
+  background: #eeeeee;
+  color: black;
+  font-size: 0.6rem;
+  margin: 0 0.1rem;
+}
+.home_ .seckill .top a div span:first-child {
+  background: none;
+  color: #898989;
+  font-size: 0.5rem;
+}
+.home_ .seckill .top a div span:last-child {
+  background: none;
+}
+.home_ .seckill a {
+  display: block;
+}
+.home_ .seckill a .swiper-container {
+  width: 100%;
+}
+.home_ .seckill a .swiper-container .swiper-slide {
+  position: relative;
+  text-align: center;
+}
+.home_ .seckill a .swiper-container .swiper-slide img {
+  width: 4rem;
+  height: auto;
+}
+.home_ .seckill a .swiper-container .swiper-slide div {
+  position: absolute;
+  right: 0;
+  bottom: 1.3rem;
+  margin: 0 0 0.5rem 0;
+}
+.home_ .seckill a .swiper-container .swiper-slide div span {
+  border-radius: 50%;
+  float: left;
+  background: #ffb629;
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+.home_ .seckill a .swiper-container .swiper-slide div span:nth-child(2) {
+  text-align: left;
+  border-radius: 0;
+  margin: 0 0 0 -0.4rem;
+  width: 1.3rem;
+  color: white;
+}
+.home_ .seckill a .swiper-container .swiper-slide p {
+  color: black;
+  font-size: 0.6rem;
+}
+.home_ .seckill a .swiper-container .swiper-slide p:last-child {
+  font-size: 0.5rem ;
+  color: #b1b1b1;
+  text-decoration: line-through;
+}
+.home_ .Pinkage {
+  margin: 0.1rem 0 0rem 0;
+  border-top: 0.3rem solid #eeeeee ;
+  border-bottom: 0.3rem solid #eeeeee ;
+  width: 100%;
+  height: 5.9rem;
+}
+.home_ .Pinkage a {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+}
+.home_ .Pinkage a img {
+  width: 100%;
+}
+.home_ .Pinkage a:first-child {
+  width: 45%;
+  border-right: 2px solid #eeeeee ;
+}
+.home_ .Pinkage a:nth-child(2) {
+  border-bottom: 2px solid #eeeeee ;
+  width: 55%;
+}
+.home_ .Pinkage a:nth-child(3) {
+  width: 55%;
+}
+.home_ .departments {
+  width: 100%;
+  height: 15.2rem;
+  clear: both;
+}
+.home_ .departments .title {
+  width: 100%;
+  height: 1.5rem;
+  border-bottom: 1px solid #eaeaea;
+}
+.home_ .departments .title p {
+  border-left: 0.2rem solid #2D8FF4;
+  color: #2d8ff4;
+  margin: 0.3rem 0 0 0;
+  text-indent: 0.5rem;
+  line-height: 0.7rem;
+  font-size: 0.6rem;
+  height: 0.7rem;
+  display: inline-block;
+}
+.home_ .departments .bottom {
+  width: 100%;
+  height: auto;
+}
+.home_ .departments .bottom a {
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+}
+.home_ .departments .bottom a img {
+  width: 100%;
+}
+.home_ .departments .bottom a:nth-child(1),
+.home_ .departments .bottom a:nth-child(2),
+.home_ .departments .bottom a:nth-child(3),
+.home_ .departments .bottom a:nth-child(4) {
+  width: 50%;
+  border-right: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+.home_ .departments .bottom a:nth-child(5),
+.home_ .departments .bottom a:nth-child(6),
+.home_ .departments .bottom a:nth-child(7),
+.home_ .departments .bottom a:nth-child(8) {
+  width: 25%;
+  border-right: 2px solid #eeeeee;
+}
+.home_ .like {
+  width: 100%;
+  padding-bottom: 3rem;
+  background: #eeeeee;
+}
+.home_ .like .header {
+  width: 100%;
+  height: 1.8rem;
+  text-align: center;
+  line-height: 1.6rem;
+}
+.home_ .like .header span {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+}
+.home_ .like .header span img {
+  margin: -0.2rem 0 0 0;
+  width: 100%;
+}
+.home_ .like .header span:last-child {
+  width: 2rem;
+  font-size: 0.5rem;
+  color: #838383;
+}
+.home_ .like .product {
+  width: 100%;
+  height: 39rem;
+  background: #eeeeee;
+}
+.home_ .like .product a {
+  float: left;
+  display: inline-block;
+  width: 48.2%;
+  background: white;
+  margin: 0.1rem;
+}
+.home_ .like .product a i {
+  width: 0;
+  height: 0;
+  font-size: 0;
+}
+.home_ .like .product a img {
+  margin: 0.3rem auto;
+  display: block;
+  width: 70%;
+}
+.home_ .like .product a p {
+  margin: auto;
+  color: #222222;
+  font-size: 0.5rem;
+  width: 90%;
+  height: 1.5rem;
+}
+.home_ .like .product a div {
+  width: 90%;
+  margin: auto;
+  height: 1rem;
+  font-size: 0.5rem;
+}
+.home_ .like .product a div span:first-child {
+  float: left;
+  color: #ea4529;
+}
+.home_ .like .product a div span:last-child {
+  text-decoration: line-through;
+  float: right;
+  color: #cacaca;
+}

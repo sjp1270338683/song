@@ -1,0 +1,231 @@
+/*====头部=====*/
+.home_seckill_header {
+  width: 100%;
+  height: 1.2rem;
+  background: white;
+  border-bottom: 1px solid #d3d3d3;
+  color: black;
+  font-size: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.home_seckill_logo {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  font-size: 0;
+  width: 1.88rem;
+  margin: .15rem 0 0 .2rem;
+  background: url(../img/kad_logo.png) no-repeat;
+  background-size: 100%;
+}
+.home_header_middle {
+  display: block;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  font-size: 0.5rem;
+}
+.home_header_r {
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.home_header_r .home_header_search {
+  background: url(../img/jing_search.jpg) no-repeat;
+  vertical-align: middle;
+  background-size: 100%;
+  width: .5rem;
+  height: .5rem;
+  display: block;
+  margin: 0.3rem 0.2rem 0 .6rem;
+  float: left;
+}
+.home_header_r .home_header_rule {
+  font-size: .35rem;
+  margin: 0 0.2rem 0 0rem;
+  color: black;
+}
+/*=====轮播====*/
+.home_sec_loop {
+  width: 100%;
+}
+.home_sec_loop_div {
+  width: 100%;
+}
+.home_sec_loop_img {
+  width: 100%;
+}
+/*==疯抢==*/
+.home_time_describel_top {
+  height: 1.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.home_time_left {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.sanjiao{
+	position: absolute;
+	bottom: -0.6rem;
+	left: 50%;
+	z-index: 1;
+	width: 0;
+	height: 0;
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid #06a6f8;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+
+.home_time_left .home_time_p1 {
+  text-align: center;
+  font-size: 0.3rem;
+  
+}
+.home_time_right {
+	position: relative;
+  width: 50%;
+  height: 100%;
+  background: #06a6f8;
+}
+.home_time_right .home_time_p1 {
+  text-align: center;
+  font-size: 0.3rem;
+}
+.home_time_describel_bottom {
+  height: 1rem;
+  background: #f0f0f0;
+  border-bottom: 1px solid #D3D3D3;
+  text-align: center;
+  position: relative;
+}
+.home_time_describel_bottom .home_time_bottom_p1 {
+  height: 1rem;
+  line-height: 1rem;
+  font-size: .4rem;
+}
+.home_time_describel_bottom .home_time_bottom_p1 span {
+  color: red;
+  padding-left: 0.1rem;
+}
+/*=====图文列表====*/
+.home_secskill_list_wrap {
+  background: #D3D3D3;
+ 	clear: both;
+  border-bottom: 1px solid gray;
+  padding: 0 0 0.2rem 0;
+}
+.home_secskill_list_wrap ul li {
+  border-bottom: 1px solid #D3D3D3;
+  position: relative;
+  background: white;
+  height: 3.5rem;
+  overflow: hidden;
+}
+.home_secskill_list_wrap ul li .pro_left {
+  position: relative;
+  width: 100%;
+  display: block;
+  float: left;
+}
+.home_secskill_list_wrap ul li .pro_left div {
+  position: absolute;
+  width: .68rem;
+  height: .64rem;
+  line-height: .54rem;
+  left: 1rem;
+  top: .3rem;
+  color: white;
+  text-align: center;
+  background-size: 100%;
+  background: url(../img/promotion_bg.png) no-repeat;
+}
+.home_secskill_list_wrap ul li .pro_right {
+  position: relative;
+}
+.home_secskill_list_wrap ul li .pro_right .home_p {
+  position: absolute;
+  left: 4.5rem;
+  padding: 0.3rem 0 0 1.3rem;
+  color: black;
+  font-size: 0.44rem;
+  font-weight: bold;
+}
+.home_secskill_list_wrap ul li .pro_right .home_p2 {
+  position: absolute;
+  left: 5.8rem;
+  top: 1.8rem;
+}
+.home_secskill_list_wrap ul li .pro_right .home_p2 p {
+  color: #ff4040;
+  font-size: 0.44rem;
+  font-weight: bold;
+}
+.home_secskill_list_wrap ul li .pro_right .home_p3 {
+  position: absolute;
+  left: 5.8rem;
+  top: 2.5rem;
+}
+.home_secskill_list_wrap ul li .pro_right .home_p3 p {
+  color: #888;
+  font-size: 0.4rem;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+.pro_right_img {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: block;
+  padding-left: 1rem;
+}
+.home_footer_more {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  border-bottom: 2px solid #d3d3d3;
+  border-top: 2px solid #d3d3d3;
+  background: #ffffff url(../img/more_jincai.png) no-repeat;
+  background-size: 10%;
+}
+.home_footer_more h4 {
+  font-size: .4rem;
+  padding-left: 2rem;
+}
+.home_footer_more h4 span {
+  padding-left: .2rem;
+}
+.home_footer_1 {
+  padding: .2rem 0 0rem 0;
+  background: #D3D3D3;
+}
+.home_footer_1 ul {
+  width: 100%;
+  height: 7.5rem;
+}
+.home_footer_1 ul li {
+  width: 49%;
+  float: left;
+  margin-bottom: 0.1rem;
+}
+.home_footer_1 ul li:nth-child(2) a,
+.home_footer_1 ul li:last-child a {
+  margin-left: 0.1rem;
+}
+.home_footer_1 ul li img {
+  width: 100%;
+  height: 100%;
+  background-size: 100% ;
+}
+.home_sec_back a {
+  display: block;
+  text-align: center;
+  height: 1rem;
+  line-height: 1rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 0.5rem;
+  background: #007AFF;
+  font-weight: bold;
+}

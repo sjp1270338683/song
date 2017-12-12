@@ -1,0 +1,156 @@
+.clear:after{
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.dianzan_body{
+	width: 100%;
+	height: 20rem;	
+	background: #FFF;
+}
+.dianzan_ {
+	width: 100%;
+	height: 1.5rem;
+	background: #f8f8f8;
+	border-bottom: 1px solid #CBCBCB;
+}
+.dianzan_ :first-child{
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.dianzan_ :first-child i{
+	width: 100%;
+	height: 100%;
+	font-size: 0.7rem;
+	line-height: 1.5rem;
+	text-align: center;
+
+}
+
+.dianzan_ :nth-child(2){
+	width: 60%;
+	height: 100%;
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: 0.5rem;
+	float: left;
+}
+.dianzan_ :last-child{
+	width: 20%;
+	height: 100%;
+	font-size: 1rem;
+	line-height: 1rem;
+	float: left;
+	text-align: center;
+}
+.dianzan_tab{
+	width: 100%;
+}
+.dianzan_a{
+	width: 53%;
+	height: 1.3rem;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	
+}
+.dianzan_a a{
+	width:48.8%;
+	height: 1.2rem;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 1.2rem;
+	font-size: 0.5rem;
+	border: 1px solid #2C8EF3;
+	color: #2C8EF3;
+}
+
+.dianzan_a a:first-child{
+	border-radius: 0.3rem 0 0 0.3rem;
+}
+.dianzan_a a:last-child{
+	border-radius: 0 0.3rem 0.3rem 0 ;
+}
+.dianzan_a a:hover{
+	background:#2C8EF3 ;
+	color: #FFF;
+}
+
+
+
+#dianzan_wrap{width: 100%;height: 15rem; position: relative; background: red;}
+#dianzan_wrap div{width: 100%;height: 100%;position: absolute; background: #fff;}
+
+/*.dianzan_zan{
+	width: 100%;
+	padding-bottom: 0.0001px;
+}*/
+.dianzan_zan img{
+	width: 100%;
+	height: 8rem;
+	margin-left: 0.5rem;
+}
+
+#dianzan_inp{
+	width: 90%;
+	height: 3rem;
+	margin: 0 5%;
+	background:#EEEEEE;
+	border:none;
+	text-indent: 1em;
+	line-height: 1rem;
+	font-size: 0.5rem;
+	
+}
+.dianzan_liuyan{
+	width: 90%;
+	height: 1.5rem;
+	display: inline-block;
+	border: 1px solid #2C8EF3;
+	border-radius: 0.2rem;
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: 0.6rem;
+	margin-left: 5%;
+	margin-top: 1rem;
+}
+
+
+
+.dianzan_tucao{
+	width: 100%;
+	padding: 0.1px;
+}
+.dianzan_tucao img{
+	width: 100%;
+	height: 8rem;
+	margin-left: 0.5rem;
+}
+
+#tucao_inp{
+	width: 90%;
+	height: 3rem;
+	margin: 0 5%;
+	background:#EEEEEE;
+	border:none;
+	text-indent: 1em;
+	line-height: 1rem;
+	font-size: 0.5rem;
+	
+}
+.tucao_liuyan{
+	width: 90%;
+	height: 1.5rem;
+	display: inline-block;
+	border: 1px solid #2C8EF3;
+	border-radius: 0.2rem;
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: 0.6rem;
+	margin-left: 5%;
+	margin-top: 1rem;
+}

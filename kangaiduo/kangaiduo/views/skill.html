@@ -1,0 +1,100 @@
+
+	
+<!-----------精选秒杀------------>
+<link rel="stylesheet" type="text/css" href="./css/home_seckill.css"/>
+<div class="home_sec" ng-app="ngAnimate">
+	
+	<!--头部-->
+	<div class="home_seckill_header">
+		<h3 class="home_seckill_logo"><a href="http://m.kad.com" class="heder_1">康爱多</a></h3>
+		<span class="home_header_middle">超值秒杀</span>
+		<div class="home_header_r">
+			<a href="#/search" class="home_header_search"></a>
+			<a href="http://m.360kad.com/zhuanti/m_guizhe.shtml" class="home_header_rule">规则</a>
+		</div>
+	</div>
+	<!--轮播-->
+	<div class="swiper-container home_sec_loop">
+	    <div class="swiper-wrapper home_sec_loop_div">
+	        <div class="swiper-slide">
+	        	<img class="home_sec_loop_img" src="img/jing_lunbo.jpg" />
+	        </div>
+	        <div class="swiper-slide">
+	        	<img class="home_sec_loop_img" src="img/jing_lunbo.jpg" />
+	        </div>
+	        <div class="swiper-slide">
+	        	<img class="home_sec_loop_img" src="img/jing_lunbo.jpg" />
+	        </div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination home_sec_loop_dain"></div>
+	</div>
+	<div class="home_time_describel">
+		<div class="home_time_describel_top">
+			<div id="home_time_left" class="home_time_left" ng-click = 'bg = !bg' ng-class="{true:'a',flase:'b'}" >
+				<p class="home_time_p1">09:00</p>
+				<p class="home_time_p1">正在疯抢</p>
+			</div>
+			<div id="home_time_right" class="home_time_right" ng-class="{true:'a',flase:'b'}" ng-click = 'bg = !bg'>
+				<p class="home_time_p1">21:00</p>
+				<p class="home_time_p1">即将开始</p>
+				<span class="sanjiao"></span>
+			</div>
+		</div>
+		<div class="home_time_describel_bottom">
+			<p class="home_time_bottom_p1">
+				距离本场结束
+				<span class="last_time">
+					<span id="time_h">00</span>时
+					<span id="time_m">00</span>分
+					<span id="time_s">00</span>秒
+				</span>
+			</p>
+			<div class="home_time_line"></div>
+		</div>
+	</div>
+	<!--图文列表1-->
+	<div class="home_secskill_list_wrap" ng-app="">
+		<div class="seckill_list">
+			<ul>
+				<li ng-repeat="x in arrAll">
+					<div class="pro_left" >
+						<a href="###">
+							<!--<img class="pro_right_img" ng-src="{{x.Pic180}}" />-->	
+							<img class="pro_right_img" lazy-src="{{x.Pic180}}"  animate-visible="true" animate-speed="1000ms" />
+						</a>
+						<div ng-bind="{{x.Discount}}"></div>
+					</div>
+					<div class="pro_right">
+						<div class="home_p">
+							<p class="p1">{{x.WareCode}}</p>
+						</div>
+						<div class="home_p2">
+							<p>${{x.SeckillPrice}}</p>
+						</div>
+						<div class="home_p3">
+							<p>${{x.Price}}</p>
+						</div>	
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--------footer-------->
+	<div class="home_footer">
+		<div class="home_footer_more">
+			<h4>更多精彩活动<span>MORE</span></h4>
+		</div>
+		<div class="home_footer_1">
+			<ul>
+				<li><a href="http://m.360kad.com/Category_2450/Index.aspx"><img src="img/jing_gan.jpg"/></a></li>
+				<li><a href="http://m.360kad.com/family"><img src="img/jing_jia.jpg"/></a></li>
+				<li><a href="http://m.360kad.com/men"><img src="img/jing_man.jpg"/></a></li>
+				<li><a href="http://m.360kad.com/Category_2433/Index.aspx"><img src="img/jing_pi.jpg"/></a></li>
+			</ul>
+		</div>
+		<div class="home_sec_back">
+			<a href="###">返回首页</a>
+		</div>
+	</div>
+</div>

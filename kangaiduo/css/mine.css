@@ -1,0 +1,272 @@
+#mine_body{
+	width: 100%;
+	height: 30rem;
+	background: #eeeeee;
+}
+.mine_shezhi{
+	width: 100%;
+	height: 1.5rem;
+	background:#2D8FF4 ;
+	position:fixed;
+	left: 0;
+	top: 0;
+}
+.mine_shezhi span{
+	width: 59%;
+	height: 1.5rem;
+	font-size: 0.6rem;
+	text-align: center;
+	line-height: 1.5rem;
+	float: left;
+	color: #fff;
+	display: none;
+}
+.mine_shezhi i:first-of-type{
+	width: 20%;
+	line-height: 1.5rem;
+	float: left;
+	text-align: center;
+	font-size: 0.9rem;
+	color: #fff;
+}
+.mine_shezhi i:nth-of-type(2){
+	width: 20%;
+	line-height: 1.5rem;
+	float: right;
+	text-align: center;
+	font-size: 0.9rem;
+	color: #fff;
+}
+
+.mine_ {
+	width: 100%;
+	height: 7rem;
+	background: #2D8FF4;
+	padding: 0.1px;
+}
+.mine_t{
+	margin-top: 1.6rem;
+}
+.mine_touxiang{
+	width: 25%;
+	height: 3rem;
+	background: #fff;
+	margin: 0 auto;
+	
+	border-radius: 50%;
+	overflow: hidden;
+	text-align: center;
+}
+.mine_touxiang img{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.mine_user{
+	width: 100%;
+	height: 1rem;
+	font-size: 0.5rem;
+	line-height: 1rem;
+	text-align: center;
+	color: #fff;
+}
+.mine_huiyuan{
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	color: #fff;
+	font-size: 0.5rem;
+	text-align: center;
+	margin: 0 auto;
+}
+.mine_topminu{
+	width: 100%;
+	height: 2.5rem;
+	background: #fff;
+	
+	
+}
+.mine_l{
+	margin: 0 auto;
+}
+.mine_topminu a{
+	width: 19%;
+	display: inline-block;
+	text-align: center;
+	border-right:0.01rem solid #C0C0C0;
+	margin-top: 0.3rem;
+	
+	box-sizing: border-box;
+}
+.mine_topminu a:last-child{
+	border: none;
+	
+}
+.mine_topminu a p{font-size: 0.25rem;}
+.mine_topminu a i{
+	font-size: 0.8rem;
+}
+
+.mine_ul{
+	width: 100%;
+	background: #fff;
+	margin-top: 0.3rem;
+}
+.mine_ul li{
+	width: 100%;
+	height: 1.5rem;
+	border-bottom: 1px solid #E2E2E2;
+	text-indent: 0.5rem;
+	line-height: 1rem;
+	font-size: 0.8rem;
+	
+}
+.mine_ul li span{
+	height: 1.5rem;
+	margin-left: 0.5rem;
+	font-size:0.5rem;
+	margin-top: 0.1rem;
+}
+.mine_ul li .ico1,.ico2,.ico3{
+	width: 20%;
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+}
+
+.mine_ul li .ico1{
+	color: #39597e;
+	font-size: 0.8rem;
+}
+.mine_ul li .ico2{
+	color: #f75a53;
+	font-size: 0.8rem;
+}
+.mine_ul li .ico3{
+	color: #58bbb8;
+	font-size: 0.8rem;
+}
+.mine_ul li .ico4{
+	float: right;
+	line-height: 1.5rem;
+	padding-right: 0.5rem;
+}
+
+.mine_ul2{
+	width: 100%;
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.mine_ul2 li{
+	width: 100%;
+	height: 1.5rem;
+	border-bottom: 1px solid #E2E2E2;
+	text-indent: 0.5rem;
+	line-height: 1rem;
+	
+}
+.mine_ul2 li span{
+	height: 1.5rem;
+	margin-left: 0.5rem;
+	font-size:0.5rem;
+	margin-top: 0.1rem;
+}
+.mine_ul2 li .ico5,.ico6{
+	width: 20%;
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+}
+.mine_ul2 li .ico5{
+	color: #098bc9;
+	font-size: 0.8rem;
+}
+.mine_ul2 li .ico6{
+	color: #f75a53;
+	font-size: 0.8rem;
+}
+
+.mine_ul2 li .ico4{
+	float: right;
+	line-height: 1.5rem;
+	padding-right: 0.5rem;
+}
+
+.mine_ul3{
+	width: 100%;
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.mine_ul3 li{
+	width: 100%;
+	height: 1.5rem;
+	border-bottom: 1px solid #E2E2E2;
+	text-indent: 0.5rem;
+	line-height: 1rem;
+	
+}
+.mine_ul3 li span{
+	height: 1.5rem;
+	margin-left: 0.5rem;
+	font-size:0.5rem;
+	margin-top: 0.1rem;
+}
+.mine_ul3 li .ico5,.ico6{
+	width: 20%;
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+}
+.mine_ul3 li .ico5{
+	color: #ec940e;
+	font-size: 0.8rem;
+}
+.mine_ul3 li .ico6{
+	color: #e94db0;
+	font-size: 0.8rem;
+}
+
+.mine_ul3 li .ico4{
+	float: right;
+	line-height: 1.5rem;
+	padding-right: 0.5rem;
+}
+
+.mine_ul4{
+	width: 100%;
+	background: #fff;
+	margin-top: 0.3rem;
+}
+.mine_ul4 li{
+	width: 100%;
+	height: 1.5rem;
+	border-bottom: 1px solid #E2E2E2;
+	text-indent: 0.5rem;
+	line-height: 1rem;
+	
+}
+.mine_ul4 li span{
+	height: 1.5rem;
+	margin-left: 0.5rem;
+	font-size:0.5rem;
+	margin-top: 0.1rem;
+}
+.mine_ul4 li .ico1,.ico2,.ico3{
+	width: 20%;
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+}
+.mine_ul4 li .ico1{
+	color: #117ab3;
+	font-size: 0.8rem;
+}
+.mine_ul4 li .ico2{
+	color: #da557c;
+	font-size: 0.8rem;
+}
+.mine_ul4 li .ico3{
+	color: #72bd3e;
+	font-size: 0.8rem;
+}
+.mine_ul4 li .ico4{
+	float: right;
+	line-height: 1.5rem;
+	padding-right: 0.5rem;
+}

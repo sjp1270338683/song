@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="./css/ganmao.css"/>
+<div class="ganmao_">
+	<div><i class="iconfont icon-xiangzuojiankuohao"></i></div>
+	<div>感冒发烧</div>
+	<div>...</div>
+</div>
+<div class="clear"></div>
+<div class="ganmao_mian">全场正品&nbsp;&nbsp;满39免邮</div>
+
+<div class="ganmao_list" >
+	<figure ng-repeat="x in data" class="container">
+		<!--<img src="{{x.ProductPic}}"/>-->
+		<img lazy-src="{{x.ProductPic}}"  animate-visible="true" animate-speed="10.5s" />
+		<div class="ganmao_jj"><span>{{x.ProductName}}</span><span>{{x.Adv}}</span></div>
+		<div class="ganmao_rmb">
+			<p>￥<span>{{x.Price}}</span></p>
+			<p>￥<span>{{x.Price_Market}}</span></p>
+		</div>
+	</figure>
+	
+</div>

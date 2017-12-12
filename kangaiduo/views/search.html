@@ -1,0 +1,207 @@
+<link rel="stylesheet" type="text/css" href="./css/home_search.css"/>
+<div class=class="search_box" id="search_box">
+	
+	<!--头部开始-->
+	<header class="search_header_box">
+		<section class="search_header">
+			<h3>康爱多</h3>
+		</section>
+		<span class="search_top">全部分类</span>
+		<section class="search_header_right">
+			<a href="###">
+				<img src="img/gwuche.jpg" />
+			</a>
+			<a href="###">
+				<span>0</span>
+			</a>
+		</section>
+	</header>
+	<!--搜索框-->
+	<form class="search_form" action="###" method="get">
+		<div class="search_sec">
+			<input type="text" placeholder="六味地黄丸" />
+			<div class="search_sec_yao">
+				<span><a href="http://m.360kad.com/search/Index?pageText=%E5%85%AD%E5%91%B3%E5%9C%B0%E9%BB%84%E4%B8%B8" class="myyao" style="color: white;">搜药</a></span>
+			</div>
+		</div>	
+	</form>
+	<!--列表详细信息-->
+	<div class="search_msg">
+		<ul class="search_ul">
+			<li ng-click="toggle1()" class="max_li">
+				<div class="top">
+					<h2>中西药品</h2>
+					<p>儿科/妇科</p>
+				</div>
+				<div class="bottom" >
+					<ol class="bottom_meu" ng-hide="!a">
+						<li>儿科</li>
+						<li>妇科</li>
+						<li>神经科</li>
+						<li>抗生素药</li>
+						<li>儿科</li>
+						<li>妇科</li>
+						<li>神经科</li>
+						<li>抗生素药</li>
+						<li>儿科</li>
+						<li>妇科</li>
+						<li>神经科</li>
+						<li>抗生素药</li>
+					</ol>
+				</div>
+				<!--<span class="iconfont arrow">&#xe642;</span>-->
+			</li>
+			<li ng-click="toggle2()" class="max_li">
+				<div class="top">
+					<h2>家庭药箱</h2>
+					<p>感冒/消炎</p>
+				</div>
+				<div class="bottom" ng-hide="!b">
+					<ol class="bottom_meu">
+						<li>感冒</li>
+						<li>消炎</li>
+						<li>日常</li>
+						<li>抗生素药</li>
+					</ol>
+				</div>
+				<!--<span class="iconfont arrow arrow1">&#xe642;</span>-->
+			</li>
+			<li ng-click="toggle3()" class="max_li">
+				<div class="top">
+					<h2>日化品</h2>
+					<p class="font">日化用平</p>
+				</div>
+				<div class="bottom" ng-hide="!c">
+					<ol class="bottom_meu">
+						<li>儿科</li>
+						<li>妇科</li>
+					</ol>
+				</div>
+				<!--<span class="iconfont arrow arrow2">&#xe642;</span>-->
+			</li>
+			<li ng-click="toggle4()" class="max_li">
+				<div class="top">
+					<h2>食品</h2>
+					<p class="font">儿科/妇科</p>
+				</div>
+				<div class="bottom" ng-hide="!d">
+					<ol class="bottom_meu">
+						<li>儿科</li>
+						<li>妇科</li>
+						<li>神经科</li>
+						<li>抗生素药</li>
+					</ol>
+				</div>
+				<!--<span class="iconfont arrow arrow3">&#xe642;</span>-->
+			</li>
+			<li ng-click="toggle5()" class="max_li">
+				<div class="top">
+					<h2>医疗器械</h2>
+					<p>辅助理疗/辅助器械</p>
+				</div>
+				<div class="bottom" ng-hide="!e">
+					<ol class="bottom_meu">
+						<li>辅助理疗</li>
+						<li>辅助器械</li>
+						<li>家庭常备</li>
+						<li>抗生素药</li>
+					</ol>
+				</div>
+				<!--<span class="iconfont arrow arrow3">&#xe642;</span>-->
+			</li>
+			<li ng-click="toggle6()" class="max_li">
+				<div class="top">
+					<h2>成人用品</h2>
+					<p>计生用品/男性器具</p>
+				</div>
+				<div class="bottom" ng-hide="!f">
+					<ol class="bottom_meu">
+						<li>计生用品</li>
+						<li>男性器具</li>
+						<li>女性器具</li>
+						<li>抗生素药</li>
+					</ol>
+				</div>
+				<!--<span class="iconfont arrow arrow3">&#xe642;</span>-->
+			</li>
+			<li ng-click="toggle7()" class="max_li">
+				<div class="top">
+					<h2>营养保健品</h2>
+					<p>参茸滋补/活力儿童</p>
+				</div>
+				<div class="bottom" ng-hide="!g">
+					<ol class="bottom_meu">
+						<li>儿科</li>
+						<li>妇科</li>
+						<li>神经科</li>
+						<li>抗生素药</li>
+					</ol>
+				</div>
+				<!--<span class="iconfont arrow arrow3">&#xe642;</span>-->
+			</li>
+			<li ng-click="toggle8()" class="max_li">
+				<div class="top">
+					<h2>中药饮品</h2>
+					<p>平肝息风</p>
+				</div>
+				<div class="bottom" ng-hide="!h">
+					<ol class="bottom_meu">
+						<li>儿科</li>
+						<li>妇科</li>
+						<li>神经科</li>
+						<li>抗生素药</li>
+					</ol>
+				</div>
+				<!--<span class="iconfont arrow ">&#xe642;</span>-->
+			</li>
+		</ul>
+	</div>
+	
+	<!--------底部---------->
+	<div class="search_footer">
+		<p class="userloginf">
+			<span class="search_denglu">
+				<a href="#/login">登录</a>
+			</span>
+			<span class="search_zhu">
+				<a href="#/zhuce">注册</a>
+			</span>
+		</p>
+		<a href="###" class="iconfont search_first">&#xe630;<span>首页</span></a>
+		<div class="fot_btn">
+			<ul>
+				<li>用药问答<span>|</span></li>
+				<li>心愿单<span>|</span></li>
+				<li>帮助<span>|</span></li>
+				<li>反馈<span>|</span></li>
+				<li>关于康爱多</li>
+			</ul>
+		</div>
+		<div class="search_phone">
+			<img src="img/search_phone.jpg" />
+			<img src="img/search_wx.jpg" />
+		</div>
+		<p class="search_footer_p">下载iphone客户端</p>
+		<ul class="search_footer_mess">
+			<li>
+				<span>正</span>
+				正品保障
+			</li>
+			<li>
+				<span>隐</span>
+				隐私配送
+			</li>
+			<li>
+				<span>专</span>
+				专业药师
+			</li>
+			<li>
+				<span>付</span>
+				货到付款
+			</li>
+		</ul>
+		<footer>
+			<p class="search_footer_banquan">copyright ©2010-2016 康爱多网上药店 版权所有</p>
+		</footer>
+	</div>
+</div>

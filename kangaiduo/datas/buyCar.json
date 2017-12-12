@@ -1,0 +1,194 @@
+{
+    "Code": "0",
+    "Result": true,
+    "Message": "展示",
+    "Data": {
+        "ProductId": "65114",
+        "RedirectUrl": "",
+        "PicList": [
+            "http://image.360kad.com/group1/M00/37/B3/CgAgEFdlXByAHwbdAAGs7z8lQyc311.jpg",
+            "http://image.360kad.com/group1/M00/1E/C0/CgAgEVbGieGAHobnAAGpes8O-6c771.jpg",
+            "http://image.360kad.com/group1/M00/1E/C0/CgAgEVbGieCALQnwAAG1HLAyBww776.jpg",
+            "http://image.360kad.com/group1/M00/1E/C0/CgAgEVbGieCAC1KqAAGxvyRaR1w028.jpg",
+            "http://image.360kad.com/group1/M00/1E/C0/CgAgEFbGieCAAO0HAAGe6dsN0vY943.jpg",
+            "http://image.360kad.com/group1/M00/1E/C0/CgAgEFbGieCAVsrEAAGepRuPTts073.jpg"
+        ],
+        "TitleInfo": {
+            "Title": "松下 腕式电子血压计EW-BW02 1台",
+            "Adv": "【金秋9月】限时特惠，仅需219元！单机送菊花饮片，加【9.9元换购】价值42元健康礼包！温馨提示：日本品牌，带体动提示，心率检测，便捷准确。",
+            "ProducerName": "松下电气机器（北京）有限公司",
+            "StockStatus": "现在有货"
+        },
+        "PriceInfo": {
+            "Style": "CommonStyle",
+            "StyleInfo": {
+                "Price": 219,
+                "OriginalPrice": 350,
+                "IsAppPrivate": false,
+                "AppPrivateIcon": null,
+                "SaveDesc": "立省131.00元"
+            },
+            "ActivityStock": null
+        },
+        "Promises": [
+            {
+                "Title": "正品保证",
+                "Pic": "http://res3.360kad.com/theme/mobile/image/details3.0/zheng.png",
+                "Content": "康爱多是全国首批获国家食药监局批准的合法网上药店，专供正规厂家优质药品！"
+            },
+            {
+                "Title": "满39包邮",
+                "Pic": "http://res3.360kad.com/theme/mobile/image/details3.0/you.png",
+                "Content": "买满包邮，优惠多多。全场订单金额满39元即享受免邮费优惠！"
+            },
+            {
+                "Title": "隐私配送",
+                "Pic": "http://res3.360kad.com/theme/mobile/image/details3.0/shi.png",
+                "Content": "购物无忧，隐私配送。您在康爱多网上药店注册时产生的所有个人信息将被保密，快递包装上也不会出现您的购物内容和“康爱多”字样。"
+            }
+        ],
+        "ActivityList": [
+            {
+                "ID": "13382740",
+                "Icon": "http://res.360kad.com/theme/app/img/productDetail/actIcon/manzeng.png",
+                "Title": "本商品满1件，即可获得：草晶华 破壁草本 菊花破壁饮片(体验装) 1g*4袋1件",
+                "CouponList": null
+            }
+        ],
+        "ColorSpec": {
+            "PropertyName": null,
+            "IsShow": false,
+            "IsVirtualMainWareSku": false,
+            "PropertyList": null,
+            "PropertyGroupList": null
+        },
+        "Treatments": [],
+        "Packages": [
+            {
+                "PackageId": "13303860",
+                "Title": "套餐1",
+                "PackageTitle": "调节血脂：松下 血压计1台+鱼油1瓶",
+                "PackageReason": "当血液中脂肪含量偏高，血液变得粘稠，容易阻碍血液的正常流通，甚至堵塞血管，从而使血压升高。深海鱼油中富含EPA、DHA，辅助降血脂。适用于血脂偏高人群。原价138元鱼油软胶囊，限时特惠仅需79元！",
+                "PackagePrice": 288,
+                "OriginalPrice": 357,
+                "SaveDesc": "降低血液胆固醇水平，辅助降血脂。",
+                "Items": [
+                    {
+                        "Id": "65114",
+                        "Pic": "http://image.360kad.com/group1/M00/1E/C0/CgAgEVbGiM-AWjElAABAAPZYSt497.jpeg",
+                        "Title": "松下 腕式电子血压计EW-BW02 1台",
+                        "Qty": 1,
+                        "Price": 219
+                    },
+                    {
+                        "Id": "6346",
+                        "Pic": "http://image.360kad.com/group1/M00/4E/B1/CgAgEFffRYWAawjAAAG8dpFLEYc908.jpg_180x180.jpg",
+                        "Title": "汤臣倍健 鱼油软胶囊 1000mg*100粒",
+                        "Qty": 1,
+                        "Price": 138
+                    }
+                ],
+                "BtnEvent": "buy",
+                "Button": "加入购物车"
+            },
+            {
+                "PackageId": "13303900",
+                "Title": "套餐2",
+                "PackageTitle": "9.9元换购：松下 血压计1台+VC 1瓶",
+                "PackageReason": "通常患有高血压的中老年人，日常容易出现头晕目眩，免疫力低下。每天一片VC，补充日常所需维生素。原价42元康富来 维生素C咀嚼片，限时特惠9.9元，即可轻松带走。",
+                "PackagePrice": 228.9,
+                "OriginalPrice": 261,
+                "SaveDesc": "增强自身免疫力！",
+                "Items": [
+                    {
+                        "Id": "65114",
+                        "Pic": "http://image.360kad.com/group1/M00/1E/C0/CgAgEVbGiM-AWjElAABAAPZYSt497.jpeg",
+                        "Title": "松下 腕式电子血压计EW-BW02 1台",
+                        "Qty": 1,
+                        "Price": 219
+                    },
+                    {
+                        "Id": "41197",
+                        "Pic": "http://image.360kad.com/group1/M00/46/85/CgAgEVe2dRCASmh4AAGyx5cc5e8501.jpg_180x180.jpg",
+                        "Title": "康富来 维生素C咀嚼片 0.5g*50片",
+                        "Qty": 1,
+                        "Price": 42
+                    }
+                ],
+                "BtnEvent": "buy",
+                "Button": "加入购物车"
+            },
+            {
+                "PackageId": "13303880",
+                "Title": "套餐3",
+                "PackageTitle": "强壮筋骨：松下 血压计1台+金钙尔奇1盒",
+                "PackageReason": "一般中老年人随着年龄的增加，钙也在不断流失。适当补钙可预防骨质疏松，骨骼变脆，易骨折等情况，增强骨密度，提高骨质韧性，改善骨骼健康。",
+                "PackagePrice": 255,
+                "OriginalPrice": 308,
+                "SaveDesc": "日常补钙，预防骨质疏松等症。",
+                "Items": [
+                    {
+                        "Id": "65114",
+                        "Pic": "http://image.360kad.com/group1/M00/1E/C0/CgAgEVbGiM-AWjElAABAAPZYSt497.jpeg",
+                        "Title": "松下 腕式电子血压计EW-BW02 1台",
+                        "Qty": 1,
+                        "Price": 219
+                    },
+                    {
+                        "Id": "38734",
+                        "Pic": "http://image.360kad.com/group1/M00/39/B5/CgAgEFdw1tyABRdoAAGqlSw4Ygs560.jpg_180x180.jpg",
+                        "Title": "金钙尔奇 碳酸钙维D3元素片(4) 30片",
+                        "Qty": 1,
+                        "Price": 89
+                    }
+                ],
+                "BtnEvent": "buy",
+                "Button": "加入购物车"
+            },
+            {
+                "PackageId": "13303870",
+                "Title": "套餐4",
+                "PackageTitle": "测压测糖：松下 血压计1台+三诺 血糖仪1台+试纸1盒",
+                "PackageReason": "通常高血压病人特别是肥胖型人群，随着血粘稠度增加，血管壁受损，导致血管阻力增加，而高血压合并糖尿病的情况也较为常见。三诺 安稳免调码血糖仪，插入试条即可使用，简单易操作，方便日常随时检测，关注健康状况。",
+                "PackagePrice": 309,
+                "OriginalPrice": 339,
+                "SaveDesc": "检测血糖血压方便简单，呵护家人健康",
+                "Items": [
+                    {
+                        "Id": "65114",
+                        "Pic": "http://image.360kad.com/group1/M00/1E/C0/CgAgEVbGiM-AWjElAABAAPZYSt497.jpeg",
+                        "Title": "松下 腕式电子血压计EW-BW02 1台",
+                        "Qty": 1,
+                        "Price": 219
+                    },
+                    {
+                        "Id": "1010409990",
+                        "Pic": "http://image.360kad.com/group1/M00/0D/CE/CgAgEVZJmpuAJMxIAAAgAJ4NZF046.jpeg",
+                        "Title": "三诺 安稳免调码型血糖仪 1台",
+                        "Qty": 1,
+                        "Price": 35
+                    },
+                    {
+                        "Id": "82211",
+                        "Pic": "http://image.360kad.com/group1/M00/08/9D/CgAgEVWKScSAP0hgAABVQ6-xVCs050.jpg",
+                        "Title": "三诺 安稳免调码血糖试条（独立装） 50支独立试条+50个针头",
+                        "Qty": 1,
+                        "Price": 85
+                    }
+                ],
+                "BtnEvent": "buy",
+                "Button": "加入购物车"
+            }
+        ],
+        "ButtonInfo": {
+            "IsShowSupport": false,
+            "ChatGroupId": null,
+            "PhoneNumber": "4008808488",
+            "BtnEvent": "buy",
+            "Button": "加入购物车/立即购买",
+            "HasButton": true,
+            "ShowTips": null,
+            "IsShowAddRemind": false
+        }
+    }
+}

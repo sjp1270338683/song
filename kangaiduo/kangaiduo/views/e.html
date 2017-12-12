@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div>
+			<section>
+				<div class="mytext-g" style="padding:0.5rem;"><img src="http://image.360kad.com/group1/M00/2B/9E/CgAgEFchcbGAVut2AABexTZeC_I997.jpg" /><img src="http://image.360kad.com/group1/M00/2B/D1/CgAgEVciG_GAY5BeAAFdA_k3kWg952.jpg" /><img src=" http://image.360kad.com/group1/M00/2B/39/CgAgEFcfGleAVdXBAAFIhnAppB4484.jpg" /> <img src="http://image.360kad.com/group1/M00/0D/84/CgAgEFZCAsOAX_6KAAIrvPru2jA043.jpg" /><img src="http://image.360kad.com/group1/M00/0D/84/CgAgEVZCAsOAH9gCAAF4Fz3SSIA751.jpg" /><img src="http://image.360kad.com/group1/M00/0D/84/CgAgEFZCAsSANy6rAAE74-9HRdM569.jpg" /><img src="http://image.360kad.com/group1/M00/0D/84/CgAgEVZCAsSAXUFcAAF1JD6wl2I633.jpg" /><img src="http://image.360kad.com/group1/M00/0D/84/CgAgEFZCAsWANspWAAEXlszJLY8474.jpg" /><img src="http://image.360kad.com/group1/M00/0D/84/CgAgEVZCAsWAXFyrAAED5lB-ctY146.jpg" /><img src="http://image.360kad.com/group1/M00/0D/84/CgAgEFZCAsaAdKEEAACKCq2trqk547.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEVZCAs6AfND4AACS7GWASOA586.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEVZCAuCATRd7AAC70lU_rzo527.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEFZCAuCACUi1AAC0WKBa8Y4330.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEVZCAuGAc_eRAAD1lXELFWs841.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEFZCAuGAMAgJAAEbsPKicj4275.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEVZCAuKACBNNAACdiM6EKns184.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEFZCAuKADdYIAADHkcY7-gI518.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEVZCAuOAF-cWAAFZ06KbEb4638.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEFZCAuOAHMg-AAD2GoHytNg997.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEVZCAwaADMrvAAHjz1gHBdg179.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEFZCAwaAF3qSAAGWLwL4Lks759.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEVZCAwaAcJHBAAGF7ltmLeE480.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEFZCAwaALlT7AAILEpDjqe0695.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEVZCAweAXQ1WAAElq4-nXCM800.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEFZCAziALSdJAAEhWiCs8QI672.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEVZCAziAcPfOAAFdzBXwinE396.jpg" /><img src="http://image.360kad.com/group1/M00/0D/85/CgAgEFZCAzmAUeT2AAF_y9EKZJk952.jpg" /> &nbsp; <img src="http://image.360kad.com/group1/M00/2E/6C/CgAgEFcxqGiAQKO8AAiMr8YofDI918.jpg" />
+				</div>
+			</section>
+			<script type='text/javascript'>
+				var tags_div = document.body.getElementsByClassName('.mytext-g');
+				for(var i = 0; i < tags_div.length; i++) {
+					if(tags_div[i].id == 'divHint' || tags_div[i].id == 'kadIntroId') {
+						continue;
+					};
+					tags_div[i].style.display = 'block';
+					tags_div[i].style.height = 'auto'; /*tags_div[i].style.width = '100%';*/
+				};
+				var tags_p = document.getElementsByClassName('.Zp');
+				for(var i = 0; i < tags_p.length; i++) {
+					tags_p[i].style.marginTop = '0';
+					tags_p[i].style.marginBottom = '0';
+					tags_p[i].style.marginLeft = '0';
+					tags_p[i].style.marginRight = '0';
+					tags_p[i].style.height = 'auto';
+					tags_p[i].style.width = '100%';
+					tags_p[i].style.display = 'block';
+				};
+				var dataoris = document.getElementsByClassName('.Zimg');
+				for(var i = 0; i < dataoris.length; i++) {
+					var dataori = dataoris[i].getAttribute('data-original');
+					if(dataori != undefined && dataori != null && dataori != '') {
+						dataoris[i].setAttribute('src', dataori);
+					}
+				}
+				var images = document.getElementsByClassName('.Zimg');
+				for(var i = 0; i < images.length; i++) {
+					if(images[i].id == 'idHint') {
+						continue;
+					};
+					images[i].style.display = 'block';
+					images[i].style.width = '100%';
+					images[i].style.height = 'auto';
+				}
+				var inputs = document.getElementsByClassName('.Zinput');
+				for(var i = 0; i < inputs.length; i++) {
+					inputs[i].style.display = 'block';
+					inputs[i].style.width = '100%';
+					inputs[i].style.height = 'auto';
+				}
+			</script>
+
+		</div>
+	</body>
+
+</html>
