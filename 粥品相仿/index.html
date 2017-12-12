@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../vue/js/Animate Css3/Animate.css_files/animate.min.css"/>
+		<script src="js/vueJS/vue.min.js"></script>
+		<script src="js/bootstrap/jq/jquery-3.1.1.js"></script>
+		<script src="js/vueJS/vue-router.min.js"></script>
+		<script src="js/iscroll/iscroll.js"></script>
+		<script src="js/vueJS/vue-resource.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<v-header></v-header>
+			<v-wu></v-wu>
+			<v-nav></v-nav>
+			<transition enter-active-class="animated zoomInUp">
+				<router-view></router-view>
+			</transition>
+			<footer class="footer">
+				<router-link to="/footer"><img src="img/外卖01_商品页_03.jpg"/></router-link>
+				<span>￥{{s}}</span>
+				<span>权需配送费￥4元</span>
+				<p>￥20起送</p>
+			</footer>
+		</div>
+		<template id="header">
+			<header class="header">
+				<div v-if="xian" id="wu" class="wu">
+					<div class="w-xian"></div>
+					<div class="div1">
+						<p class="p1">粥品香坊大运村</p>
+						<p class="p2">
+							<span>★</span>
+							<span>★</span>
+							<span>★</span>
+							<span>★</span>
+							<span>☆</span>
+						</p>
+					</div>
+					<div class="div2">
+						<p>———————&nbsp;优惠 &nbsp———————</p>
+						<div class="d-d1">
+							<span><b class="span">减</b>在线支付满28减5，满50减10</span>
+							<span><b class="span1">折</b>单人精彩赛</span>
+							<span><b class="span1">折</b>清肺雪梨汤8折强购</span>
+							<span><b class="span1">折</b>特价饮品八折抢购</span>
+							<span><b class="span1">折</b>单人特色套餐</span>
+						</div>
+					</div>
+					<div class="div3">
+						<p>——————&nbsp;商家公告 &nbsp;——————</p>
+						<div class="d-d1">{{names.seller.bulletin}}</div>
+					</div>
+					<a @click="san()">×</a>
+				</div>
+				<div class="yin"></div>
+				<img class="img" src="img/01_03.jpg"/>
+				<div class="h-con">
+					<p>
+						<span>品牌</span>
+						<span>粥品香坊（大运村）</span>
+					</p>
+					<p>蜂鸟专送 / 38分钟送达</p>
+					<p>
+						<span>减</span>
+						<span>在线支付满28减5</span>
+						<span @click="wuge()">5个 ></span>
+					</p>
+				</div>
+				<div class="h-bottom"></div>
+				<div class="h-b">
+					<p>
+						<span>公告</span>
+						<marquee class="a">{{names.seller.bulletin}}</marquee>
+						<span>></span>
+					</p>
+				</div>
+			</header>
+		</template>
+		<template id="wu">
+				
+		</template>
+		<template id="nav">
+			<nav class="nav">
+				<router-link to="/a">商品</router-link>
+				<router-link to="/b">评价</router-link>
+				<router-link to="/c">商家</router-link>
+			</nav>
+		</template>
+		<template id="a">
+			<div class="a">
+				<a-left></a-left>
+				<a-right></a-right>
+			</div>
+		</template>
+		<template id="aa">
+			<div class="aa">
+				<router-link :to="v.id" v-for="(v,k) in names">{{v.names}}</router-link>
+			</div>
+		</template>
+		<template id="bb">
+			<div class="bb">
+				<transition enter-active-class="animated bounceInRight">
+					<router-view></router-view>
+				</transition>
+			</div>
+		</template>
+		<template id="bbb">
+			<div class="bbb">
+				<div class="b-same" v-for="(v,k) in names.goods1">
+					<h1><span>{{v.title}}</span></h1>
+					<div class="same" v-for="(val,key) in v.dan">
+						<img :src="val.img"/>
+						<p>
+							<span>{{val.span1}}</span>
+							<span>{{val.span2}}</span>
+							<span>{{val.span3}}</span>
+							<span>
+								<span>￥{{val.price}}</span>
+								<span>{{val.price1}}</span>
+								<img class="jian" v-if="val.count>0" @click="jian(val.id)" src="img/01_12.jpg"/>
+								<span v-if="val.count>0">{{val.count}}</span>
+								<img class="jia" @click="add(val.id)" src="img/01_14.jpg"/>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</template>
+		<template id="c">
+			<div class="c">
+				<div class="c-d1">
+					<p>
+						<span>粥品香坊（大运村）</span>
+						<span> ★ ★ ★ ★ <span>☆ （661）月售690单</span></span>
+					</p>
+					<p>
+						<span class="img2">❤</span>
+						<span>已收藏</span>
+					</p>
+				</div>
+				<div class="c-d2">
+					<p>
+						<span>起送价</span>
+						<span>20元</span>
+					</p>
+					<p>
+						<span>两家配送</span>
+						<span>4元</span>
+					</p>
+					<p>
+						<span>平均配送时间</span>
+						<span>39分钟</span>
+					</p>
+				</div>
+				<h1></h1>
+				<div class="c-d3">
+					<p>
+						<b>公告与活动</b>
+						<span>{{names.seller.bulletin}}</span>
+					</p>
+				</div>
+				<div class="c-d4">
+					<span><b class="span">减</b>在线支付满28减5，满50减10</span>
+					<span><b class="span1">折</b>单人精彩赛</span>
+					<span><b class="span1">折</b>清肺雪梨汤8折强购</span>
+					<span><b class="span1">折</b>特价饮品八折抢购</span>
+					<span><b class="span1">折</b>单人特色套餐</span>
+					<span><b class="span1">票</b>该商家支持开发票，请在下单时填写好发票</span>
+					<span><b class="span1">保</b>已加入“外卖保”计划，食品安全保障</span>
+				</div>
+				<h1></h1>
+				<div class="c-d5">
+					<p>商家实景</p>
+					<div class="p">
+						<p class="p1">
+							<img src="img/外卖06_商家页_03.jpg"/>
+							<img src="img/外卖06_商家页_05.jpg"/>
+							<img src="img/外卖06_商家页_06.jpg"/>
+							<img src="img/外卖06_商家页_06.jpg"/>
+							<img src="img/外卖06_商家页_05.jpg"/>
+							<img src="img/外卖06_商家页_06.jpg"/>
+							<img src="img/外卖06_商家页_03.jpg"/>
+						</p>
+					</div>
+				</div>
+				<div class="c-d6">
+					<p>商家信息</p>
+					<p>
+						<span>该商家支持发票,请下单写好发票抬头</span>
+						<span>品类：其他菜，包子粥店</span>
+						<span>地址：北京昌平区回龙观大街龙观大厦B座102楼</span>
+						<span>营业时间：100:00 - 20:30</span>
+					</p>
+				</div>
+				<p class="aaaa"></p>
+			</div>
+		</template>
+		<template id="footers">
+			<div class="footers">
+				
+			</div>
+		</template>
+	</body>
+	<script type="text/javascript" src="index.js"></script>
+</html>

@@ -1,0 +1,714 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+}
+body{
+    font-size: 62.5%;
+}
+#app{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .header{
+        width: 100%;
+        height: 12rem;
+        background: url(../img/01_03.jpg) no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        .wu{
+            width: 100%;
+            height: 42rem;
+            position: absolute;
+            z-index: 1001;
+            animation: zoomInDown 2s;
+            .div1{
+                width: 100%;
+                position: absolute;
+                top: 4rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p{
+                    font-size: 1.5rem;
+                    font-weight: bolder;
+                    font-family: "微软雅黑";
+                }
+                .p1{
+                    color: white;
+                }
+                .p2{
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    span:first-of-type{
+                        margin-left: 0;
+                    }
+                    span{
+                        font-size: 2rem;
+                        color: gold;
+                        animation: rollIn 2s infinite;
+                    }
+                    span:hover{
+                        animation: rollOut 2s both;
+                    }
+                }
+            }
+            .div2{
+                width: 100%;
+                position: absolute;
+                top: 9rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p{
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1rem;
+                    font-family: "微软雅黑";
+                    font-weight: bolder;
+                    color: white;
+                    animation: bounce 2s infinite;
+                }
+                p:hover{
+                     animation: rubberBand 2s infinite;
+                }
+                .d-d1{
+                    width: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    span:first-of-type{
+                        margin-top: 1rem;
+                    }
+                    span{
+                        font-size: 0.9rem;
+                        font-family: "微软雅黑";
+                        color: white;
+                        margin-top: 0.8rem;
+                        display: flex;
+                        align-items: center;
+                        b{
+                            width: 1.4rem;
+                            height: 1.1rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 0.5rem;
+                            background: white;
+                            animation: swing 2s infinite;
+                        }
+                        b:hover{
+                            animation: wobble 2s infinite;
+                        }
+                        .span{
+                            color: orangered;
+                        }
+                        .span1{
+                            color: green;
+                        }
+                    }
+                }
+            }
+            .div3{
+                width: 100%;
+                position: absolute;
+                top: 22rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p{
+                    width: 85%;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1rem;
+                    font-family: "微软雅黑";
+                    font-weight: bolder;
+                    color: white;
+                    animation: bounce 2s infinite;
+                }
+                p:hover{
+                     animation: rubberBand 2s infinite;
+                }
+                .d-d1{
+                    width: 70%;
+                    display: flex;
+                    margin-top: 0.8rem;
+                    flex-direction: column;
+                    font-size: 1rem;
+                    color: white;
+                    font-family: "微软雅黑";
+                }
+            }
+            .w-xian{
+                width: 100%;
+                height: 100%;
+                background: #504438;
+                opacity: 0.9;
+                z-index: 1001;
+            }
+            a{
+                font-size: 3rem;
+                font-family: "微软雅黑";
+                color: gainsboro;
+                position: absolute;
+                bottom: 2.5rem;
+                left: 45%;
+                animation: flipInX 2s infinite;
+            }
+            a:hover{
+                animation: wobble 2s infinite;
+            }
+        }
+        .yin{
+            width: 100%;
+            height: 100%;
+            background: black;
+            opacity: 0.8;
+        }
+        .img{
+            width: 23%;
+            position: absolute;
+            z-index: 1000;
+            top: 15%;
+            left: 6%;
+        }
+        .h-con{
+            width: 66%;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 15%;
+            left: 32%;
+            p{
+                display: flex;
+                align-items: center;
+                color: gainsboro;
+                font-size: 0.8rem;
+                font-weight: bolder;
+                margin-top: 0.8rem;
+                span{
+                    font-size: 0.9rem;
+                    color: white;
+                    font-weight: bolder;
+                }
+            }
+            p:first-of-type{
+                margin: 0.2rem;
+                span:first-of-type{
+                    width: 21%;
+                    height: 1.2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: red;
+                    margin: 0;
+                    font-size: 0.8rem;
+                }
+                span{
+                    font-size: 0.9rem;
+                    margin-left: 0.5rem;
+                }
+            }
+            p:last-of-type{
+                span:first-of-type{
+                    width: 12%;
+                    height: 1.2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: white;
+                    color: red;
+                    font-size: 0.8rem;
+                }
+                span{
+                    font-size: 0.8rem;
+                    color: gainsboro;
+                    
+                }
+                span:nth-of-type(2){
+                    margin-left: 0.3rem;
+                }
+                span:last-of-type{
+                    width: 21%;
+                    height: 1.4rem;
+                    border-radius: 0.6rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: black;
+                    opacity: 0.5;
+                    color: white;
+                    font-size: 0.8rem;
+                    margin-left: 20%;
+                }
+            }
+        }
+    }
+    .h-bottom{
+        width: 100%;
+        height: 2.5rem;
+        background: black;
+        opacity: 0.5;
+        position: absolute;
+        top: 79%;
+    }
+    .h-b{
+        width: 100%;
+        height: 2.5rem;
+        position: absolute;
+        top: 79%;
+        p{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span:first-of-type{
+                width: 12%;
+                height: 1.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: white;
+                color: black;
+                font-size: 0.8rem;
+                font-weight: bolder;
+            }
+            span{
+                font-size: 0.8rem;
+                color: gainsboro;
+                
+            }
+            .a{
+                width: 18rem;
+                font-size: 0.8rem;
+                color: gainsboro;
+            }
+            span:last-of-type{
+                color: gainsboro;
+                font-size: 0.8rem;
+            }
+            marquee{
+                margin: 0;
+            }
+        }
+    }
+    
+    div{
+        font-size: 2rem;
+    }
+    .c{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .c-d1{
+            width: 95%;
+            height: 4.5rem;
+            border-bottom: 1px solid gainsboro;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p{
+                height: 70%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                span{
+                    font-size: 1rem;
+                    font-family: "微软雅黑";
+                }
+                span:last-of-type{
+                    font-size: 0.8rem;
+                    color: orange;
+                    span{
+                        color: darkgray;
+                    }
+                }
+            }
+            p:last-of-type{
+                width: 15%;
+                justify-content: center;
+                align-items: center;
+                span:first-of-type{
+                    color: red;
+                }
+                .img2:hover{
+                    animation: bounce 2s infinite;
+                }
+                .img2{
+                    animation: shake 2s infinite;
+                }
+            }
+        }
+        .c-d2{
+            width: 100%;
+            height: 4rem;
+            display: flex;
+            p{
+                -webkit-flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                span{
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                    color: gray;
+                }
+                span:last-of-type{
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color: gray;
+                    margin-top: 0.2rem;
+                }
+            }
+        }
+        h1{
+            width: 100%;
+            height: 1.5rem;
+            background: gainsboro;
+        }
+        .c-d3{
+            width: 100%;
+            height: 8rem;
+            display: flex;
+            justify-content: center;
+            p{
+                width: 95%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                b{
+                    font-size: 1rem;
+                }
+                span{
+                    font-size: 0.8rem;
+                    color: red;
+                    text-indent: 1.4rem;
+                    line-height: 1.2rem;
+                }
+            }            
+        }
+        .c-d4{
+            width: 85%;
+            display: flex;
+            flex-direction: column;
+            span:first-of-type{
+                margin-top: 1rem;
+                b{
+                    background: red;
+                }
+            }
+            span:nth-of-type(4),span:nth-of-type(5){
+                b{
+                    background: green;
+                }
+            }
+            span:nth-of-type(6),span:nth-of-type(7){
+                b{
+                    border: 1px solid #8B008B;
+                    background: white;
+                    color: #8B008B;
+                    border-radius: 0.1rem;
+                }
+            }
+            span{
+                height: 1.6rem;
+                font-size: 0.9rem;
+                font-family: "微软雅黑";
+                color: gray;
+                margin-top: 0.8rem;
+                display: flex;
+                align-items: center;
+                border-top: 1px solid gainsboro;
+                b{
+                    width: 1.3rem;
+                    height: 1.1rem;
+                    font-size: 0.8rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 0.5rem;
+                    color: white;
+                    background: dodgerblue;
+                    animation: tada 2s infinite;
+                }
+                b:hover{
+                    animation: bounceIn 2s infinite;
+                }
+            }
+        }
+        .c-d5{
+           width: 95%;
+           display: flex;
+           flex-direction: column;
+           p{
+               width: 100%;
+               font-size: 1rem;
+               display: flex;
+               justify-content: space-between;
+               margin-top: 0.8rem;
+               img{
+                   width: 31%;
+                   height: 50%;
+                   margin-bottom: 0.8rem;
+               }
+           }
+           .p{
+               width: 100%;
+               font-size: 1rem;
+               display: flex;
+               justify-content: space-between;
+               margin-top: 0.8rem;
+               overflow: auto;
+               .p1{
+                   width: 200%;
+                   img{
+                       width: 30%;
+                       height: 70%;
+                       margin-left: 0.8rem;
+                       margin-bottom: 0.8rem;
+                   }
+               }
+           }
+        }
+        .c-d6{
+           width: 95%;
+           display: flex;
+           flex-direction: column;
+           p{
+               width: 100%;
+               font-size: 1rem;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               margin-top: 0.8rem;
+              span{
+                  font-size: 0.9rem;
+                  color: gray;
+                  font-family: "微软雅黑";
+                  margin-top: 0.5rem;
+              }
+           }
+        }
+        
+        
+        
+        .aaaa{
+             margin-bottom: 6rem;
+        }
+    }
+    .nav{
+        width: 100%;
+        height: 3.5rem;
+        border-bottom: 1px solid gainsboro;
+        display: flex;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-flex: 1;
+            font-size: 1rem;
+            font-weight: bolder;
+            color: gray;
+            text-decoration: none;
+        }
+        a.router-link-active{
+            color: red;
+        }
+    }
+    .a{
+        width: 100%;
+        display: flex;
+         margin-bottom: 4rem;
+        .aa{
+            width: 28%;
+            display: flex;
+            flex-direction: column;
+            a{
+                width: 100%;
+                height: 3.7rem;
+                display: flex;
+                border-right: 1px solid lightgray;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.9rem;
+                color: gray;
+                border-bottom: 1px solid gainsboro;
+                text-decoration: none;
+                font-weight: bolder;
+            }
+            a.router-link-active{
+                background: white;
+                color: black;
+                border: 0;
+            }
+            
+        }
+        .bb{
+            width: 72%;
+            display: flex;
+            flex-direction: column;
+            div{
+                font-size: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .bbb{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .b-same:first-of-type{
+                    .same{
+                        p{
+                            span:last-of-type{
+                                img:first-of-type{
+                                    margin-left: 1.9rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .b-same{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    h1{
+                        width: 100%;
+                        height: 2rem;
+                        background: ghostwhite;
+                        display: flex;
+                        align-items: center;
+                        span{
+                            color: darkgray;
+                            font-size: 0.9rem;
+                            margin-left: 0.5rem;
+                        }
+                    }
+                    .same{
+                        width: 100%;
+                        display: flex;
+                        img{
+                            width: 25%;
+                            height: 50%;
+                            margin-left: 0.5rem;
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                        }
+                        img:hover{
+                            animation: rubberBand 2s;
+                        }
+                        p{
+                            width: 72%;
+                            margin-left: 0.3rem;
+                            display: flex;
+                            flex-direction: column;
+                            span:first-of-type{
+                                margin-top: 0.8rem;
+                                font-size: 0.9rem;
+                            }
+                            span{
+                                font-size: 0.8rem;
+                                margin-top: 0.1rem;
+                            }
+                            span:last-of-type{
+                                width: 72%;
+                                display: flex;
+                                align-items: center;
+                                span:first-of-type{
+                                    margin: 0;
+                                    color: red;
+                                    font-size: 1rem;
+                                }
+                                img{
+                                    width: 15%;
+                                }
+                                img:first-of-type{
+                                    margin-left: 40%;
+                                }
+                                span:nth-of-type(2){
+                                    margin-left: 0.2rem;
+                                    text-decoration: line-through;
+                                }
+                                span:last-of-type{
+                                    margin-left: 0.3rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        height: 3.8rem;
+        background: #141c27;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        a{
+            width: 15%;
+            text-decoration: none;
+             img{
+                width: 100%;
+                border-radius: 50%;
+                margin-left: 1rem;
+                margin-top: -1.5rem;
+            }
+            img:hover{
+                animation: flipInY 2s;
+            }
+        }
+        span:first-of-type{
+            width: 20%;
+            height: 40%;
+            border-right: 1px solid darkgray;
+            font-size: 0.9rem;
+            font-weight: bolder;
+            color: #75767b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span:last-of-type{
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bolder;
+            color: #75767b;
+            
+        }
+        p{
+            background: #2b343b;
+            color: gainsboro;
+            font-size: 0.9rem;
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            border: 0;
+        }
+        p:active{
+            animation: tada 1s;
+        }
+    }
+}
