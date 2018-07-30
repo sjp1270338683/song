@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+
+	<head>
+		<title>个人信息</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<!-- <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" /> -->
+		<link rel="stylesheet" href="../css/fonts/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/ui-box.css">
+		<link rel="stylesheet" href="../css/ui-base.css">
+		<link rel="stylesheet" href="../css/ui-color.css">
+		<link rel="stylesheet" href="../css/uap.icon.css">
+		<link rel="stylesheet" href="../css/uap.control.css">
+		<link rel="stylesheet" href="../css/ui-tab.css">
+		<link href="../modules/datePicker/iosSelect.css" rel="stylesheet" type="text/css">
+		<script src="../modules/datePicker/areaData_v2.js" type="text/javascript"></script>
+		<link href="../css/loadding.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			.required {
+				content: "*";
+				color: #ff4949;
+				margin-right: 4px;
+				 
+			}
+			.uinn{
+				padding: .5em 0;
+				display: flex !important;
+				justify-content: space-between;
+			}
+			.rigs{
+				text-align: right;
+				width: 8em;
+			}
+			.rights{
+				width: 13em;
+				text-align: left;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.tx-r{
+				text-align: left !important;
+			}
+			.uinput input, .uinput textarea{
+				padding: 0;
+			}
+			.footer_btn{
+				width: 21em;
+			    border-radius: .3em!important;
+			    background-color: #417fcb;
+			    height: 2.3em;
+			    line-height: 2.3em;
+			    text-align: center;
+			    color: white;
+			    margin: 1.1em auto;
+			}
+		</style>
+
+	</head>
+
+	<body class="um-vp ">
+		<div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+			<div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header">
+				<div id="header" class="uh bc-text-head ub bc-head">
+					<div class="nav-btn" id="nav-left">
+						<div class="fa fa-angle-left fa-2x"></div>
+					</div>
+					<h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">个人信息</h1>
+					<div class="nav-btn nav-bt" id="nav-right">
+						<div class="ub ulev3" id="save" v-on:click="forSave">保存
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--header结束-->
+			<!--content开始-->
+			<br>
+			<form>
+				<div class="content" id="content_c">
+					<div>
+						<div class="box_bounce ub ub-ver ub-pc">
+							<div class="ub-f1"></div>
+							<div class="bounce_status">下拉更新......</div>
+							<div class="bounce_status">松手更新......</div>
+							<div class="bounce_status">更新中......</div>
+						</div>
+						<div class="ub ub-ver">
+							<div class="uinn-a1 ub ub-ac">
+								<div class="t-red-form2 umar-r-form">&nbsp;</div>
+								<div class="t-gra4 ulev-1">
+									<input type="hidden" v-model="member_id" name="member_id" id="member_id" value="">
+								</div>
+							</div>
+							<div class="uinn-a7" id="rbaseinfo">
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1 rigs"><span class="required">*</span>姓名</li>
+									<li class="tx-r t-blu ulev-app1 ub-ae rights">
+										<div class="uinput uinn4">
+											<input placeholder="请输入内容" v-model="name" name="name" id="name" type="text" disabled="disabled" class="tx-r ">
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1 rigs"><span class="required">*</span>性别</li>
+									<li class="tx-r t-blu ulev-app1 ub-ae rights">
+										<div class="pc-box">
+											<input type="hidden" v-model="gender" name="gender" id="gender" value="">
+											<a id="showSex" disabled="disabled">请选择性别</a>
+										</div>
+
+									</li>
+
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ulev-app1 rigs"><span class="required">*</span>身份证号</li>
+									<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae rights">
+										<div class="uinput uinn4">
+											<input placeholder="请输入内容" onpaste="return false;" disabled="disabled" v-model="id_card" id="id_card" name="id_card" type="text" class="tx-r">
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1 rigs"><span class="required">*</span>出生日期</li>
+									<li id="selectDate" class="rights">
+										<div class="pc-box">
+											<input type="hidden" v-model="birthday" id="birthday" name="birthday" value=""> <span data-year="" data-month="" data-date="" id="show_birthday" disabled="disabled">请选择</span>
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1 rigs"><span class="required">*</span>籍贯</li>
+									<li class="tx-r t-blu ulev-app1 ub-ae rights">
+										<div class="uinput uinn4">
+											<input placeholder="填写到市，如：xx省xx市"  v-model="region" name="region" id="name" type="text" maxlength="40" class="tx-r ">
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1 rigs "><span class="required">*</span>民族</li>
+									<li id="select_Nation" class="rights">
+										<div class="pc-box">
+											<input type="hidden" v-model="nation" id="nation" name="nation" value=""> <span id="show_Nation" v-on:click="getNation">请选择</span>
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ulev-app1 rigs"><span class="required">*</span>生源地</li>
+									<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae rights" id="select_contact">
+										<div class="pc-box">
+											<input type="hidden" name="contact_province_code" data-id="0001" id="contact_province_code" value="" data-province-name="">
+											<input type="hidden" name="contact_city_code" id="contact_city_code" value="" data-city-name="">
+											<input type="hidden" name="contact_district__code" v-model="district_code" id="contact_district__code" value="" data-district-name="">
+											<span data-city-code="510100" data-province-code="510000" data-district-code="510105" id="show_contact" v-on:click="getDistrict_code">请选择</span>
+										</div>
+									</li>
+								</ul>
+								<ul class="ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1 rigs"><span class="required">*</span>(预计)毕业时间</li>
+									<li id="selectGradTime" class="rights">
+										<div class="pc-box">
+											<input type="hidden" v-model="expect_grad_time" name="expect_grad_time" id="expect_grad_time" value="">
+											<div data-year="" data-month="" data-date="" id="show_expect_grad_time" v-on:click="getGradTime">请选择</div>
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ulev-app1 rigs"><span class="required">*</span>毕业生类型</li>
+									<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae rights">
+										<div class="uinput uinn4">
+											<input type="hidden" v-model="student_type" id="student_type" name="student_type" value=""> <span id="showStuType" v-on:click="getshowStuType">请选择</span>
+										</div>
+									</li>
+								</ul>
+
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1 rigs"><span class="required">*</span>身高(cm)</li>
+									<li class="tx-r t-blu ulev-app1 ub-ae rights">
+										<div class="uinput uinn4">
+											<input placeholder="请输入内容" v-model="height" name="height" id="height" type="text" maxlength="3" class="tx-r ">
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1 rigs"><span class="required">*</span>体重(kg)</li>
+									<li class="tx-r t-blu ulev-app1 ub-ae rights">
+										<div class="uinput uinn4">
+											<input placeholder="请输入内容" v-model="weight" name="weight" id="height" type="text" maxlength="3" class="tx-r ">
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ulev-app1 rigs"><span class="required">*</span>婚姻状况</li>
+									<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae rights">
+										<div class="uinput uinn4">
+											<input type="hidden" v-model="marital_status" id="marital_status" name="marital_status" value=""> <span id="show_marital_status" v-on:click="getMaritalStatus">请选择</span>
+										</div>
+									</li>
+								</ul>
+
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ulev-app1 rigs"><span class="required">*</span>政治面貌</li>
+									<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae rights">
+										<div class="uinput uinn4">
+											<input type="hidden" v-model="political_status" id="political_status" name="political_status" value="">
+											<span id="show_political_status" v-on:click="getPoliticalStatus">请选择</span>
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ulev-app1 rigs"><span class="required">*</span>是否健康
+									</li>
+									<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae rights">
+										<div class="uinput uinn4">
+											<input type="hidden" v-model="is_health" id="is_health" name="is_health" value="X"> <span id="show_is_health" v-on:click="getshow_is_health">请选择</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="footer_btn">
+								下一步
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
+		<div class="container"></div>
+		<p id="m-TopTip" class="m-tips"></p>
+		<script src="../assets/api/api.js"></script>
+		<script src="../modules/toast/toast.js"></script>
+		<script src="../lib/jquery.js"></script>
+		<!--<script src="../vendor/lib/mobileSelect.js"></script>-->
+		<!--<script src="../vendor/lib/selectDate.js"></script>-->
+		<script src="../js/util.js"></script>
+		<script src="../modules/datePicker/iosSelect.js" type="text/javascript"></script>
+		<script src="../modules/datePicker/zepto.js" type="text/javascript"></script>
+		<script src="../modules/datePicker/datePicker.js" type="text/javascript"></script>
+		<script src="../js/uap/vue.min.js"></script>
+		<script src="personalInfo/personalInfo.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

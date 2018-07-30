@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../css/fonts/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/ui-box.css">
+		<link rel="stylesheet" href="../css/ui-base.css">
+		<link rel="stylesheet" href="../css/ui-color.css">
+		<link rel="stylesheet" href="../css/uap.icon.css">
+		<link rel="stylesheet" href="../css/uap.control.css">
+		<link rel="stylesheet" href="../css/weui3.css">
+		<link rel="stylesheet" href="resume.css">
+		<title></title>
+		
+		<style type="text/css">
+			.uinn{
+				padding-top: 1.5em;
+			}
+		</style>
+	</head>
+
+	<body class="um-vp ">
+
+		<div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+			<div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header">
+				<div id="header" class="uh bc-text-head ub bc-head">
+					<div class="nav-btn" id="nav-left1">
+						<div class="fa fa-angle-left fa-2x"></div>
+					</div>
+					<h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">教育能力</h1>
+					<div class="nav-btn nav-bt" id="nav-right"></div>
+				</div>
+			</div>
+			<!--header结束-->
+			<div class="ub-f1" id="education0">
+						<div class="box_bounce ub ub-ver ub-pc">
+							<div class="ub-f1"></div>
+							<div class="bounce_status">下拉更新......</div>
+							<div class="bounce_status">松手更新......</div>
+							<div class="bounce_status">更新中......</div>
+						</div>
+					
+				  <div class="ub ub-ver">
+			  			<div class="uinn-a1 ub ub-ac">
+							<div class="t-red-form2 umar-r-form">&nbsp;</div>
+							<div class="t-gra4 ulev-1">
+							</div>
+						</div>
+					<div id="listview1" class="ubt bc-border sc-bg" style="margin: 0 0.3em 0 0.5em;">
+						<div class='table'>
+							<div style="display: block;" class='Annoucement'>
+								<!--教育经历-->
+								<ul class="edulist comAnnoucement"></ul>
+							</div>
+						</div>
+					</div>
+					  <!-- 添加教育经历 -->
+					     <div class="uin uinn ">
+                <div class="btn ub ub-ac bc-text-head ub-pc bc-btn uc-a1 bold add_button " id="edu01"  v-on:click="toForInsert">
+                                             +添加教育经历
+                          </div>
+                          
+                          
+                          
+                          			<!-- 添加教育经历的说明  S-->
+					<ul class="ubb ub bc-border bc-text ub-ac uinn">
+						<li class="ub-f1 ut-s ulev-app1">上传证书</li>
+						<li id="select_is_most_education">
+							<div class="uinn4">
+
+								<span class="ub ulev-4" style="color: #417fcb;"> 
+														
+								<b>学历信息请从高往低填写，高中及高中以下学历无需填写</b><br>
+								
+								<b>1.学历选择“博士、硕士、硕士研究生毕业”则必须填写一条本科或专科记录；</b><br>
+								
+								<b>2.招生批次选择“专升本”则必须填写一条专科记录；</b><br>
+								
+							    <b>3.学位为双学士的则必须先填写一条主修记录；其主修和辅助学位作为两条学习经历，分别填写，学位均选择“双学士”；</b><br>
+								
+								<b>4.学历信息中包含一个选项是否全日制最高学历，若此选项标识为最高学历，则学习形式必须是普通全日制，请结合自己的实际学历情况进行选择；</b><br>
+								
+								<b>5.最高学历的下一级学历证号和学位号和学位证号必输，“学历证书号”栏和“学位证书号”栏中；硕博连读人员如无硕士学位、学历证号，填写“无”；留学生需填写教育部留学服务中心的国外学历、学位认证号，暂无获取的填写“无”。</b><br>
+								
+								</span>
+
+							</div>
+						</li>
+					</ul>
+                    </div>
+				</div>
+				<br>
+				
+		</div>
+		
+		<div id='footer' class='uf c-m2 c-bla t-wh'></div>
+		</div>
+		<div class="container"></div>
+		<p id="m-TopTip" class="m-tips"></p>
+		<script src="../lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="../lib/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="../lib/jquery_ui/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="../modules/disable/disable.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/util.js" ></script>
+		<script src="../modules/datePicker/iosSelect.js" type="text/javascript"></script>
+		<script src="../modules/datePicker/zepto.js" type="text/javascript"></script>
+		<script src="../modules/datePicker/datePicker.js" type="text/javascript"></script>
+		<script src="../js/uap/vue.min.js"></script>
+		<script src="../assets/api/api.js" ></script>
+		<script src="../js/uap/weiUI.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../modules/encryptConfig/encryptConfig.js" ></script>
+		<script src="../js/toast/toast.js" ></script>
+	</body>
+	<script type="text/javascript">
+		(function($) {
+
+			$(document).on('click', '#nav-left1', function(e) {
+	    		Util.setStorage('fromLogin',1);
+	    		$(window).attr("location","./resume.html")
+			});
+		
+			document.addEventListener('click', function() {
+				var _con = $('#listview1');
+				if(!_con.is(event.target) && _con.has(event.target).length === 0){ // Mark 1
+		      		$(".CoatingLayer").hide();
+			  	}
+			});
+
+			var token = Util.getStorage('token');
+			//绑定保存事件
+			var vump = new Vue({
+				el: '#listview1',
+				beforeCreate: function() {
+					getBaseData();
+				},
+				data: {
+					education_data: []
+				},
+				methods: {
+					showData: function() {
+						getBaseData();
+						//getSchoolData();
+					}
+				}
+			});
+			//加载数据
+			function getBaseData() {
+				var token = Util.getStorage('token');
+				var url = $api + 'education/' + token + '/list?dict_codes=308004,308006,308027,308009,308032,308026,' + new Date().getTime();
+				console.log("url1010101010110:" + url);
+				var getresInfo = {
+					url: url,
+					type: 'GET',
+					dataType: "json",
+					success: function(data) {
+						// console.log('这个是用于用户登录后默认简历中心信息查询接口------>success'+data);
+						// data=JSON.parse(data);
+					  if(data.retcode == 200) {
+
+							var json = data.retdata;
+							//console.log("getdataedu00000:" + JSON.stringify(json));
+							var education_data = json.education_data;
+							//var dic_data = json.dict_data;
+							//console.log("education_data0000:" + JSON.stringify(education_data));
+
+							//教育信息
+							var html = "";
+							if(education_data) {
+
+								var listData = [];
+
+								for(var i in education_data) {
+									var begin_date = education_data[i].begin_date;
+									var end_date = education_data[i].end_date;
+									var school_name = education_data[i].school_name;
+									var id = education_data[i].qualifi_id;
+
+									html += " <li class='parentsLi'>";
+									html += "<p id='left' title='" + id + "'>";
+									html += "<span>" + school_name + " </span></p><span class='stateGrid'>" + begin_date + "  至 " + end_date + "</span>";
+									html += "<span class='u-pero more' id='more'>";
+									html += "<i class='icon bgImg' style='display: inline-block;'>";
+									html += "<img src='../img/u2622.png' alt=''/><img src='../img/u2622.png' alt=''/><img src='../img/u2622.png' alt=''/></i></span>";
+									html += "<div class='CoatingLayer' id='CoatingLayer'><ul> <li class='confirm-del' delId='" + id + "' ><div> <p><span class='delForImg'></span></p><span>删除</span></div></li></ul></div></li>";
+
+								}
+
+								$(".edulist").append(html);
+							} else {
+								//如果没有数据，则隐藏listview1
+								$("#listview1").hide();
+							}
+
+					   }else if(data.retcode=='ERRCODE_00017'){
+		                        toast.setToast(data.retmsg, 'two');
+	                            Util.newLocation("two","education_0");
+	                     
+						}else {
+		  
+							toast.setToast(data.retmsg, 'five');
+						}
+					},
+					error: function(data) {
+						toast.setToast(data.retmsg, 'five');
+					}
+
+				};
+				$.ajax(getresInfo);
+
+			}
+
+			$(document).on("click", "#left", function(s) {
+				var id = this.title;
+				var url = "education_forUpdate.html?qualifi_id=" + id + "&isforUpdate=true";
+				var pageId = "education_update";
+				localStorage.setItem('qualifi_id', id);
+				localStorage.setItem('isforUpdate_education', "true");
+			});
+
+			$(document).on('click', '.confirm-del', function() {
+				var id = $(this).attr('delId');
+				deleteById(id);
+
+			})
+			//遮罩层的显示隐藏
+			$("body").on("click", ".more", function() {
+				$(this).parents(".parentsLi").children(".CoatingLayer").show().parent().siblings(".parentsLi").find(".CoatingLayer").hide();
+			})
+
+			//添加教育经历
+			var add = new Vue({
+				el: '#edu01',
+				methods: {
+					toForInsert: function() {
+						$(window).attr('location','./education_forUpdate.html')
+					}
+				}
+			});
+
+			function deleteById(id) {
+				var token = Util.getStorage('token');
+				 dialog('您确认要删除吗？','',function(){  
+                        var url = $api + 'education/' + token + '/delete/' + id;
+							var getresInfo = {
+								url: url,
+								type: 'POST',
+								dataType: "json",
+								success: function(data) {
+									if(data.retcode == 200) {
+										//alert("删除成功!");
+										var r=data.retdata.resume_progress;
+										if(r){
+											localStorage.setItem("resume_progress", r);
+										}
+										toast.setToast(data.retmsg, 'five');
+										//停留2000毫秒跳转到首页
+										setTimeout(function() {
+											 $(".edulist li").remove();
+								       	   	$(".CoatingLayer").hide();
+								       		getBaseData();
+ 							 
+										}, 200);
+
+									} else {
+										//alert("删除失败!");
+										console.log('验证删除教育信息的接口是否成功------>success');
+										console.log(data);
+										$(".CoatingLayer").hide();
+										toast.setToast(data.retmsg, 'five');
+									}
+								}
+
+							};
+							$.ajax(getresInfo);
+
+
+
+		  		      $('#dialog1').remove();  
+		          }); 
+			}
+
+		})($);
+	</script>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/loginh.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/toast.css"/>
+	</head>
+
+	<body>
+		<div class="login_box">
+			<div class="login_header">
+				登录
+			</div>
+			<div class="login_nav">
+				<img src="../img/login_logos.png"/>
+			</div>
+			<div class="login_section">
+				<ul>
+					<li>
+						<p>姓 名：</p>
+						<input type="text" class="dr_name" id="dr_name" placeholder="请输入您的真实姓名"/>
+					</li>
+					<li>
+						<p>身份证号：</p>
+						<input type="text" class="dr_nameId" id="dr_nameId" placeholder="请输入您的身份证号"/>
+					</li>
+					<li>
+						<p>密 码：</p>
+						<input type="password" class="dr_password" id="dr_password" placeholder="请输入您的密码"/>
+					</li>
+					<li>
+						<p>验证码：</p>
+						<input type="text" maxlength="4" class="codeInput" id="codeInput" placeholder="请输入验证码"/>
+						<span class="huan_img"><img src="" class="yzm_img" id="code" alt="图片失效" /></span>
+					</li>
+				</ul>
+			</div>
+			<div class="login_footer">
+				<div class="login_footer_top">
+					<input type="button" id="login" class="login" value="立即登录" />
+				</div>
+				<div class="login_footer_bottom">
+					<div class="footer_bottom_same register">注册账号</div>
+					<div class="footer_bottom_same for_pass">忘记密码</div>
+				</div>
+			</div>
+		</div>
+		<p id="m-TopTip" class="m-tips"></p>
+	</body>
+	<!--<script src="../js/uap/uap.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../js/util.js" ></script>
+	<script type="text/javascript" src="../lib/jquery.js"></script>
+	<script type="text/javascript" src="../lib/jquery.lazyload.min.js"></script>
+	<script src="../modules/disable/disable.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../assets/api/api.js" ></script>
+	<script src="../modules/encryptConfig/encryptConfig.js" ></script>
+	<script src="../js/toast/toast.js" ></script>
+	<script src="../js/login/login.js" ></script>
+	<script type="text/javascript">
+		document.documentElement.style.fontSize = innerWidth / 12 + "px";
+		//document.documentElement.style.height=innerHeight+"px";
+		window.onresize = function() {
+
+			document.documentElement.style.fontSize = innerWidth / 12 + "px";
+				//document.documentElement.style.height=innerHeight+"px";
+				//console.log(document.documentElement.style.height)
+		}
+	</script>
+</html>

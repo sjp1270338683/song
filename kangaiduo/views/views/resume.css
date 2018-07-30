@@ -1,0 +1,255 @@
+
+html, body {
+         margin: 0;
+         padding: 0;
+         width: 100%;
+         height: 100%;
+}
+
+#Header {
+	color: rgba(255, 255, 255, 1);
+}
+
+#ScrollContent {
+	padding: 2.69em 0em 0em 0em;
+}
+
+.uinn-at4 {
+	padding: 2.69em 0.5em 0em !important;
+}
+
+.uinn-4a {
+	padding-top: 1em !important;
+}
+
+.uinn-a4 {
+	padding: 2.69em .5em 0 !important;
+}
+
+.uinn-pFS1 {
+	padding: 0.72em 0.59em 0.72em 0.6875em;
+}
+
+.t-gra-pFS1 {
+	color: #c0c0c0;
+}
+
+.uinn-a1 {
+	padding: 0.625em;
+}
+
+.umar-at1 {
+	margin-top: 0.625em;
+	margin-left: .3em;
+	margin-right: .3em;
+}
+
+.uinn-4a {
+	padding-top: 3.3em;
+}
+
+.t-gra-pFS1 .t-bla {
+	color: #000;
+}
+
+.angle-right {
+	font-size: 1.5em;
+	padding-left: 0.3em;
+	color: #c0c0c0;
+	height: 0.75em;
+	line-height: 0.75em;
+}
+
+.bgWight {
+	background-color: #fff;
+}
+
+ul, li {
+	list-style: none;
+}
+
+.ub-img4 {
+/* 	background-image: url("../../assets/images/resume/u1910.png"); */
+	height: 3em;
+	width: 3em;
+	text-align: center;
+	line-height: 3em;
+}
+
+.ub-img4 img {
+	display: inline-block;
+	text-align: center;
+	height: 3em;
+	width: 3em;
+	vertical-align: middle;
+}
+
+.photo img {
+	 border: 1px solid #d5d5d5;  
+	 margin-top: 0; 
+	 padding-top:0;
+	height: 120px;
+	width: 120px;
+	max-width: 140px;
+	/*这是DIV的大小*/
+	width: expression(this.width > 140 ? "140px" : this.width);
+    background:url('../../assets/images/photo2.png') no-repeat  ;
+    background-position: -7px -21px;
+     overflow: visible;
+	/*  实现按比例缩放 */
+}
+
+#resC .umar-at1 {
+	margin-top: 0.3em;
+}
+
+#ac {
+	margin-top: 0.3em;
+}
+
+
+/*content内容里的ul*/
+#listview{
+	margin-top:-0.3em;
+}
+/*选项卡内容*/
+.box .table{
+    width: 100%;
+    float: right;
+}
+.selectBox .table div{
+    display: none;
+}
+/*选中样式*/
+#resume_content .active{
+    display: block;
+    color: #169E8C;
+}
+/*列表内容最外边的盒子*/
+.contentList{
+ 	padding: 0em 0.81em 0em 0.81em; 
+}
+/*下边ul数据列表*/
+#listview1 .Annoucement{
+	background-color:#fff;
+	position: relative;
+}
+#listview1 .Annoucement>ul{
+    width: 100%;
+    background-color: #fff;
+   font-family: '微软雅黑 Regular','微软雅黑';
+}
+#listview1 .Annoucement>ul>li{
+    width: 100%;
+    font-size: 1em;
+    border-bottom: 0.0625em solid #ececec;
+    color: #000000;
+    padding: 0.8em 0em 0.8em 0em;
+    position: relative;
+}
+/*包下方两个文字的p标签*/
+.stateGrid{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1em;
+    font-size: 0.875em;
+    color: #a2a2a2;
+}
+.stateGrid:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+/*li中右下角的时间日期*/
+.stateGridDate{
+    color: #a2a2a2;
+}
+.SecondBatches{
+	margin-left: 1em;
+}
+.sameColor{
+	color: red;
+}
+.more{
+	display: inline-block;
+	width: 2.5em;
+	height: 0.5em; 
+	float: right;
+	text-align: center;
+	margin-top: -2em;
+	/*列表右侧三个点禁止换行*/
+	white-space: nowrap;
+	
+}
+.more>i>img{
+	width: .5em;
+	padding-left: 0.3em;
+}
+/*遮罩层*/
+ #listview1 .parentsLi>.CoatingLayer{
+	width: 100%;
+	height: 100%;
+	display:none;
+	position: absolute;
+	top: 0;
+	background-color: rgba(255,253,253,0.6);
+}
+.CoatingLayer>ul{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.CoatingLayer>ul>li{
+	width: 100%;
+	float: left;
+	text-align: center;
+	height: 100%;
+	position: relative;
+}
+.CoatingLayer>ul>li>div{
+	width: 50%;
+	height: 90%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.CoatingLayer>ul>li>div>p{
+	width: 2.5em;
+	height: 2.5em;
+	margin: auto;
+	line-height: 2em;
+	border-radius:100% ;
+}
+.CoatingLayer>ul>li>div>p>span{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	border-radius:100% ;
+/* 	background-color: #c8ecea; */
+}
+.CoatingLayer>ul>li>div>p>span>img{
+	width: 100%;
+	height: 100%;
+}
+.CoatingLayer>ul>li>div>span{
+	font-size: 0.8em;
+}
+.delForImg{
+	margin-top:0.08em;
+  	background: url("../img/resume/del.png")  no-repeat center; 
+    height:1.8em !important;
+    width:1.8em !important;
+    line-height:2.5em !important;
+}
+
+/*添加按钮*/
+.add_button{
+    border-radius: 200px;
+	background-color: #417fcb;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+ 

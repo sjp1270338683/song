@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title>注册</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="../css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/ui-box.css">
+        <link rel="stylesheet" href="../css/ui-base.css">
+        <link rel="stylesheet" href="../css/ui-color.css">
+        <link rel="stylesheet" href="../css/uap.icon.css">
+        <link rel="stylesheet" href="../css/uap.control.css">
+        <link rel="stylesheet" href="../css/common_login_register.css">
+        <link rel="stylesheet" type="text/css" href="../lib/jquery_ui/jquery-ui.min.css"/>
+        <style type="text/css">
+            /*::-webkit-input-placeholder { /* WebKit browsers */
+                /*color:#ededed;*/
+            /*}*/
+           body{
+           	font-size: 1.1em;
+           }
+            .checkbox input[type=checkbox]:checked:before{
+                color:#417fcb;
+            }
+        </style>
+    </head>
+    <body class="um-vp " ontouchstart>
+    
+        <div id="page_0" class="up ub ub-ver bc-bg" tabindex="0">
+            <!--header开始-->
+            <div id="header" class="uh bc-text-head ub bc-head">
+                <div class="nav-btn" id="nav-left">
+                    <div class="fa fa-angle-left fa-2x"></div>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">注册</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+            <div id="content" class="ub-f1 tx-l ub ub-ver c-wh1">
+                <!-- 注册的表单 S -->
+                <div class="ub ub-ver ub-f1 umar-a">
+                    <form>
+                        <div class="uba b-wh umar-a uc-a1 c-wh section_wrap">
+                            <div class="ub ub-ac login_line">
+                                <div class="umhw resuser ub-img umar-l sun-shi">真实姓名：</div>
+                                <div class="ub-f1 uinput uinn">
+                                    <input placeholder="请输入您的真实姓名" id="dr-name"  maxlength="20" value="" type="text" class="uc-a1 t-wh">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uba b-wh umar-a uc-a1 c-wh section_wrap">
+                            <div class="ub ub-ac login_line">
+                                <div class="umhw respwd ub-img umar-l sun-shi">身份证号：</div>
+                                <div class="ub-f1 uinput uinn">
+                                    <input placeholder="请输入您的身份证号" id="dr-nameId" maxlength="18" value="" type="text" class="uc-a1 t-wh">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uba b-wh umar-a uc-a1 c-wh section_wrap">
+                            <div class="ub ub-ac login_line">
+                                <div class="umhw respwd ub-img umar-l sun-shi">确认身份证号：</div>
+                                <div class="ub-f1 uinput uinn">
+                                    <input placeholder="请确认您的身份证号" id="dr-nameIdT" maxlength="18" value="" type="text" class="uc-a1 t-wh">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uba b-wh umar-a uc-a1 c-wh section_wrap">
+                            <div class="ub ub-ac login_line">
+                                <div class="umhw respwd ub-img umar-l sun-shi">密码：</div>
+                                <div class="ub-f1 uinput uinn firstPassword">
+                                    <input style="font-size:.1em" placeholder="包含数字、字母、~!@#$%^&*_-" id="dr-password" minlength="6" maxlength="16" value="" type="password" class="uc-a1 t-wh">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uba b-wh umar-a uc-a1 c-wh section_wrap">
+                            <div class="ub ub-ac login_line">
+                                <div class="umhw respwd ub-img umar-l sun-shi">确认密码：</div>
+                                <div class="ub-f1 uinput uinn rePassword">
+                                    <input placeholder="请确认您的密码" id="dr-passwordT" maxlength="16"  minlength="6"  value="" type="password" class="uc-a1 t-wh">
+                                </div>
+                            </div>
+                        </div>
+                        
+                         <div class="uba b-wh umar-a uc-a1 c-wh section_wrap">
+                            <div class="ub ub-ac login_line">
+                                <div class="umhw respwd ub-img umar-l sun-shi">电子邮箱：</div>
+                                <div class="ub-f1 uinput uinn">
+                                    <input placeholder="请输入您的电子邮箱" id="dr-email"  value="" type="text" class="uc-a1 t-wh">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uba b-wh umar-a uc-a1 c-wh section_wrap">
+                            <div class="ub ub-ac login_line">
+                                <div class="umhw respwd ub-img umar-l sun-shi">微信账号：</div>
+                                <div class="ub-f1 uinput uinn">
+                                    <input placeholder="请输入您的微信账号" id="dr-wx"  value="" type="text" class="uc-a1 t-wh">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uba b-wh umar-a uc-a1 c-wh section_wrap">
+                            <div class="ub ub-ac login_line">
+                                <div class="umhw respwd ub-img umar-l sun-shi">QQ账号：</div>
+                                <div class="ub-f1 uinput uinn">
+                                    <input placeholder="请输入您的QQ账号" id="dr-qq"  value="" type="text" class="uc-a1 t-wh">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uba b-wh umar-a uc-a1 c-wh section_wrap">
+                            <div class="ub ub-ac login_line">
+                                <div class="umhw respwd ub-img umar-l sun-shi">手机号码：</div>
+                                <div class="ub-f1 uinput uinn">
+                                    <input placeholder="请输入您的手机号码" id="dr-phone" maxlength="11" value="" type="text" class="uc-a1 t-wh">
+                                </div>
+                            </div>
+                        </div>
+               
+                        <div class="uba b-wh umar-a uc-a1 c-wh section_wrap">
+                            <div class="ub ub-ac login_line">
+                                <div class="umhw respwd ub-img umar-l sun-shi">短信验证码：</div>
+                                <div class="ub-f1 uinput uinn">
+                                    <input  placeholder="请输入验证码"  id="codeInput" maxlength="6" value="" type="text" class="form_code uc-a1 t-wh">
+                                    <div  id="r-picture"  class="code_wrap">
+                                    	<input type="button" id="changeOne1" class="l-changeOne changeOne" value="获取验证码" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uba b-wh umar-a uc-a1 c-wh ">
+                           <div class="ub ub-ac bottom_wrap">
+                                 <div class="checkbox umar-r" style="width:100%;">
+                                     <input id="dr_cbx" type="checkbox" style="width:1.6em" class="uabs ub-con" ></input>
+                                     <span class="licese_account">我已了解并同意
+                                     <span class="register_read register_account_licese_one"   onclick="openWin('goodFaithCommitment')">《诚信承诺》</span>
+                                     <span class="register_read register_account_licese_two"   onclick="openWin('registrationPolicy')">《注册须知》</span>
+                                     <span class="register_read register_account_licese_three" onclick="openWin('noticeOfApplication')">《应聘须知》</span>
+                                     </span>
+                                 </div>
+                            </div>
+                        </div>
+                        
+                        <div class="uin uinn">
+                            <div class="btn ub ub-ac bc-text-head ub-pc bc-btn uc-a1 bold login_button"  id="dr-register"   >
+                                                                                                         立即注册
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+                <!-- 注册的表单 E -->
+            </div>
+            <div id="footer" class=""></div>
+        </div>
+            <!--content结束-->
+        </div>
+        <p id="m-TopTip" class="m-tips"></p>
+    </body>
+    <script src="../lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../lib/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../lib/jquery_ui/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../modules/disable/disable.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/util.js" ></script>
+	<script src="../assets/api/api.js" ></script>
+	<script src="../modules/encryptConfig/encryptConfig.js" ></script>
+	<script src="../js/toast/toast.js" ></script>
+	<script src="register/register.js"></script>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../css/fonts/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/ui-box.css">
+		<link rel="stylesheet" href="../css/ui-base.css">
+		<link rel="stylesheet" href="../css/ui-color.css">
+		<link rel="stylesheet" href="../css/uap.icon.css">
+		<link rel="stylesheet" href="../css/uap.control.css">
+		<link rel="stylesheet" href="school/css/school.css">
+		<link rel="stylesheet" href="resume.css">
+		<link href="../modules/datePicker/iosSelect.css" rel="stylesheet" type="text/css">
+		<link href="../css/loadding.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body class="" ontouchstart>
+		<div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+			<div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header">
+				<div id="header" class="uh bc-text-head ub bc-head">
+					<div class="nav-btn" id="nav-left">
+						<div class="fa fa-angle-left fa-2x"></div>
+					</div>
+					<h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">教育经历-选择学校</h1>
+					<div class="nav-btn nav-bt" id="nav-right">
+					 <div class="ub-img1 icon-add ulev1"></div>
+					</div>
+				</div>
+			</div>
+			<form action="">
+				<div class="" data-control="CONTENT" id="ScrollContent">
+					<div class="scrollbox">
+						<div class="box_bounce ub ub-ver ub-pc">
+							<div class="ub-f1"></div>
+							<div class="bounce_status">
+								下拉更新......
+							</div>
+							<div class="bounce_status">
+								松手更新......
+							</div>
+							<div class="bounce_status">
+								更新中......
+							</div>
+						</div>
+
+						<div class="ub ub-ver" id="school_0">
+							<!--列表-->
+							<div class="ub ub-ver uinn-a1 ub-f1" id="searchbox">
+
+								<ul class="ubb ub bc-border  ub-ac uinn-a9">
+									<li class="ub-f1 ut-s t-gra4 ulev-app1">
+										学校所在地
+									</li>
+									<li class="tx-r ulev-app1 t-gra4" id="selectSchool_place">
+										<div class="pc-box">
+											<input type="hidden" id="school_place" name="school_place" value="">
+											<span id="show_school_place" v-on:click="getschool_place">请选择</span>
+
+										</div>
+
+									</li>
+									<li class="ulev1 ub fa fa-angle-right t-gra4" style="margin-left: 0.2em;"></li>
+								</ul>
+
+								<div class="ub-f1">
+									<div class="sc-bg-active uinput ub ub-f1  bc-border uba">
+										<div class="uinn fa fa-search sc-text"></div>
+										<input placeholder="请输入搜索学校名称" id="school_name" type="text" class="ub-f1">
+									</div>
+								</div>
+
+ 
+								<div class="uin uinn" style="margin: 0.5em 0.5em; height: 100%;" align="center" id="sbtn">
+									<div
+										class="btn ub ub-ac bc-text-head ub-pc bc-btn uc-a1 bold add_button "
+										id="btn2" v-on:click="forSearch">查询</div>
+								</div>
+								
+								<br>
+
+								<div id="listview2" class="bc-border ubb" style="margin: 0.5em 0.5em;display: none;"></div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
+		<div class="container"></div>
+		<p id="m-TopTip" class="m-tips"></p>
+		<script src="../lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/api/api.js"></script>
+		<script src="../modules/toast/toast.js"></script>
+		<!--<script src="../js/uap/template.import.js"></script>-->
+		<script src="../js/util.js"></script>
+		<script src="../modules/toast/toast.js"></script>
+		<script src="school/js/school.js"></script>
+		<script src="../js/uap/vue.min.js"></script>
+		<script src="../modules/datePicker/iosSelect.js" type="text/javascript"></script>
+		<script src="../modules/datePicker/zepto.js" type="text/javascript"></script>
+		<script src="../modules/datePicker/datePicker.js" type="text/javascript"></script>
+	</body>
+	<script type="text/javascript">
+(function($) {	
+	   $("#nav-left").on("click", function() {
+ 			 $(window).attr('location','./education_forUpdate.html')
+			Util.closeWin('school_0');
+		});
+//		uap.button("#nav-right", "btn-act", function(e) {
+//			uap.window.open("school_add", "school_add.html");
+//			Util.closeWin('school_0');
+//		});
+		
+		
+		var qualifi_id = Util.getStorage('qualifi_id');
+		
+		var token = Util.getStorage('token');
+		//alert("education_data:" + education_data);
+		//绑定保存事件
+		var vump = new Vue({
+			el: '#school_0',
+			beforeCreate: function() {
+				getBaseData();
+			},
+			data: {
+				//school_name:'',
+				//school_place:'',
+				school_place_data: []
+			},
+			methods: {
+				showData: function() {
+					getBaseData();
+					//getSchoolData();
+				},
+				getschool_place: function() {
+					var school_place_data = vump.school_place_data;
+					if(school_place_data) {
+						//console.log("school_place_data school_place_data:"+JSON.stringify(school_place_data));
+						// 动态加载学历状况 字典  
+						getDicData("show_school_place", "school_place", school_place_data,this);
+
+					}
+				},
+			    forSearch:function() {
+		               //绑定查询事件
+					//debugger;
+					var school_place = $("#school_place").val();
+					var school_name = $("#school_name").val();
+					//alert(school_place);
+		//alert(school_name);
+					if(!school_name || "undefined" == school_name) {
+						school_name = "";
+					}
+					if(school_place == null || school_place == "") {
+						toast.setToast('请先选择学校所在地！','three')
+					} else {
+						console.log(school_name)
+						//if(school_place) {
+						//调用接口查询学校列表
+						getSchoolData(school_place, school_name);
+						//}
+		
+					}
+		        }
+			}
+		});
+	
+		//加载数据
+		function getBaseData() {
+          // alert(token);
+			var url = $api + 'dict/' + token + '/?dict_codes=308030,' + new Date().getTime();
+			//var url = $api + 'education/' + token + '/'+qualifi_id+'?dict_codes=308004,308006,308027,308009,308032,308026,' + new Date().getTime();
+			console.log("url1010101010110:" + url);
+			var getresInfo = {
+				url: url,
+				type: 'GET',
+				dataType: "json",
+				success: function(data) {
+					// console.log('这个是用于用户登录后默认简历中心信息查询接口------>success'+data);
+					// data=JSON.parse(data);
+					 if(data.retcode == 200) {
+
+						var json = data.retdata;
+			 
+						var dic_data = json.dict_data;
+						//console.log("dic_data:" + JSON.stringify(dic_data));
+						if(dic_data) {
+							 
+							var dic_school_place = dic_data["308030"];
+							var school_place_value = "";
+							if(dic_school_place) {
+								//给vue绑定元素赋值
+
+								//遍历字典，显示中文
+								for(var s in dic_school_place) {
+									var arr = {
+										"id": s,
+										"value": dic_school_place[s]
+									};
+									// console.log("arrarrarr:"+arr);
+
+									vump.school_place_data.push(arr);
+								}
+								//console.log("vump.school_place_data:"+JSON.stringify(vump.school_place_data));
+								//   								 
+							}
+
+						} 
+
+			      }else if(data.retcode=='ERRCODE_00017'){
+					  
+	                        toast.setToast(data.retmsg, 'two');
+                            Util.newLocation("two","school_0");
+                     
+					}else {
+	  
+						toast.setToast(data.retmsg, 'five');
+					}
+
+				},
+				error: function(data) {
+					toast.setToast(data.retmsg, 'five');
+				}
+
+			};
+		
+		    //uap.ready(function() {
+          		$.ajax(getresInfo);
+		    //});
+
+		}
+		
+	
+
+//		var lv1 = uap.listview({
+//			selector: "#listview2",
+//			type: "thickLine",
+//			hasTouchEffect: true,
+//			hasIcon: false,
+//			hasAngle: true,
+//			hasSubTitle: false,
+//			multiLine: 3,
+//			hasRadiobox: true,
+//			align: 'left'
+//		});
+//		lv1.on("click", function(obj, data, subObj) {
+//							 
+//					if(data.name) {
+//						//var url3 = "education_forUpdate.html?qualifi_id=" + qualifi_id + "&isforUpdate=true&school_code=" + data.id + "&school_name=" + data.name;
+//						var pageId = "education_update";
+//						//url3 = encodeURI(url3);
+//						//console.log("url3:" + url3);
+//				 
+//						uap.window.evaluateScript({
+//							name: pageId,
+//							scriptContent: "initSchool('" + data.name + "','" + data.id + "')"
+//						});
+//						//uap.window.open(pageId, url3, 10);
+//						Util.closeWin('school_0');
+//					}
+//		
+//			});
+		//查询学校名称和代码
+		function getSchoolData(school_place, school_name) {
+			var sname = "";
+			if(school_name != null && school_name != "" && "undefined" != school_name) {
+				sname = encodeURI(school_name);
+			}
+			if(school_place){
+		
+			
+			var url = $api+'schoolapply/'+token+'?school_place='+school_place+'&school_name='+sname;
+
+			var getSchData = {
+				url: url,
+				type: 'GET',
+				dataType: "json",
+				success: function(data) {
+					console.log(data);
+					// data=JSON.parse(data);
+					//debugger;
+					if(data.retcode == 200) {
+						var json = data.retdata;
+						//console.log('333333333333333'+JSON.stringify(json));
+						var school_apply_data = json.school_apply_data;
+						//console.log("school_apply_data:" + JSON.stringify(school_apply_data));
+						if(school_apply_data) {
+							$("#listview2").show();
+							//sv1.dic_school = school_apply_data;
+							var listData = [];
+							for(var i in school_apply_data) {
+
+								var apply_no = school_apply_data[i].apply_no;
+								var school_name = school_apply_data[i].school_name;
+								var list = {
+									title: '<div class="ulev3" >' + school_name + '</div>',
+									id: apply_no,
+									name: school_name
+									//describe: '<div   class="ulev2" v-longtap="{fn:vuetap,id:'+id+'}"   >' + school_name + '</div>'
+								}
+								listData.push(list);
+
+							}
+
+							lv1.set(listData);
+
+							
+
+						} else {
+							$("#listview2").hide();
+							toast.setToast(data.retmsg, 'five');
+						}
+
+				    }else if(data.retcode=='ERRCODE_00017'){
+	                        toast.setToast(data.retmsg, 'two');
+                            Util.newLocation("two","school_0");
+                      
+					} else {
+						$("#listview2").hide();
+						toast.setToast(data.retmsg, 'five');
+
+					}
+
+				},
+				error: function(e) {
+					$("#listview2").hide();
+					toast.setToast("请求失败", 'five');
+				}
+
+			};
+		
+			
+		    //uap.ready(function() {
+          			$.ajax(getSchData);
+		    //});
+		    
+		   	}else{
+		   	
+		     	toast.setToast("请求参数为空", 'five');
+		   	} 
+		}
+		
+	})($);		
+	</script>
+
+</html>

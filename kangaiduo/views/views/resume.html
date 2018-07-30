@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/resume.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/toast.css"/>
+		<link rel="stylesheet" href="../css/fonts/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="login_box">
+			<div id="header" class="login_header">
+                <div class="nav-btn" id="nav-left">
+                    <div style="font-size: .8rem;" class="fa fa-angle-left fa-2x"></div>
+                </div>
+            	<p>简历</p>
+            	<div class="nav-btn nav-bt" id="nav-right"></div>
+			</div>
+			<div class="login_nav">
+				<div class="head_port">
+					<img class="head_img" id="head_img" src=""/>
+				</div>
+				<div class="nav_team">
+					<p class="nav_name" id="user_name">张三</p>
+					<p class="nav_xq">欢迎来到简历中心</p>
+				</div>
+			</div>
+			<div id="login_section" class="login_section">
+				
+			</div>
+			<div class="zhan"></div>
+			<div class="login_footer">
+				<p id="exit_login">退出当前账号</p>
+			</div>
+		</div>
+		<div class="tan">
+			<div class="tan_c">
+				<p>是否退出登录</p>
+				<div>
+					<p id="yes">是</p>
+					<p id="fou">否</p>
+				</div>
+			</div>
+		</div>
+		<p id="m-TopTip" class="m-tips"></p>
+	<script src="../lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../lib/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../lib/jquery_ui/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../modules/disable/disable.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/util.js" ></script>
+	<script src="../assets/api/api.js" ></script>
+	<script src="../modules/encryptConfig/encryptConfig.js" ></script>
+	<script src="../js/toast/toast.js" ></script>
+	<script src="resume/resume.js"></script>
+	<script type="text/javascript">
+		document.documentElement.style.fontSize = innerWidth / 12 + "px";
+		//document.documentElement.style.height=innerHeight+"px";
+		window.onresize = function() {
+
+			document.documentElement.style.fontSize = innerWidth / 12 + "px";
+				//document.documentElement.style.height=innerHeight+"px";
+				//console.log(document.documentElement.style.height)
+		}
+	</script>
+</html>
