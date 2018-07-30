@@ -235,7 +235,7 @@
 			error: function(data) {
 				toast.setToast(data.retmsg, 'five');
 			}
-
+		}
 		
 
 		$.ajax(getresInfo);
@@ -256,12 +256,7 @@
 			// 数组中不存在该元素
 			return -1;
 		}
-	}else {
-		toast.setToast('登录失效请重新登录', 'three');
-		setTimeout(function (){
-			$(window).attr("location","./login.html");
-		},5000)
-	}
+
 	
 	function ckBaseReq() {
 		var s = "";
