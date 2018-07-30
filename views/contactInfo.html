@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+
+	<head>
+		<title>联系方式</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../css/fonts/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/ui-box.css">
+		<link rel="stylesheet" href="../css/ui-base.css">
+		<link rel="stylesheet" href="../css/ui-color.css">
+		<link rel="stylesheet" href="../css/uap.icon.css">
+		<link rel="stylesheet" href="../css/uap.control.css">
+		<link rel="stylesheet" href="../css/ui-tab.css">
+		<link href="../modules/datePicker/iosSelect.css" rel="stylesheet" type="text/css">
+		<link href="../css/loadding.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			.required {
+				content: "*";
+				color: #ff4949;
+				margin-right: 4px;
+			}
+			.ut-s{
+				text-align: right;
+			}
+			.uinn4 {
+			    padding: 0 1.5em;
+			}
+			.uinput input, .uinput textarea{
+				padding: .1em 0;
+			}
+			.footer_btn{
+				width: 21em;
+			    border-radius: .3em!important;
+			    background-color: #417fcb;
+			    height: 2.3em;
+			    line-height: 2.3em;
+			    text-align: center;
+			    color: white;
+			    margin: 1.1em auto;
+			}
+		</style>
+
+	</head>
+
+	<body class="um-vp ">
+		<div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+			<div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header">
+				<div id="header" class="uh bc-text-head ub bc-head">
+					<div class="nav-btn" id="nav-left">
+						<div class="fa fa-angle-left fa-2x"></div>
+					</div>
+					<h1 class="ut ub-f1 ulev-3 ut-s tx-c" style="padding: 0.6em 5em 0.6em;" tabindex="0">联系方式</h1>
+					<div class="nav-btn nav-bt" id="nav-right">
+						<div class="ub ulev3" id="save" v-on:click="forSave">保存</div>
+					</div>
+				</div>
+			</div>
+			<!--header结束-->
+			<!--content开始-->
+			<br>
+			<form>
+				<!-- 			<div class="content" data-control="CONTENT" id="ScrollContent"> -->
+				<div class="content" id="content_c">
+					<!-- 				<div class="scrollbox"> -->
+					<div>
+						<div class="box_bounce ub ub-ver ub-pc">
+							<div class="ub-f1"></div>
+							<div class="bounce_status">下拉更新......</div>
+							<div class="bounce_status">松手更新......</div>
+							<div class="bounce_status">更新中......</div>
+						</div>
+						<div class="ub ub-ver">
+							<div class="uinn-a1 ub ub-ac">
+								<div class="t-red-form2 umar-r-form">&nbsp;</div>
+								<div class="t-gra4 ulev-1">
+									<input type="hidden" v-model="member_id" name="member_id" id="member_id" value="">
+								</div>
+							</div>
+							<div class="uinn-a7" id="contactInfo">
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1"><span class="required">*</span>手机号码</li>
+									<li class="tx-l t-blu ulev-app1 ub-ae">
+										<div class="uinput uinn4">
+											<input placeholder="请输入内容" v-model="mobile" name="mobile" id="mobile" type="text"  value="" class="tx-l ">
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1"><span class="required">*</span>QQ账号</li>
+									<li class="tx-l t-blu ulev-app1 ub-ae">
+										<div class="uinput uinn4">
+											<input placeholder="请输入内容" v-model="qq_no" name="qq_no" id="qq_no" type="text" value=""   class="tx-l ">
+										</div>
+									</li>
+								</ul>
+
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1"><span class="required">*</span>微信账号</li>
+									<li class="tx-l t-blu ulev-app1 ub-ae">
+										<div class="uinput uinn4">
+											<input placeholder="请输入内容" v-model="we_chat" name="we_chat" id="we_chat" type="text" value=""  class="tx-l ">
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1"><span class="required">*</span>电子邮箱</li>
+									<li class="tx-l t-blu ulev-app1 ub-ae">
+										<div class="uinput uinn4">
+											<input placeholder="请输入内容" v-model="email" name="email" id="email" type="text" value="" class="tx-l ">
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1"><span class="required">*</span>通信地址</li>
+									<li class="tx-l t-blu ulev-app1 ub-ae">
+										<div class="uinput uinn4">
+											<input placeholder="请输入内容" v-model="address" name="address" id="address" type="text" value=""  maxlength="200" class="tx-l ">
+										</div>
+									</li>
+								</ul>
+
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1"><span class="required">*</span>邮政编码</li>
+									<li class="tx-l t-blu ulev-app1 ub-ae">
+										<div class="uinput uinn4">
+											<input placeholder="请输入内容" v-model="post_code" name="post_code" id="postcode" type="text" value=""   class="tx-l ">
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="footer_btn">
+								下一步
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
+		<div class="container" id="container"></div>
+		<p id="m-TopTip" class="m-tips"></p>
+		<script src="../assets/api/api.js"></script>
+		<script src="../modules/toast/toast.js"></script>
+		<script src="../lib/jquery.js"></script>
+		<!--<script src="../vendor/lib/mobileSelect.js"></script>-->
+		<!--<script src="../vendor/lib/selectDate.js"></script>-->
+		<script src="../js/util.js"></script>
+		<script src="../modules/datePicker/iosSelect.js" type="text/javascript"></script>
+		<script src="../modules/datePicker/zepto.js" type="text/javascript"></script>
+		<script src="../modules/datePicker/datePicker.js" type="text/javascript"></script>
+		<script src="../js/uap/vue.min.js"></script>
+
+	</body>
+	<script type="text/javascript">
+		(function($) {
+			$("#nav-left").on("click",function (){
+				$(window).attr("location","./resume.html")
+			})
+			var token = localStorage.getItem('token');
+			var project_progress;
+
+			// var token="807a43d67fb34f6b97e6d71da3c85cd7";
+			//定义Vue组件
+			var vump = new Vue({
+				el: "#contactInfo",
+				beforeCreate: function() {
+					getData();
+				},
+				data: {
+					member_id: '',
+					tel: '',
+					mobile: '',
+					email: '',
+					address: '',
+					post_code: '',
+					qq_no: '',
+					we_chat: ''
+				},
+				methods: {
+					showData: function() {
+						getData();
+					}
+
+				}
+			});
+
+			//加载数据
+			function getData() {
+				var url = $api + 'resume/base/' + token + '?' + new Date().getTime();
+				console.log("url66666666666:" + url);
+				var getresInfo = {
+					url: url,
+					type: 'GET',
+					dataType: "json",
+					success: function(data) {
+						// console.log('这个是用于用户登录后默认简历中心信息查询接口------>success'+data);
+						// data=JSON.parse(data);
+						if(data.retcode == 200) {
+							var json = data.retdata;
+							var resume_base = json.resume_base;
+							project_progress = resume_base.resume_progress
+							var tel = resume_base.tel;
+							var qq = resume_base.qq_no;
+							var we_chat = resume_base.we_chat;
+							if("undefined" == tel || tel == null || tel == "null") {
+								tel = "";
+							}
+							//console.log("tel22222:"+tel);
+							if("undefined" == qq || qq == null || qq == "null") {
+								qq = "";
+							}
+							if("undefined" == we_chat || we_chat == null || we_chat == "null") {
+								we_chat = "";
+							}
+							//联系方式
+							vump.member_id = resume_base.member_id;
+							vump.mobile = resume_base.mobile;
+							vump.tel = tel;
+							vump.email = resume_base.email;
+							vump.post_code = resume_base.post_code;
+							vump.address = resume_base.address;
+							vump.qq_no = qq;
+							vump.we_chat = we_chat;
+							
+				     }else if(data.retcode=='ERRCODE_00017'){
+	                        toast.setToast(data.retmsg, 'two');
+                            Util.newLocation("two","contactInfo");
+                     
+					}else {
+						toast.setToast(data.retmsg, 'five');
+					}
+
+					},
+					error: function(data) {
+						toast.setToast(data.retmsg, 'five');
+					}
+
+				};
+				$.ajax(getresInfo);
+
+			}
+			$(".footer_btn").on("click",function (){
+				console.log(project_progress)
+				if(checkform() && project_progress == "100000000") {
+					$(window).attr("location","./education.html");
+				}else{
+					toast.setToast('请先保存联系方式', 'three');
+				}
+			})
+			//绑定保存事件
+			var savedata = new Vue({
+				el: '#save',
+				methods: {
+					forSave: function() {
+						save();
+					}
+				}
+			});
+			//保存方法 
+			//保存方法 
+			function save() {
+				if(checkform()) {
+					var mobile = vump.mobile + "";
+					var email = vump.email;
+					var address = vump.address;
+					var postcode = vump.post_code+ "";
+					var qq_no = vump.qq_no;
+					var we_chat = vump.we_chat;
+					var member_id = vump.member_id;
+					//特殊的参数的处理
+					if(Util.checkValue([mobile, email, address, postcode, qq_no, we_chat])) {
+						toast.setToast('信息内包含特殊字符，请重新输入', 'three');
+						$("#save").attr("disabled", false);
+						return;
+					}
+                     $("#save").attr("disabled",false);
+                     $("#save").css("color","#cccccc");
+					var dataPam = JSON.stringify({
+						member_id: member_id,
+						mobile: mobile,
+						email: email,
+						address: address,
+						post_code: postcode,
+						qq_no: qq_no,
+						we_chat: we_chat
+					});
+					var token = localStorage.getItem('token')
+					if(token) {
+						//调用修改联系方式接口
+						var saveUrl = $api + "resume/contract/" + token + '?' + new Date().getTime();
+						console.log("saveUrl:" + saveUrl);
+						var setObj = {
+							url: saveUrl,
+							type: "POST",
+							contentType: 'application/json;charset=utf-8',
+							dataType: "json",
+							data: dataPam,
+							success: function(data) {
+								if(data.retcode == 200) {
+									toast.setToast(data.retmsg, 'five');
+									var r=data.retdata.resume_base.resume_progress;
+									if(r){
+										localStorage.setItem("resume_progress", r);
+									}
+									$("#save").attr("disabled", false);
+									setTimeout(function() {
+										localStorage.getItem('fromLogin',1);
+									}, 200);
+
+						       }else if(data.retcode=='ERRCODE_00017'){
+							      // $("#load1").hide();
+			                        toast.setToast(data.retmsg, 'two');
+		                            Util.newLocation("two","contactInfo");
+								} else {
+									console.log('验证修改简历基本信息的接口是否成功------>success');
+									toast.setToast(data.retmsg, 'five');
+								}
+							},
+							error: function(e){
+							     Util.closeLoading();
+								 toast.setToast("网络错误，请重试", 'five');
+								
+							}
+						};
+
+						$.ajax(setObj);
+
+					}else {
+                      Util.closeLoading();
+					  toast.setToast('登录过期已过期，请重新登录！','three');
+					  localStorage.clear();//清空所有缓存
+					  Util.newLocation('three','contactInfo');	
+
+				   }
+
+				} else {
+
+
+				}
+
+			}
+			function AntiSqlValid(oFieldVal){
+		    	 //防止SQL注入
+		       var  re= /select|update|insert|delete|exec|count|'|"|=|;|>|<|%/i;
+		       if(re.test(oFieldVal) ) {
+		    		 toast.setToast('请您不要输入特殊字符和SQL关键字！！','three');
+		            return false;
+		      }
+		       
+		       return true;
+		    }
+			// 判断是否为手机号  
+			function isPoneAvailable(str) {  
+		        var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;  
+		        if(str){
+		            if (!myreg.test(str)) {  
+		        		toast.setToast('请填写正确的手机号码！','three');
+		                return false;  
+		            } else {  
+		                return true;  
+		            }  
+		        	
+		        }
+		   
+		    }
+			function isQQ(qq){  
+		    	 if(qq){
+		    	      if (qq.search(/^[1-9]{1}[0-9]{4,16}$/) !=-1){  
+		    		       return true;   
+		    	       }else{   
+		    	    	  toast.setToast('请填写正确的qq号码！','three');
+		    	         return false;
+		    	       }
+		    	 }
+		 
+		  
+		    }
+			function isWe_chat(we_chat){
+	    	 	if(we_chat){
+	    			var reg = /^[a-zA-Z]{1}[-_a-zA-Z0-9]{2,19}$/;
+    		        if (!reg.test(we_chat)) {  
+    		        	toast.setToast('请填写正确的微信号码！','three');
+    		            return false;  
+    		        } else {  
+    		            return true;  
+    		        } 
+		    	 }
+		     
+		    }
+			// 判断是否为电子邮箱
+		    function isEmailable(email) {  
+		    	var mailReg = /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/; 
+		    	 if(email){
+		    	     if (!mailReg.test(email)){
+		    	    	  toast.setToast('请填写正确的电子邮箱！','three');
+		    	    	  return false;  
+		    	      } else {  
+		    	          return true;  
+		    	      } 
+		    	 }
+		  
+		    }
+		    // 判断是否为邮政编码
+		    function isPostCodeable(postCode) { 
+		    	 if(postCode){
+		    		   	var reg = /^[0-9]{6}$/;
+		    		      if (!reg.test(postCode)) {
+		    		    	  toast.setToast('请填写正确的E邮政编码！','three');
+		    		          return false;  
+		    		      } else {  
+		    		          return true;  
+		    		      } 
+		    	 }
+		  
+		    }
+			function checkform() {
+				var mobile = vump.mobile;
+				if(mobile == null || mobile == "") {
+					toast.setToast('手机号码不能为空！','three');
+					return false;
+				} else if(mobile && !isPoneAvailable(mobile)) {
+					return false;
+				}else if(mobile && !AntiSqlValid(mobile)){
+				  toast.setToast('请您不要输入特殊字符和SQL关键字!','three');
+				  return false;
+			    }
+				
+				var email = vump.email;
+				if(email == null || email == "") {
+					toast.setToast( '电子邮箱不能为空！','three');
+					return false;
+				} else if(email && !isEmailable(email)) {
+					return false;
+			    }else if(email && !AntiSqlValid(email)){
+				  toast.setToast('请您不要输入特殊字符和SQL关键字!','three');
+				  return false;
+			    }
+			    
+				var address = vump.address;
+				if(address == null || address == "") {
+					toast.setToast('通讯地址不能为空！','three');
+					return false;
+			    }else if(address && !AntiSqlValid(address)){
+				  toast.setToast('请您不要输入特殊字符和SQL关键字!','three');
+				  return false;
+			    }
+				var postcode = vump.post_code;
+				if(postcode == null || postcode == "") {
+					toast.setToast('邮政编码不能为空！','three');
+					return false;
+				} else if(postcode && !isPostCodeable(postcode)) {
+					return false;
+				}else if(postcode && !AntiSqlValid(postcode)){
+				  toast.setToast('请您不要输入特殊字符和SQL关键字!','three');
+				  return false;
+			    }
+				
+				var qq_no = vump.qq_no;
+				if(qq_no && !isQQ(qq_no)) {
+					return false;
+				}else if(qq_no && !AntiSqlValid(qq_no)){
+				  toast.setToast('请您不要输入特殊字符和SQL关键字!','three');
+				  return false;
+			    }else if(qq_no == null || qq_no == "") {
+					toast.setToast('QQ号码不能为空！','three');
+					return false;
+				}
+			    
+				var we_chat = vump.we_chat;
+				if(we_chat && !isWe_chat(we_chat)) {
+					return false;
+				}else if(we_chat && !AntiSqlValid(we_chat)){
+				  toast.setToast('请您不要输入特殊字符和SQL关键字!','three');
+				  return false;
+			    }else if(we_chat == null || we_chat == "") {
+					toast.setToast('微信号码不能为空！','three');
+					return false;
+				}
+				
+ 
+				return true;
+
+			}
+		})($);
+	</script>
+
+</html>

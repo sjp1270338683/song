@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+
+	<head>
+		<title>教育经历新增页面</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../css/fonts/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/ui-box.css">
+		<link rel="stylesheet" href="../css/ui-base.css">
+		<link rel="stylesheet" href="../css/ui-color.css">
+		<link rel="stylesheet" href="../css/uap.icon.css">
+		<link rel="stylesheet" href="../css/uap.control.css">
+		<link rel="stylesheet" href="../css/ui-tab.css">
+		<link rel="stylesheet" href="../modules/datePicker/iosSelect.css" type="text/css">
+		<link rel="stylesheet" href="../css/loadding.css" type="text/css">
+		<link rel="stylesheet" href="../css/weui.css">
+		<style type="text/css">
+			.required {
+				content: "*";
+				color: #ff4949;
+				margin-right: 4px;
+			}
+		</style>
+
+	</head>
+
+	<body class="um-vp">
+		<div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+			<div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header">
+				<div id="header" class="uh bc-text-head ub bc-head" style='line-height: 1.425em !important;'>
+					<div class="nav-btn" id="nav-left">
+						<div class="fa fa-angle-left fa-2x"></div>
+					</div>
+					<h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">外语能力</h1>
+					<div class="nav-btn nav-bt" id="nav-right">
+						<div class="ub ulev3" id="save" v-on:click="forSave">保存
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--header结束-->
+			<!--content开始-->
+			<form autocomplete="on" method="post" enctype="multipart/form-data">
+				<div class="content" id="content_c">
+
+					<div>
+						<div class="box_bounce ub ub-ver ub-pc" id="">
+							<div class="ub-f1"></div>
+							<div class="bounce_status">下拉更新......</div>
+							<div class="bounce_status">松手更新......</div>
+							<div class="bounce_status">更新中......</div>
+						</div>
+						<div class="ub ub-ver" id="language_update">
+							<div class="uinn-a1 ub ub-ac">
+								<div class="t-red-form2 umar-r-form">&nbsp;</div>
+								<div class="t-gra4 ulev-1">
+									<input type="hidden" v-model="language_id" name="language_id" id="language_id" value="">
+
+								</div>
+							</div>
+							<br>
+							<div class="uinn-a7">
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1">外语语种<span class="required">*</span></li>
+									<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae">
+										<div class="pc-box">
+											<input type="hidden" v-model="language_category_name" id="language_category_name" name="language_category_name" value="">
+											<span id="show_lc_name" v-on:click="getlc_name">请选择</span>
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1">外语水平级别<span class="required">*</span></li>
+									<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae">
+										<div class="pc-box">
+											<input type="hidden" v-model="foreign_grade" id="foreign_grade" name="foreign_grade" value="">
+											<span id="show_foreign_grade" v-on:click="getForeign_grade">请选择</span>
+
+										</div>
+									</li>
+
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ulev-app1">熟练程度<span class="required">*</span></li>
+									<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae">
+										<div class="uinput uinn4">
+											<input type="hidden" v-model="proficiency" id="proficiency" name="proficiency" value="">
+											<span id="show_proficiency" v-on:click="getProficiency">请选择</span>
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1">证书获得时间<span class="required">*</span></li>
+									<li id="selectAuth_date">
+										<div class="pc-box">
+											<input type="hidden" v-model="auth_date" id="auth_date" value="">
+											<div data-year="" data-month="" data-date="" id="show_auth_date" v-on:click="getAuth_date">请选择</div>
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1">认证机构<span class="required">*</span></li>
+									<li class="tx-r t-blu ulev-app1 ub-ae">
+										<div class="uinput uinn4">
+											<input type="text" placeholder="请输入内容" v-model="auth_org_name" id="auth_org_name" name="auth_org_name" maxlength="20"  value="" class="tx-r ">
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1">成绩<span class="required">*</span></li>
+									<li class="tx-r t-blu ulev-app1 ub-ae">
+										<div class="uinput uinn4">
+											<input type="text" placeholder="请输入内容" v-model="score" id="score" name="score" maxlength="5" value="" class="tx-r ">
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ulev-app1">证书编号<span class="required">*</span></li>
+									<li class="tx-r t-blu ulev-app1 ub-ae">
+										<div class="uinput uinn4">
+											<input placeholder="请输入内容" type="text" maxlength="20"  v-model="cert_no" id="cert_no" name="cert_no" value="" class="tx-r ">
+										</div>
+									</li>
+								</ul>
+								<ul class="ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1">上传证书或成绩单</li>
+									<li id="select_is_most_education">
+										<div class="uinput uinn4">
+											<input v-model="attach_id" name="attach_id" id="attach_id" type="hidden" class="tx-r ">
+											<input v-model="attach_title" name="attach_title" id="attach_title" type="hidden" class="tx-r ">
+											<input v-model="attach_url" name="attach_url" id="attach_url" type="hidden" class="tx-r ">
+											<!-- <input v-model="attach_url" name="attach_url" id="attach_url" type="file" class="tx-r "> -->
+											<div id="MEET_IMG_Btn">
+												请选择
+											</div>
+										</div>
+									</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="tx-r t-blu ulev-app1 ub-ae">
+										<!-- weui的HTML代码  -->
+										<div class="weui-cells weui-cells_form" style="margin-top: 0em;width: 100%;">
+											<div class="weui-cell">
+												<div class="weui-cell__bd">
+													<div class="weui-uploader">
+														<div class="weui-uploader__bd" id="weui-uploader__bd">
+															<ul class="weui-uploader__files" id="MEET_IMG_Files"   >
+															
+															 
+															</ul>
+															<!-- 															<div class="weui-uploader__input-box" id="MEET_IMG_Btn"> -->
+
+															<!-- 															</div> -->
+															<!-- 										                         <div class="weui-uploader__input" id="MEET_IMG_Btn"> -->
+
+															<!-- 																 </div> -->
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="ub-f1 ut-s ulev-app1">备注</li>
+								</ul>
+								<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+									<li class="tx-r t-blu ulev-app1 ub-ae">
+										<div class="uinput uinn4">
+											<textarea name="remark" id="remark"  maxlength="50"  v-model="remark" cols="40 " rows="2" theme="simple" cssStyle="width:90%" placeholder="请输入内容" class="tx-l"></textarea>
+										</div>
+									</li>
+								</ul>
+
+								<div class="container"></div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- weui的HTML代码 图片点击放大 删除  -->
+					<div class="weui-gallery" id="gallery">
+						<span class="weui-gallery__img" id="galleryImg"></span>
+						<div class="weui-gallery__opr">
+							<a href="javascript:" class="weui-gallery__del"> <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+			</form>
+		</div>
+
+		<p id="m-TopTip" class="m-tips"></p>
+		<br><br>
+		<script src="../lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/api/api.js"></script>
+		<script src="../modules/toast/toast.js"></script>
+		<script src="../vendor/lib/mobileSelect.js"></script>
+		<script src="../vendor/lib/selectDate.js"></script>
+		<script src="../js/util.js"></script>
+		<script src="../modules/datePicker/iosSelect.js" type="text/javascript"></script>
+		<script src="../modules/datePicker/zepto.js" type="text/javascript"></script>
+		<script src="../modules/datePicker/datePicker.js" type="text/javascript"></script>
+		<script src="../js/uap/vue.min.js"></script>
+		<script src="../js/uap/weui.js"></script>
+
+	</body>
+	<script type="text/javascript">
+	console.log($('#header').height());
+		(function($) {
+
+			$("#nav-left").on("tap", function() {
+					//uap.window.windowBack(0,200);
+					 Util.clearStorage("language_id");
+		             Util.clearStorage("isforUpdate_language");
+					uap.window.open("language0", "language.html");
+					Util.closeWin('language_update');
+				});
+
+			var token = Util.getStorage('token');
+			var language_id = uap.locStorage.getVal('language_id');
+			var isforUpdate = uap.locStorage.getVal('isforUpdate_language');
+			
+
+			var pk = Util.uuid(8, 16);
+
+			if(isforUpdate == "true") {
+				pk = language_id;
+				// alert("pk is language_id:"+pk);
+			} else {
+				//alert("pk is pk:"+pk);
+			}
+			var tmpl = '<li class="weui-uploader__file" style="background-image:url(\'#url#\')"></li>', //上传成功添加的元素模板
+				$gallery = $("#gallery"),
+				$galleryImg = $("#galleryImg"),
+				$MEET_Img_Btn = $("#MEET_IMG_Btn"),
+				$MEET_IMG_Files = $("#MEET_IMG_Files");
+          
+			//定义Vue组件
+			var vump = new Vue({
+				el: "#content_c",
+				beforeCreate: function() {
+					getBaseData();
+
+				},
+				data: {
+					language_category_name: '',
+					foreign_grade: '',
+					proficiency: '',
+					auth_date: '',
+					auth_org_name: '',
+					score: '',
+					cert_no: '',
+					attach_id: '',
+					attach_url: '',
+					attach_title: '',
+					remark: '',
+					dic_lc_name: [],
+					dic_foreign_grade: [],
+					dic_proficiency: [],
+					fileType:''
+
+				},
+			  watch:{
+			    　language_category_name(curVal,oldVal){
+			         //监控当language_category_name发生改变时，外语级别变为请选择
+					 var show_foreign_grade=document.getElementById("show_foreign_grade");
+				      if(oldVal && curVal!=oldVal){
+				        show_foreign_grade.innerText="请选择";
+				        this.foreign_grade='';
+				      }
+　　　　　　　　　　     //   console.log("curVal:"+curVal+"--oldVal:"+oldVal);
+               }
+			
+			},
+				methods: {
+					showData: function() {
+						getBaseData();
+					},
+					getAuth_date: function() {
+						//初始化获毕业时间
+						getDateforPicker("selectAuth_date", "show_auth_date", "auth_date", this);
+					},
+					getlc_name: function() {
+						var dic_lc_name = this.dic_lc_name;
+						if(dic_lc_name) {
+							if(isforUpdate == "true") {
+								var dic = JSON.stringify(dic_lc_name).replace(/k/g, 'id').replace(/v/g, 'value');
+								console.log("dic_lc_name:" + dic);
+								getDicData("show_lc_name", "language_category_name", JSON.parse(dic), this);
+							} else {
+								console.log("dic_lc_name:" + dic_lc_name);
+								getDicData("show_lc_name", "language_category_name", dic_lc_name, this);
+
+							}
+						}
+
+					},
+					getForeign_grade: function() {
+						var dic_foreign_grade = this.dic_foreign_grade;
+							
+						if(dic_foreign_grade) {
+						
+						   var lcName=vump.language_category_name;
+					   		var dic2=[];
+							if(isforUpdate == "true") {
+								//dic=JSON.parse(dic);
+								//根据选择的外语语种级联下拉外语水平级别
+							      for(var i in dic_foreign_grade){
+						                 if(lcName=="EN"){
+						                     dic2.push(dic_foreign_grade[i]);
+						                 }else if(lcName!="EN"){
+						                    if((dic_foreign_grade[i].k!="11" && dic_foreign_grade[i].k!="12" && dic_foreign_grade[i].k!="21" && dic_foreign_grade[i].k!="22"  )){
+						                      dic2.push(dic_foreign_grade[i]);
+						                    }
+						                      
+						                 }
+							      }
+							    
+							    //将原有的看k,V 格式的json数据替换为picker的 id,value
+								var dic = JSON.stringify(dic2).replace(/k/g, 'id').replace(/v/g, 'value');
+								console.log("dic_foreign_grade:" + JSON.stringify(dic));
+								getDicData("show_foreign_grade", "foreign_grade", JSON.parse(dic), this);
+							} else {
+								
+								 for(var i in dic_foreign_grade){
+							          // console.log("dic_foreign_grade[i]:"+JSON.stringify(dic_foreign_grade[i]));
+						                 if(lcName=="EN"){
+						                     dic2.push(dic_foreign_grade[i]);
+						                 }else if(lcName!="EN"){
+						                    if((dic_foreign_grade[i].id!="11" && dic_foreign_grade[i].id!="12" && dic_foreign_grade[i].id!="21" && dic_foreign_grade[i].id!="22"  )){
+						                      dic2.push(dic_foreign_grade[i]);
+						                    }
+						                      
+						                 }
+							      }
+							      console.log("dic_foreign_grade:" + dic2);
+								getDicData("show_foreign_grade", "foreign_grade", dic2, this);
+
+							}
+						}
+
+					},
+					getProficiency: function() {
+						var dic_proficiency = this.dic_proficiency;
+						if(dic_proficiency) {
+							if(isforUpdate == "true") {
+								var dic = JSON.stringify(dic_proficiency).replace(/k/g, 'id').replace(/v/g, 'value');
+								console.log("dic_proficiency:" + dic);
+								getDicData("show_proficiency", "proficiency", JSON.parse(dic), this);
+							} else {
+								console.log("dic_proficiency:" + dic_proficiency);
+								getDicData("show_proficiency", "proficiency", dic_proficiency, this);
+
+							}
+
+						}
+
+					}
+
+				}
+			});
+
+			//加载数据
+			function getBaseData() {
+				//  alert("isforUpdate:"+(isforUpdate=="true"));
+				var url = $api + 'dict/' + token + '?dict_codes=308035,308036,308010,' + new Date().getTime();
+				if(isforUpdate === "true") {
+					url = $api + 'language/' + token + '/' + language_id + '?dict_codes=308035,308036,308010,' + new Date().getTime();
+				}
+				console.log("urllanguagelanguagelanguage :" + url);
+				var getresInfo = {
+					url: url,
+					type: 'GET',
+					dataType: "json",
+					success: function(data) {
+						// console.log('这个是用于用户登录后默认简历中心信息查询接口------>success'+data);
+						// data=JSON.parse(data);
+						if(data) {
+
+							var json = data.retdata;
+							//console.log("getdata:" + JSON.stringify(json));
+							var language_data = "";
+							if(isforUpdate === "true") {
+								language_data = json.language_data;
+							}
+							var dic_data = json.dict_data;
+							console.log("language_data333:" + JSON.stringify(language_data));
+
+							//外语能力信息
+							if(language_data) {
+
+								vump.language_id = language_id;
+
+								var auth_date = language_data.auth_date;
+								if(!auth_date || "undefined" == auth_date || auth_date == null) {
+									auth_date = "";
+								}
+								vump.auth_date = auth_date;
+								vump.language_category_name = language_data.language_category_name;
+								vump.foreign_grade = language_data.foreign_grade;
+								vump.proficiency = language_data.proficiency;
+								vump.auth_org_name = language_data.auth_org_name;
+								vump.score = language_data.score;
+								vump.cert_no = language_data.cert_no;
+								vump.attach_id = language_data.attach_id;
+								vump.attach_url = language_data.attach_url;
+								vump.attach_title = language_data.attach_title;
+								vump.remark = language_data.remark;
+
+								var attach_url = vump.attach_url;
+ 								if(attach_url && attach_url.indexOf('404.html')==-1) {
+								    var  filename=Util.getFileName(attach_url);
+									//alert("attach_url:" + attach_url);
+									 var ul=document.getElementById("MEET_IMG_Files");   
+// 									 var li=document.createElement("li");
+// 									 li.classList.add("weui-uploader__file");
+									var type2 = Util.suffix(filename)+""; //正则表达式获取后缀
+									vump.fileType=type2;
+									
+									if(type2.indexOf('.jpg') >= 0 || type2.indexOf('.png') >= 0) {
+										$("#MEET_IMG_Files").append('<li class="weui-uploader__file" style="background-image:url(' + attach_url + ')"></li>'); //图片的地址
+										//li.style.backgroundImage=attach_url;
+										// div_file.innerHTML='<li class="weui-uploader__file" style="background-image:url(' + attach_url + ')"></li>';
+									} else {
+										//显示文件名称
+										 //div_file.innerHTML='<li   ><a href="javascript:void(0)"  >' + filename + '</a></li>'; //图片的地址
+									  $("#MEET_IMG_Files").append('<li class="weui-uploader__file"  style="width:100%;height:1.3em;"><a href="javascript:void(0)"  >'+filename+'</a></li>' ); 	      
+//                                           var a=document.createElement("a");
+//                                           a.innerText=filename;
+//                                           li.appendChild(a);
+									}
+// 								    ul.appendChild(li);
+								}
+								//console.log("auth_dateauth_dateauth_date666:"+auth_date);
+								// console.log("auth_dateauth_dateauth_date666:"+typeof auth_date);
+								document.getElementById("show_auth_date").innerText = auth_date;
+							}
+							if(dic_data) {
+								//动态加载外语语种字典
+								var dic_lc_name = dic_data["308010"];
+								var lcNamevalue = "";
+								if(dic_lc_name) {
+									// console.log("dic_lc_name:"+JSON.stringify(dic_lc_name));
+									//给vue绑定元素赋值
+									if(isforUpdate === "true") {
+										vump.dic_lc_name = dic_lc_name;
+									}
+									//遍历字典，显示中文
+
+									for(var s in dic_lc_name) {
+										if(language_data.language_category_name) {
+											if(dic_lc_name[s].k == language_data.language_category_name) {
+												lcNamevalue = dic_lc_name[s].v;
+												break;
+											}
+										}
+										if(isforUpdate != "true") {
+											var arr = {
+												"id": s,
+												"value": dic_lc_name[s]
+											};
+											vump.dic_lc_name.push(arr);
+										}
+									}
+
+									if(lcNamevalue) {
+										document.getElementById("show_lc_name").innerText = lcNamevalue;
+									}
+
+								}
+
+								// 外语水平级别 
+								var dic_foreign_grade = dic_data["308035"];
+								var foreign_grade_value = "";
+								if(dic_foreign_grade) {
+									console.log("dic_foreign_grade:" + JSON.stringify(dic_foreign_grade));
+									//给vue绑定元素赋值
+									if(isforUpdate == "true") {
+										vump.dic_foreign_grade = dic_foreign_grade;
+									}
+									//遍历字典，显示中文
+
+									for(var s in dic_foreign_grade) {
+										if(language_data.foreign_grade) {
+											if(dic_foreign_grade[s].k == language_data.foreign_grade) {
+												foreign_grade_value = dic_foreign_grade[s].v;
+												break;
+											}
+										}
+										if(isforUpdate != "true") {
+											var arr2 = {
+												"id": s,
+												"value": dic_foreign_grade[s]
+											};
+											vump.dic_foreign_grade.push(arr2);
+										}
+									}
+									if(foreign_grade_value) {
+										document.getElementById("show_foreign_grade").innerText = foreign_grade_value;
+									}
+
+								}
+
+								//动态加载熟练程度字典
+								var dic_proficiency = dic_data["308036"];
+								var proficiency_value = "";
+								if(dic_proficiency) {
+									console.log("dic_proficiency:" + JSON.stringify(dic_proficiency));
+									//给vue绑定元素赋值
+									if(isforUpdate == "true") {
+										vump.dic_proficiency = dic_proficiency;
+									}
+									//遍历字典，显示中文
+									for(var s in dic_proficiency) {
+										if(language_data.proficiency) {
+											if(dic_proficiency[s].k == language_data.proficiency) {
+												proficiency_value = dic_proficiency[s].v;
+												break;
+											}
+										}
+										if(isforUpdate != "true") {
+											var arr3 = {
+												"id": s,
+												"value": dic_proficiency[s]
+											};
+											vump.dic_proficiency.push(arr3);
+										}
+									}
+									if(proficiency_value) {
+										document.getElementById("show_proficiency").innerText = proficiency_value;;
+									}
+
+								}
+
+							}
+	
+					    }else if(data.retcode=='ERRCODE_00017'){
+						  
+		                        toast.setToast(data.retmsg, 'two');
+	                            Util.newLocation("two","language_update");
+	                     
+						}else {
+		  
+							toast.setToast(data.retmsg, 'five');
+						}
+
+					},
+					error: function(data) {
+						toast.setToast(data.retmsg, 'five');
+					}
+
+				};
+
+				uap.ready(function() {
+					uap.ajax(getresInfo);
+				});
+
+			}
+
+			//绑定保存事件
+			var savedata = new Vue({
+				el: '#save',
+				methods: {
+					forSave: function() {
+						save();
+					}
+				}
+			});
+
+			//保存方法 
+			function save() {
+
+				if(checkform()) {
+
+					var language_category_name = vump.language_category_name;
+					var foreign_grade = vump.foreign_grade;
+					var proficiency = vump.proficiency;
+					var auth_date = vump.auth_date;
+					var auth_org_name = vump.auth_org_name;
+					var score = vump.score;
+					var cert_no = vump.cert_no;
+					var attach_id = vump.attach_id;
+					var attach_url = vump.attach_url;
+					var attach_title = vump.attach_title;
+					var remark = vump.remark;
+					// alert("proficiency:"+proficiency);
+					// 			console.log("save   language_category_name :" + language_category_name);
+					// 			console.log("save    foreign_grade :" + foreign_grade);
+					// 			console.log("save     proficiency:" + proficiency);
+					// 			console.log("save     auth_date:" + auth_date);
+					// 			console.log("save   score:" + score);
+					// 			console.log("save   cert_no:" + cert_no);
+					//特殊的参数的处理
+					if(Util.checkValue([auth_org_name, score, attach_url, remark])) {
+						toast.setToast('信息内包含特殊字符，请重新输入', 'three');
+						$("#save").attr("disabled", false);
+						return;
+					}
+
+					$("#save").attr("disabled", true);
+					//显示加载状态
+// 					$("#content_c").html('<br><br><br><div class="laoddiv"  id="load1"></div>');
+// 					Util.showLoadding("load1");
+					 Util.openLoading('保存中...');
+				   $("#save").attr("disabled",false);
+                   $("#save").css("color","#cccccc");
+
+					var dataPam = JSON.stringify({
+						language_id: pk,
+						language_category_name: language_category_name,
+						foreign_grade: foreign_grade,
+						proficiency: proficiency,
+						auth_date: auth_date,
+						auth_org_name: auth_org_name,
+						score: score,
+						cert_no: cert_no,
+						attach_id: attach_id,
+						attach_url: attach_url,
+						attach_title: attach_title,
+						remark: remark
+
+					});
+					var saveUrl = $api + "language/" + token;
+					if(isforUpdate === "true") {
+						saveUrl = $api + "language/" + token + '/' + language_id;
+					}
+					console.log("saveUrl:" + saveUrl);
+					var setObj = {
+						url: saveUrl,
+						type: "POST",
+						contentType: 'application/json;charset=utf-8',
+						dataType: "json",
+						data: dataPam,
+						success: function(data) {
+						      Util.closeLoading();
+							if(data.retcode == 200) {
+							//	$("#load1").hide();
+                                 //console.log("data:"+JSON.stringify(data));
+								toast.setToast(data.retmsg, 'two');
+							  	var r=data.retdata.resume_progress;
+								if(r){
+									uap.locStorage.setVal("resume_progress", r);
+								}
+								//停留2000毫秒跳转到首页
+								setTimeout(function() {
+                                    
+                                Util.clearStorage("language_id");
+                                Util.clearStorage("isforUpdate_language");
+ 					 		   	 uap.window.evaluateScript({
+										name: "language0",
+										scriptContent: "window.location.reload();"
+									});
+									
+			 			        uap.window.open("language0", "language.html?" + new Date().getTime());
+	     					    Util.closeWin('language_update');  
+	                              // location.href= "language.html";
+	           
+ 
+								}, 200);
+
+						    }else if(data.retcode=='ERRCODE_00017'){
+							      // $("#load1").hide();
+			                        toast.setToast(data.retmsg, 'two');
+		                            Util.newLocation("two","language_update");
+                     
+							} else {
+								//$("#load1").hide();
+								console.log('验证修改简历基本信息的接口是否成功------>success');
+								console.log(data);
+								toast.setToast(data.retmsg, 'five');
+								$('#m-TopTip').hide();
+							}
+						},
+						error: function(e){
+							//$("#load1").hide();
+						     Util.closeLoading();
+							toast.setToast("网络错误，请重试", 'five');
+							$('#m-TopTip').hide();
+
+						}
+					};
+
+					uap.ready(function() {
+						uap.ajax(setObj);
+					});
+
+				} else { //错误的判定
+
+					//toast.setToast('校验不通过', 'three');
+					
+				}
+			}
+
+			var dataArr = []; //保存上传成功图片的id
+			function selectOrTakePic(cb) {
+				//文件类型为（pdf、doc、xls、jpg、png、docx、xlsx）其中之一，大小在1024k以内
+				var commitImg = 1; //一开始从相册中最多选择1张
+				//uap.ready(function() {
+				uap.window.actionSheet("", "取消", ["相机拍摄", "本地文件"], function(err, data) {
+					if(data == 0) {
+						var comtextareass = 0;
+						var quality = 30;
+						var imgurl = "";
+						uexCamera.open(0, quality, function(picPath) {
+							//cb(picPath);
+							//alert("picPath:" + picPath);
+
+						   if(picPath){
+							var iurl = "wgt://" + picPath;
+
+							var fileType = Util.suffix(picPath)+ "";
+
+							if(fileType.toLowerCase().indexOf("jpg") >= 0 || fileType.toLowerCase().indexOf("png") >=0) {
+
+								uexImage.saveToPhotoAlbum({
+									localPath: iurl
+								}, function(err, errStr) {
+									if(!err) {
+										var params = {
+											srcPath: picPath,
+											desLength: 120 * 160
+										};
+										uexImage.compressImage(params, function(err, errStr) {
+											
+											var datas,dataStatus;
+											if(errStr){
+												datas = JSON.parse(errStr).filePath;
+												dataStatus =  JSON.parse(errStr).status
+											}
+											if(1 == err || dataStatus == "ok") { //成功
+												if(datas) {
+													cb(datas);
+												}
+											} else if(0 == err) { //失败 
+												toast.setToast("压缩失败", 'five');
+												uexImage.clearOutputImages();
+											}
+										});
+									} else {
+										uexImage.clearOutputImages();
+										//alert("储存失败:" + errStr);
+									}
+								});
+
+							} else {
+								toast.setToast("请选择jpg或png格式的图片", 'two');
+								return;
+
+							}
+							
+							}
+						});
+
+					} else if(data == 1) {
+						//文件类型为（pdf、doc、xls、jpg、png、docx、xlsx）其中之一，大小在1024k以内
+						// 允许上传的图片类型
+						var allowTypes = ['.jpg', '.png', '.xls', '.doc', '.docx', '.xlsx', '.pdf'];
+						var maxCount = 1;
+						// 1024KB，也就是 1MB
+						var maxSize = 1024 * 1024;
+						uexFileMgr.explorer("");
+						uexFileMgr.cbExplorer = function(opId, dataType, data) {
+							//alert("选择文件:" + data);
+							if(data){
+								var fileType=Util.suffix(data)+ "";
+								// 如果类型不在允许的类型范围内
+								if(Util.indexOfArr(allowTypes,fileType)==-1) {
+								   toast.setToast("该类型不允许上传", 'two');
+									return;
+								}
+	 
+								uexFileMgr.getFileSizeByPath("wgt://" + data);
+								uexFileMgr.cbGetFileSizeByPath = function(info) {
+									//alert("cbGetFileSizeByPath:" + info);
+									if(info > maxSize) {
+									 
+										toast.setToast("文件太大，请选择1M以内的文件", 'two');
+	
+										return;
+									}
+								}
+								cb(data);
+								
+							
+							}
+						
+						}
+
+					}
+				});
+
+			 
+
+			}
+
+			$("#MEET_IMG_Btn").on("tap", function(e) {
+				if($("#language_category_name").val() != ""){
+					indexImg = 0;
+					selectOrTakePic(function(url) {
+					
+					 // $("#MEET_IMG_Files").append($(tmpl.replace('#url#', url)));
+					 // $MEET_IMG_Files.append($(tmpl.replace('#url#', url))); //图片的地址
+						uap.window.openToast("上传中");
+						var uploadurl = "";
+						var origin_name = Util.getFileName(url);
+	
+	
+						var attach_id = vump.attach_id;
+						var attach_title = vump.attach_title;
+						if(attach_id) {
+	
+							uploadurl = $api + 'upload/attach/' + token + '/edit/' + attach_id + "?origin_name=" + encodeURI(origin_name);
+						} else {
+							//attach_name是附件类型名称，origin_name是附件文件名
+							var attach_name=vump.language_category_name;
+							if(attach_name=="" || attach_name==null){
+							   attach_name=attach_title;
+							}
+							//alert("attach_name:"+attach_name);
+							if(attach_name){
+							  uploadurl = $api + 'upload/attach/1/' + token + '/0094?attach_name=' + encodeURI(attach_name) + "&origin_name=" + encodeURI(origin_name);
+							}else{
+							
+							  toast.setToast("请先选择外语语种!", 'five');
+							 
+							}
+							
+						}
+					  // alert("uploadurl:" + uploadurl);
+						if(uploadurl){
+						
+					
+						//uap.ready(function() {
+							uap.request.ajax({
+								url: uploadurl,
+								type: 'POST', //向服务器端发送数据
+								data: {
+									belong_id: pk,
+									attach_file: {
+										path: url
+									}
+								}, //发送的数据
+								contentType: "multipart/form-data",
+								dataType: "json", //json数组     
+								cache:false,//不缓存
+								timeout: 5000,
+								success: function(res) {
+									if(res.retcode == 200) {
+										uap.locStorage.setVal("dataError", "1");
+										uap.window.closeToast();
+										uap.window.alert("提示", "上传成功", ["确定"], function() {
+											console.log("上传成功");
+										});
+										//alert("retdata :" + JSON.stringify(res.retdata));
+										var retdata=res.retdata;
+										if(retdata) {
+											// var newimg=$api+dataImg;
+											
+											//vump.attach_url = dataImg;
+											var attach_path=retdata.attach_path;
+										    //alert("attach_path:" + attach_path);
+											if(attach_path) {
+											
+												  if(attach_path.indexOf('\\')>0){
+							                  	     attach_path = attach_path.replace(/\\/g, "/");
+								                 }
+												 if(attach_path.indexOf('?')>0){
+												    attach_path=attach_path.split("?")[0];
+												 }
+											
+												 var attach_url=retdata.attach_url;
+											
+	//  										    if(attach_path.indexOf('\\')>0){
+	// 						                  	     attach_path = attach_path.replace(/\\/g, "/");
+	// 							                 }
+	// 											 if(attach_path.indexOf('?')>0){
+	// 											    attach_path=attach_path.split("?")[0];
+	// 											 }
+											    var filename=Util.getFileName(attach_path);
+												var type=Util.suffix(filename)+"";
+	 											// alert("attach_url:" + attach_url)
+	 											 
+												//Vue.set(vump.data, 'attach_url', attach_url);
+												vump.attach_url=attach_url;
+												if(retdata.attach_id) {
+													//Vue.set(vump.data, 'attach_id', retdata.attach_id);
+													vump.attach_id=retdata.attach_id;
+												}
+											//	alert("vump.attach_id:"+vump.attach_id);
+												if(retdata.attach_title) {
+													//Vue.set(vump.data, 'attach_title', retdata.attach_title);
+													vump.attach_title=retdata.attach_title;
+												}
+												//alert("vump.attach_title:"+vump.attach_title);
+											     //var div_file=document.getElementById("weui-uploader__bd");
+									            $(".weui-uploader__files > li").eq(0).remove();
+												if(type.indexOf('.jpg')>= 0 || type.indexOf('.png') >= 0) {
+												 //$("#MEET_IMG_Files li").remove();
+								/* 			   		var li = document.createElement("li");
+											   		li.classList.add("weui-uploader__file");
+					       		              	    li.style.backgroundImage = "url(\'" + attach_path + "\')";　
+													ul.appendChild(li); */
+													//ul.append($(tmpl.replace('#url#', attach_path))); //图片的地址
+	                                           //  $("#MEET_IMG_Files").append('<li class="weui-uploader__file"> <img src="'+attach_path+'"/></li>' ); 
+	                                           		$("#MEET_IMG_Files").append('<li class="weui-uploader__file" style="background-image:url(' + attach_path + ')"></li>');
+													 
+												} else {
+													//显示文件名称
+												  	$("#MEET_IMG_Files").append('<li class="weui-uploader__file"  style="width:100%;height:1.3em;"><a href="javascript:void(0)"  >'+filename+'</a></li>' ); 	      
+												}
+	
+											}
+	
+										}
+										if(dataArr.length == 0) { //如果没上传过 从0开始 否则从上传的已经上传数量的后面开始
+											dataArr[0] = dataImg[0].id;
+											uap.locStorage.setVal("dataFeed", dataArr);
+										} else {
+											var dataIndex = dataArr.length;
+											dataArr[dataIndex] = dataImg[0].id;
+											uap.locStorage.setVal("dataFeed", dataArr);
+										}
+					                 }else if(data.retcode=='ERRCODE_00017'){
+						                        toast.setToast(data.retmsg, 'two');
+					                            Util.newLocation("two","language_update");
+									} else {
+										uap.window.openToast("上传失败", 1500);
+										uap.window.closeToast();
+	
+									}
+								},
+								error: function(e) {
+									if(uap.locStorage.getVal("dataError") == null) {
+										uap.window.closeToast();
+										uap.window.openToast("网络慢，请稍后再上传图片", 1500);
+										$(".weui-uploader__file").eq($(".weui-uploader__file").length - 1).remove();
+									} else {
+										uap.locStorage.remove("dataError");
+									}
+										uap.window.closeToast();
+								}
+							});
+							
+						//});
+					  }else{
+					       toast.setToast("请求出错!", 'five');
+					  
+					  }
+					})
+				}else{
+					toast.setToast("请先选择语种!", 'five');
+				}
+				
+			});
+
+			//点击图片放大
+			$(".weui-uploader__file").on("click", "li", function() {
+				$(this).attr("ast", "1"); //做标记
+				$galleryImg.attr("style", this.getAttribute("style"));
+				$gallery.fadeIn(100); //大图片显示
+			});
+			$("#gallery").on("click", function() {
+				$("#gallery").fadeOut(100); //大图片隐藏
+				setTimeout(function() {
+					for(var i = 0; i < $("li").length; i++) {
+						$("li").eq(i).attr("ast", ""); //清除标记
+					}
+				}, 500)
+			});
+
+			//删除  上传成功后不需要这张图片删除
+			$(".weui-gallery__opr").on("tap", function() {
+				for(var i = 0; i < $("li").length; i++) {
+					if($("li").eq(i).attr("ast") == 1) {
+						$("li").eq(i).remove(); //删除图片对应元素
+						if(i < dataArr.length) {
+							dataArr.splice(i, 1); //删除图片对应id
+							uap.locStorage.setVal("dataFeed", dataArr);
+						}
+					};
+				}
+
+			});
+
+			function checkform() {
+				var lc_name = vump.language_category_name;
+
+				if(lc_name == null || lc_name == "") {
+					uap.window.alert("提示", '外语语种不能为空！');
+					//vump.set(data,'language_category_name', lc_name);
+					return false;
+				}
+				var foreign_grade = vump.foreign_grade;
+				if(foreign_grade == null || foreign_grade == "") {
+					uap.window.alert("提示", '外语水平级别不能为空！');
+					return false;
+				}
+				var proficiency = vump.proficiency;
+				if(proficiency == null || proficiency == "") {
+					uap.window.alert("提示", '熟练程度不能为空！');
+					return false;
+				}
+				var auth_date = vump.auth_date;
+				if(auth_date == null || auth_date == "") {
+					uap.window.alert("提示", '证书获得时间不能为空！');
+					return false;
+				}
+				var auth_org_name = vump.auth_org_name;
+				if(auth_org_name == null || auth_org_name == "") {
+					uap.window.alert("提示", '认证机构不能为空！');
+					return false;
+				}else if(auth_org_name && !Util.AntiSqlValid(auth_org_name)){
+				 // uap.window.alert("提示",'请您不要输入特殊字符和SQL关键字!');
+				  return false;
+			    }
+				var score = vump.score;
+				if(score == null || score == "") {
+					uap.window.alert("提示", '成绩不能为空！');
+					return false;
+				} else if(score && !Util.isNumber(score) || score.length > 3) {
+					uap.window.alert("提示", '请输入正确的成绩！');
+					return false;
+				}
+				var cert_no = vump.cert_no;
+				if(cert_no == null || cert_no == "") {
+					uap.window.alert("提示", '证书编号不能为空！');
+					return false;
+				}
+				// 			var attach_id = vump.attach_id;
+				// 			var attach_url = vump.attach_url;
+				// 			var attach_title = vump.attach_title;
+				// 			var remark = vump.remark;
+				
+				var remark = vump.remark;
+			    if(remark && remark.length>50){
+				  uap.window.alert("提示",'备注长度不能超过50个字符!');
+				   return false;
+			    }else if(remark && !Util.AntiSqlValid(remark)){
+				 // uap.window.alert("提示",'请您不要输入特殊字符和SQL关键字!');
+				  return false;
+			    }
+
+				return true;
+
+			}
+
+		})($);
+	</script>
+
+</html>

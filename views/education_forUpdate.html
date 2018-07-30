@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html
+	class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+
+<head>
+<title>学习经历新增页面</title>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="../css/fonts/font-awesome.min.css">
+<link rel="stylesheet" href="../css/ui-box.css">
+<link rel="stylesheet" href="../css/ui-base.css">
+<link rel="stylesheet" href="../css/ui-color.css">
+<link rel="stylesheet" href="../css/uap.icon.css">
+<link rel="stylesheet" href="../css/uap.control.css">
+<link rel="stylesheet" href="../css/ui-tab.css">
+<link href="../modules/datePicker/iosSelect.css" rel="stylesheet" type="text/css">
+<link href="../css/loadding.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../css/tan.css"/>
+<style type="text/css">
+.required {
+	content: "*";
+	color: #ff4949;
+	margin-right: 4px;
+}
+.numInput{
+    margin: 0px;
+/*      border: 0px;   */
+/*     width: 100%; */
+    height: 100%;
+    -webkit-appearance: none;
+/*       padding: 0.2em 0.2em 0.2em 0.2em;  */
+    line-height: 1.2em;
+    font-size: 1em;
+     white-space: nowrap;
+     word-break:normal;
+      border-top: none;  
+     border-left: none;
+     border-right: none;
+     border-bottom: 1px thin #000 !important;
+   
+}
+.uinput input, .uinput textarea{
+	padding: 0;
+}
+.footer_btn{
+	width: 21em;
+    border-radius: .3em!important;
+    background-color: #417fcb;
+    height: 2.3em;
+    line-height: 2.3em;
+    text-align: center;
+    color: white;
+    margin: 1.1em auto;
+}
+.uinn{
+	padding: .5em 0;
+	display: flex !important;
+	justify-content: space-between;
+}
+.rigs{
+	text-align: right;
+	width: 10.5em;
+}
+.rights{
+	width: 12em;
+	text-align: right;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-right: 1em;
+}
+</style>
+
+</head>
+
+<body class="um-vp ">
+	<div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+		<div class="uh bc-head  ubb bc-border" data-control="HEADER"
+			id="Header">
+			<div id="header" class="uh bc-text-head ub bc-head">
+				<div class="nav-btn" id="nav-left">
+					<div class="fa fa-angle-left fa-2x"></div>
+				</div>
+				<h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">学习经历</h1>
+				<div class="nav-btn nav-bt" id="nav-right">
+					<div class="ub ulev3" id="save">保存</div>
+				</div>
+			</div>
+		</div>
+		<!--header结束-->
+		<!--content开始-->
+		<br>
+		<form>
+			<!-- 			<div class="content" data-control="CONTENT" id="ScrollContent"> -->
+			<div class="content" id="content_c">
+
+				<div>
+					<div class="box_bounce ub ub-ver ub-pc" id="">
+						<div class="ub-f1"></div>
+						<div class="bounce_status">下拉更新......</div>
+						<div class="bounce_status">松手更新......</div>
+						<div class="bounce_status">更新中......</div>
+					</div>
+					<div class="ub ub-ver" id="education_update">
+						<div class="uinn-a1 ub ub-ac">
+							<div class="t-red-form2 umar-r-form">&nbsp;</div>
+							<div class="t-gra4 ulev-1">
+								<input type="hidden" v-model="member_id" name="member_id"
+									id="member_id" value=""> <input type="hidden"
+									v-model="qualifi_id" name="qualifi_id" id="qualifi_id" value="">
+
+							</div>
+						</div>
+						<div class="uinn-a7">
+							<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ut-s ulev-app1 rigs">入学时间<span class="required">*</span></li>
+								<li id="selectBegin_date" class="rights">
+									<div class="pc-box">
+										<input type="hidden" v-model="begin_date" id="begin_date"
+											value="">
+										<div data-year="" data-month="" data-date=""
+											id="show_begin_date" v-on:click="getBegin_date">请选择</div>
+									</div>
+								</li>
+							</ul>
+							<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ut-s ulev-app1 rigs">毕业时间<span class="required">*</span></li>
+								<li id="selectEnd_date" class="rights">
+									<div class="pc-box">
+										<input type="hidden" v-model="end_date" id="end_date" value="">
+										<div data-year="" data-month="" data-date=""
+											id="show_end_date" v-on:click="getEnd_date">请选择</div>
+									</div>
+								</li>
+
+							</ul>
+							<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ut-s ulev-app1 rigs">学历证书号</li>
+								<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae rights">
+									<div class="uinput uinn4">
+										<input placeholder="请输入内容" v-model="education_no" maxlength="20"
+											name="education_no" id="education_no" type="text"
+											class="tx-r ">
+									</div>
+								</li>
+							</ul>
+							<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ut-s ulev-app1 rigs">学习形式<span class="required">*</span></li>
+								<li id="selectlearn_form" class="rights">
+									<div class="pc-box">
+										<input type="hidden" v-model="learn_form" id="learn_form"
+											name="learn_form" value=""> <span
+											id="show_learn_form" v-on:click="getlearn_form">请选择</span>
+
+									</div>
+								</li>
+							</ul>
+							<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ut-s ulev-app1 rigs">学历类型<span class="required">*</span></li>
+								<li id="selectEducation" class="rights">
+									<div class="pc-box">
+										<input type="hidden" v-model="education" id="education"
+											name="education" value=""> <span id="show_education"
+											v-on:click="getEducation">请选择</span>
+
+									</div>
+								</li>
+							</ul>
+							<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ulev-app1 rigs">学校名称<span class="required">*</span></li>
+								<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae rights">
+									<div class="uinput uinn4">
+
+										<input type="hidden" v-model="school_code" id="school_code"
+											name="school_code" value=""> <input type="hidden"
+											v-model="school_name" id="school_name" name="school_name"
+											value=""> <span id="show_school_name"
+											v-on:click="getSchool_name">请选择</span>
+									</div>
+								</li>
+							</ul>
+							<ul class="ubb ub bc-border bc-text ub-ac uinn zspc" id="zspc" style="display: none;">
+								<li class="ub-f1 ulev-app1 rigs">招生批次<span class="required">*</span></li>
+								<li id="selectRecruit_batch"  class="rights">
+									<div class="uinput uinn4">
+										<input type="hidden" v-model="recruit_batch"
+											id="recruit_batch" name="recruit_batch" value=""> <span
+											id="show_recruit_batch" v-on:click="getRecruit_batch">请选择</span>
+									</div>
+								</li>
+							</ul>
+							<ul class="ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ut-s ulev-app1 rigs">是否全日制最高学历<span class="required">*</span></li>
+								<li id="select_is_most_education" class="rights">
+									<div class="uinput uinn4">
+										<input type="hidden" v-model="is_most_education"
+											id="is_most_education" name="is_most_education" value="">
+										<span id="show_is_most_education"
+											v-on:click="getIs_most_education">请选择</span>
+									</div>
+								</li>
+							</ul>
+							<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ulev-app1 rigs">学位<span class="required">*</span></li>
+								<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae rights">
+									<div class="uinput uinn4">
+										<input type="hidden" v-model="degree" id="degree"
+											name="degree" value=""> <span id="showDegree"
+											v-on:click="getDegree">请选择</span>
+									</div>
+								</li>
+							</ul>
+
+							<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ut-s ulev-app1 rigs">学位证书编号</li>
+								<li class="tx-r t-blu ulev-app1 ub-ae rights">
+									<div class="uinput uinn4">
+										<input placeholder="请输入内容" v-model="degree_no" maxlength="20"
+											name="degree_no" id="degree_no" type="text" class="tx-r ">
+									</div>
+								</li>
+							</ul>
+							<!--<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ut-s ulev-app1">学科层次</li>
+								<li class="tx-r t-blu ulev-app1 ub-ae">
+									<div class="uinput uinn4">
+										<input type="hidden" v-model="course_level" id="course_level"
+											name="course_level" value=""> <span
+											id="show_course_level" v-on:click="getCourse_level">请选择</span>
+									</div>
+								</li>
+							</ul>-->
+							<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ulev-app1 rigs">专业名称<span class="required">*</span></li>
+								<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae rights">
+									<div class="uinput uinn4">
+										<input type="hidden" v-model="speciality" id="speciality"
+											name="speciality" value=""> <input type="hidden"
+											v-model="special_name" id="special_name" name="special_name"
+											value=""> <span id="show_special_name"
+											v-on:click="getSpecial_name">请选择</span>
+									</div>
+								</li>
+							</ul>
+
+							<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ulev-app1 rigs">专业排名</li>
+								<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae rights">
+									<div  style="white-space: nowrap; word-break:normal;">
+										<input placeholder="请输入内容" v-model="special_serial" name="special_serial" id="special_serial" type="hidden" class="tx-r ">
+										<span style="white-space: nowrap; word-break:normal;">第<input placeholder=""  id="special_serial1" type="text" class="tx-c numInput " size="3" >名，共<input placeholder=""    id="special_serial2" size="5" type="text" class="tx-c numInput ">人</span>
+									</div>
+								</li>
+									 
+							</ul>
+							<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ulev-app1 yanjiu rigs" id="yjfx">研究方向</li>
+								<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae rights">
+									<div class="uinput uinn4">
+										<input placeholder="请输入内容" v-model="research_direc" maxlength="80"
+											name="research_direc" id="research_direc" type="text"
+											class="tx-r ">
+									</div>
+								</li>
+							</ul>
+							<ul class=" ubb ub bc-border bc-text ub-ac uinn">
+								<li class="ub-f1 ulev-app1 rigs">毕业论文题目</li>
+								<li class="tx-r ub-f1 t-blu ulev-app1 ub-ae rights">
+									<div class="uinput uinn4">
+										<input placeholder="请输入内容" v-model="disser_title" maxlength="80"
+											name="disser_title" id="disser_title" type="text"
+											class="tx-r ">
+									</div>
+								</li>
+							</ul>
+
+						</div>
+						<div class="footer_btn">
+							下一步
+						</div>
+						<div class="tan_all" id="tan_all">
+							<div class="tan_all_con">
+								<p class="tan_header"><span v-on:click="span1" class="span">x</span>教育经历-选择学校</p>
+								<ul class="tan_ul">
+									<li class="tan_li">
+										<p class="tan_li_p1">学校所在地：</p>
+										<div class="pc-boxs">
+											<input type="hidden" id="school_place" name="school_place" value="">
+											<span id="show_school_place" v-on:click="getschool_place">请选择</span>
+										</div>
+									</li>
+									<li class="tan_li">
+										<p class="tan_li_p1">学校名称：</p>
+										<p class="tan_li_p2">
+											<input type="text" id="school_names" name="school_names" />
+										</p>
+									</li>
+									<div class="footer_btns"  v-on:click="forSearch">
+										搜索
+									</div>
+									<li class="tan_lis" style="height: 40%;border: 0">
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="container"></div>
+	<p id="m-TopTip" class="m-tips"></p>
+	<!--<script src="../js/uap/uap.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../lib/jquery.js"></script>
+	<script src="../assets/api/api.js"></script>
+	<!--<script src="../js/uap/uap.scrollbox.js"></script>-->
+	<script src="../modules/toast/toast.js"></script>
+	<script src="../vendor/lib/mobileSelect.js"></script>
+	<script src="../vendor/lib/selectDate.js"></script>
+	<script src="../js/util.js" ></script>
+	<script src="../modules/datePicker/iosSelect.js" type="text/javascript"></script>
+	<script src="../modules/datePicker/zepto.js" type="text/javascript"></script>
+	<script src="../modules/datePicker/datePicker.js" type="text/javascript"></script>
+	<script src="../js/uap/vue.min.js"></script>
+
+</body>
+<script type="text/javascript">
+		$("#tan_all").hide();
+  		$(document).on('click', '#nav-left', function() {
+	     //uap.button("#nav-left", "btn-act",function(e) {
+              Util.clearStorage("qualifi_id");
+              Util.clearStorage("isforUpdate_education");
+           	  $(window).attr('location','./education.html')
+		 });
+		$(document).on('tap', '#nav-right', function() {
+	     	save();
+	    });
+		var token = Util.getStorage('token');
+		var qualifi_id = Util.getStorage('qualifi_id');
+		var isforUpdate=Util.getStorage('isforUpdate_education');
+
+            var pk = Util.uuid(8, 16);
+			if(isforUpdate == "true") {
+				pk=qualifi_id;
+				// alert("pk is language_id:"+pk);
+			} else {
+				//alert("pk is pk:"+pk);
+			}
+		//定义Vue组件
+		var vump = new Vue({
+			el: "#education_update",
+			beforeCreate: function() {
+				getBaseData();
+				getBaseDatas();
+		 
+			},
+			data: {
+				qualifi_id: '',
+				member_id: '',
+				begin_date: '',
+				end_date: '',
+				recruit_batch: '',
+				learn_form: '',
+				school_name: '',
+				school_code: '',
+				special_name: '',
+				speciality: '',
+//				course_level: '',
+				research_direc: '',
+				education: '',
+				education_no: '',
+				degree: '',
+				degree_no: '',
+				is_most_education: '',
+				disser_title: '',
+				special_serial: '',
+				dic_learn_form: [],
+				dic_education: [],
+				dic_recruit_batch: [],
+				dic_degree: [],
+				dic_course_level: [],
+				dic_school: [],
+				dic_special: [],
+				school_place_data: []
+			},
+			watch:{
+			    　education(curVal,oldVal){
+			     // alert("curVal:"+curVal+"--oldVal:"+oldVal);
+					//var zspc=document.getElementById("zspc");
+					var showDegree=document.getElementById("showDegree");
+				      if(oldVal && curVal!=oldVal){
+				        showDegree.innerText="请选择";
+				        this.degree='';
+				         if(curVal!="11" && curVal!="14"){
+				         	var show_recruit_batch=document.getElementById("show_recruit_batch");
+				             show_recruit_batch.innerText="请选择";
+				             this.recruit_batch='';
+				         }
+				      }
+					if(curVal=="11" || curVal=="14"){
+					  		$("#zspc").removeClass("ubb ub bc-border bc-text ub-ac uinn");
+					  		$("ul.zspc").hide();
+					  		$("#yjfx").html("研究方向<span class='required'>*</span>");
+				 
+					}else{
+						$("#zspc").addClass("ubb ub bc-border bc-text ub-ac uinn");
+					 	$("ul.zspc").show();
+					 	$("#yjfx").html("研究方向");
+					}
+				
+		      
+　　　　　　　　　　    // console.log("curVal:"+curVal+"--oldVal:"+oldVal);
+               }
+			
+			},
+			methods: {
+				showData: function() {
+					getBaseData();
+				},
+				span1:function(){
+					$("#tan_all").hide();
+				},
+				forSearch:function() {
+		               //绑定查询事件
+					var school_place = $("#school_place").val();
+					var school_name = $("#school_names").val();
+					if(!school_name || "undefined" == school_name) {
+						school_name = "";
+					}
+					if(school_place == null || school_place == "") {
+						toast.setToast('请先选择学校所在地！','three')
+					} else {
+						console.log(school_name)
+						//调用接口查询学校列表
+						getSchoolData(school_place, school_name);
+						//}
+		
+					}
+		      },
+				getSchool_name: function() {
+					if($('#education').val() != ''){
+						var url = "school.html?qualifi_id=" + qualifi_id;
+						Util.setStorage('qualifi_id',qualifi_id);
+						$("#tan_all").show();
+					}else {
+						toast.setToast('请先选择学历！','three')
+					}
+
+				},
+				getschool_place: function() {
+					var school_place_data = vump.school_place_data;
+					if(school_place_data) {
+						//console.log("school_place_data school_place_data:"+JSON.stringify(school_place_data));
+						// 动态加载学历状况 字典  
+						getDicData("show_school_place", "school_place", school_place_data,this);
+
+					}
+				},
+				getSpecial_name: function() {
+					if(this.education != ""){
+						var education = $("#education").val();
+						var eduName = $("#show_education").text();
+						//alert("education:"+education);
+						//var url = "special.html?qualifi_id=" + qualifi_id + "&education=" + education + "&eduName=" + eduName;
+						var url = "special.html"
+						url= encodeURI(url);
+						Util.setStorage('qualifi_id',qualifi_id);
+				        Util.setStorage('education',education);
+				        Util.setStorage('eduName',eduName);
+//						uap.window.open("special_0", url, 10);
+					}else{
+						toast.setToast("请先选择学历", 'five');
+					}
+					
+				},
+				getlearn_form: function() {
+					var dic_learn_form = this.dic_learn_form;
+					if(dic_learn_form) {
+						//处理修改格式的数据字典格式
+						if(isforUpdate == "true") {
+							var dic = JSON.stringify(dic_learn_form).replace(/k/g, 'id').replace(/v/g, 'value');
+							console.log("dic_learn_form2:" + dic);
+							// 动态加载学习形式字典  
+							getDicData("show_learn_form", "learn_form", JSON.parse(dic), this);
+						} else {
+							//处理新增格式的数据字典格式
+							console.log("dic_learn_form1:" + dic_learn_form);
+							// 动态加载学习形式字典  
+							getDicData("show_learn_form", "learn_form", dic_learn_form, this);
+						}
+						//	vump.learn_form = $("#learn_form").val();
+
+					}
+
+				},
+				getEducation: function() {
+					var dic_education = this.dic_education;
+					if(dic_education) {
+						//处理修改格式的数据字典格式
+						if(isforUpdate == "true") {
+							var dic = JSON.stringify(dic_education).replace(/k/g, 'id').replace(/v/g, 'value');
+							console.log("dic_education2:" + dic);
+							// 动态加载学历状况 字典  
+							getDicData("show_education", "education", JSON.parse(dic), this);
+							console.log($(".sure"))
+							$(".sure").on("tap", function (){
+								$("#show_special_name").text("请选择");
+								$("#speciality").text("");
+								$("#special_name").text("");
+								$("#speciality").val("");
+								$("#special_name").val("");
+							})
+						} else {
+							console.log("dic_education1111:" + JSON.stringify(dic_education));
+							// 动态加载学历状况 字典  
+							getDicData("show_education", "education", dic_education, this);
+							console.log($(".sure"))
+							$(".sure").on("tap", function (){
+								$("#show_special_name").text("请选择");
+								$("#speciality").text("");
+								$("#special_name").text("");
+								$("#speciality").val("");
+								$("#special_name").val("");
+							})
+						}
+				
+					}
+				},
+				getRecruit_batch: function() {
+					//   
+
+					var dic_recruit_batch = this.dic_recruit_batch;
+					var education=this.education;
+					console.log("dic_recruit_batch:" + dic_recruit_batch);
+					var dic2=[];
+					if(dic_recruit_batch) {
+
+						//处理修改格式的数据字典格式
+						if(isforUpdate == "true") {
+						      for(var i in dic_recruit_batch){
+						                 if(education=="31"){
+						                    if((dic_recruit_batch[i].k=="08" ||  dic_recruit_batch[i].k=="09" || dic_recruit_batch[i].k=="05" ||  dic_recruit_batch[i].k=="06" || dic_recruit_batch[i].k=="07" ||  dic_recruit_batch[i].k=="99"   )){
+						                      dic2.push(dic_recruit_batch[i]);
+						                    }
+						                 }else  if(education=="21"){
+						                      if((dic_recruit_batch[i].k=="08" ||  dic_recruit_batch[i].k=="09" || dic_recruit_batch[i].k=="01" || dic_recruit_batch[i].k=="02" || dic_recruit_batch[i].k=="03" || dic_recruit_batch[i].k=="04" || dic_recruit_batch[i].k=="99" )){
+						                        dic2.push(dic_recruit_batch[i]);
+						                      }
+						                 }
+							  }
+							var dic = JSON.stringify(dic2).replace(/k/g, 'id').replace(/v/g, 'value');
+							console.log("dic_recruit_batch:" + dic);
+							// 动态加载招生批次状况 字典  
+							getDicData("show_recruit_batch", "recruit_batch", JSON.parse(dic), this);
+						} else {
+						     for(var i in dic_recruit_batch){
+				                 if(education=="31"){
+				                    if((dic_recruit_batch[i].id=="08" ||  dic_recruit_batch[i].id=="09" || dic_recruit_batch[i].id=="05" ||  dic_recruit_batch[i].id=="06" || dic_recruit_batch[i].id=="07" ||  dic_recruit_batch[i].id=="99"   )){
+				                      dic2.push(dic_recruit_batch[i]);
+				                    }
+				                 }else  if(education=="21"){
+				                      if((dic_recruit_batch[i].id=="08" ||  dic_recruit_batch[i].id=="09" || dic_recruit_batch[i].id=="01" || dic_recruit_batch[i].id=="02" || dic_recruit_batch[i].id=="03" || dic_recruit_batch[i].id=="04" || dic_recruit_batch[i].id=="99" )){
+				                        dic2.push(dic_recruit_batch[i]);
+				                      }
+				                 }
+							  }
+							//console.log("dic_recruit_batch:" + dic_recruit_batch);
+							// 动态加载招生批次状况 字典  
+							getDicData("show_recruit_batch", "recruit_batch", dic2, this);
+						}
+
+					}
+
+				},
+				getIs_most_education: function() {
+					//是否全日制
+					var sfDic = [{
+						'id': 'X',
+						'value': '是'
+					}, {
+						'id': '0',
+						'value': '否'
+					}];
+					getDicData("show_is_most_education", "is_most_education", sfDic, this);
+
+				},
+
+				getBegin_date: function() {
+					//初始化入学时间
+					getDateforPicker("selectBegin_date", "show_begin_date", "begin_date", this);
+
+				},
+
+				getEnd_date: function() {
+					//     //初始化获毕业时间
+					getDateforPicker("selectEnd_date", "show_end_date", "end_date", this);
+				},
+				getDegree: function() {
+					var dic_degree = this.dic_degree;
+					var education=this.education;
+					//alert("education1111:"+education);
+				 //  console.log("dic_degree:" + JSON.stringify(dic_degree));
+				   var dic2=[];
+					if(dic_degree) {
+						//处理修改格式的数据字典格式
+						if(isforUpdate=="true") {
+						
+						      for(var i in dic_degree){
+						                 if(education=="11"){
+						                      if((dic_degree[i].k=="-1" ||  dic_degree[i].k=="1" || dic_degree[i].k=="2" || dic_degree[i].k=="201"  )){
+						                        dic2.push(dic_degree[i]);
+						                      }
+						                 }else if(education=="14"){
+						                    if((dic_degree[i].k=="-1" || dic_degree[i].k=="3"   )){
+						                      dic2.push(dic_degree[i]);
+						                    }
+						                 }else if(education=="31"){
+						                    if((dic_degree[i].k=="-1"  )){
+						                      dic2.push(dic_degree[i]);
+						                    }
+						                 }else  if(education=="21"){
+						                      if((dic_degree[i].k=="-1" ||  dic_degree[i].k=="4" || dic_degree[i].k=="5" || dic_degree[i].k=="6"  )){
+						                        dic2.push(dic_degree[i]);
+						                      }
+						                 }
+							  }
+							var dic = JSON.stringify(dic2).replace(/k/g, 'id').replace(/v/g, 'value');
+							//console.log("dic_degree:" + dic);
+							// 动态加载学位字典  
+							getDicData("showDegree", "degree", JSON.parse(dic), this);
+						} else {
+							
+							 for(var i in dic_degree){
+						                 if(education=="11"){
+						                      if((dic_degree[i].id=="-1" ||  dic_degree[i].id=="1" || dic_degree[i].id=="2" || dic_degree[i].id=="201"  )){
+						                        dic2.push(dic_degree[i]);
+						                      }
+						                 }else if(education=="14"){
+						                    if((dic_degree[i].id=="-1" || dic_degree[i].id=="3"   )){
+						                      dic2.push(dic_degree[i]);
+						                    }
+						                 }else if(education=="31"){
+						                    if((dic_degree[i].id=="-1"  )){
+						                      dic2.push(dic_degree[i]);
+						                    }
+						                 }else  if(education=="21"){
+						                      if((dic_degree[i].id=="-1" ||  dic_degree[i].id=="4" || dic_degree[i].id=="5" || dic_degree[i].id=="6"  )){
+						                        dic2.push(dic_degree[i]);
+						                      }
+						                 }
+							  }
+							 // console.log("dic_degree:" + dic2);
+							// 动态加载学位字典  
+							getDicData("showDegree", "degree", dic2, this);
+						}
+					}
+
+				},
+				getCourse_level: function() {
+
+					var dic_course_level = this.dic_course_level;
+					if(dic_course_level) {
+						//处理修改格式的数据字典格式
+						if(isforUpdate == "true") {
+							var dic = JSON.stringify(dic_course_level).replace(/k/g, 'id').replace(/v/g, 'value');
+							console.log("dic_course_level:" + dic);
+							// 动态加载学位字典  
+							getDicData("show_course_level", "course_level", JSON.parse(dic), this);
+						} else {
+							console.log("dic_course_level:" + dic_course_level);
+							// 动态加载学位字典  
+							getDicData("show_course_level", "course_level", dic_course_level, this);
+
+						}
+
+					}
+				}
+
+			}
+		});
+		
+		/*显示或隐藏 */
+		function change(divId){
+		 var obj=document.getElementById(divId);
+		if(obj.style.display=='none'){
+		obj.style.display='block';
+		}else{
+		obj.style.display='none';
+		}
+       }
+		//查询学校名称和代码
+		function getSchoolData(school_place, school_name) {
+			var sname = "";
+			if(school_name != null && school_name != "" && "undefined" != school_name) {
+				sname = encodeURI(school_name);
+			}
+			if(school_place){
+		
+			
+			var url = $api+'schoolapply/'+token+'?school_place='+school_place+'&school_name='+sname;
+
+			var getSchData = {
+				url: url,
+				type: 'GET',
+				dataType: "json",
+				success: function(data) {
+					console.log(data);
+					// data=JSON.parse(data);
+					//debugger;
+					if(data.retcode == 200) {
+						var json = data.retdata;
+						//console.log('333333333333333'+JSON.stringify(json));
+						var school_apply_data = json.school_apply_data;
+						//console.log("school_apply_data:" + JSON.stringify(school_apply_data));
+						if(school_apply_data) {
+							$("#listview2").show();
+							//sv1.dic_school = school_apply_data;
+							var listData = [];
+							for(var i in school_apply_data) {
+
+								var apply_no = school_apply_data[i].apply_no;
+								var school_name = school_apply_data[i].school_name;
+								var list = {
+									title: '<div class="ulev3" >' + school_name + '</div>',
+									id: apply_no,
+									name: school_name
+									//describe: '<div   class="ulev2" v-longtap="{fn:vuetap,id:'+id+'}"   >' + school_name + '</div>'
+								}
+								listData.push(list);
+
+							}
+
+							lv1.set(listData);
+
+							
+
+						} else {
+							$("#listview2").hide();
+							toast.setToast(data.retmsg, 'five');
+						}
+
+				    }else if(data.retcode=='ERRCODE_00017'){
+	                        toast.setToast(data.retmsg, 'two');
+                            Util.newLocation("two","school_0");
+                      
+					} else {
+						$("#listview2").hide();
+						toast.setToast(data.retmsg, 'five');
+
+					}
+
+				},
+				error: function(e) {
+					$("#listview2").hide();
+					toast.setToast("请求失败", 'five');
+				}
+
+			};
+		
+			
+		    //uap.ready(function() {
+          			$.ajax(getSchData);
+		    //});
+		    
+		   	}else{
+		   	
+		     	toast.setToast("请求参数为空", 'five');
+		   	} 
+		}
+		function getBaseDatas() {
+          // alert(token);
+			var url = $api + 'dict/' + token + '/?dict_codes=308030,' + new Date().getTime();
+			//var url = $api + 'education/' + token + '/'+qualifi_id+'?dict_codes=308004,308006,308027,308009,308032,308026,' + new Date().getTime();
+			console.log("url1010101010110:" + url);
+			var getresInfo = {
+				url: url,
+				type: 'GET',
+				dataType: "json",
+				success: function(data) {
+					// console.log('这个是用于用户登录后默认简历中心信息查询接口------>success'+data);
+					// data=JSON.parse(data);
+					 if(data.retcode == 200) {
+
+						var json = data.retdata;
+			 
+						var dic_data = json.dict_data;
+						//console.log("dic_data:" + JSON.stringify(dic_data));
+						if(dic_data) {
+							 
+							var dic_school_place = dic_data["308030"];
+							var school_place_value = "";
+							if(dic_school_place) {
+								//给vue绑定元素赋值
+
+								//遍历字典，显示中文
+								for(var s in dic_school_place) {
+									var arr = {
+										"id": s,
+										"value": dic_school_place[s]
+									};
+									// console.log("arrarrarr:"+arr);
+
+									vump.school_place_data.push(arr);
+								}
+								//console.log("vump.school_place_data:"+JSON.stringify(vump.school_place_data));
+								//   								 
+							}
+
+						} 
+
+			      }else if(data.retcode=='ERRCODE_00017'){
+					  
+	                        toast.setToast(data.retmsg, 'two');
+                            Util.newLocation("two","school_0");
+                     
+					}else {
+	  
+						toast.setToast(data.retmsg, 'five');
+					}
+
+				},
+				error: function(data) {
+					toast.setToast(data.retmsg, 'five');
+				}
+
+			};
+		
+		    //uap.ready(function() {
+          		$.ajax(getresInfo);
+		    //});
+
+		}
+		//加载数据
+		function getBaseData() {
+			var url = $api + 'dict/' + token + '?dict_codes=308004,308006,308027,308009,308032,308026,308030,' + new Date().getTime();
+			if(isforUpdate == "true") {
+				url = $api + 'education/' + token + '/' + qualifi_id + '?dict_codes=308004,308006,308027,308009,308032,308026,308030,' + new Date().getTime();
+			}
+			console.log("url7777777:" + url);
+			var getresInfo = {
+				url: url,
+				type: 'GET',
+				dataType: "json",
+				success: function(data) {
+					// console.log('这个是用于用户登录后默认简历中心信息查询接口------>success'+data);
+					// data=JSON.parse(data);
+					 if(data.retcode == 200) {
+
+						var json = data.retdata;
+						//console.log("getdata:" + JSON.stringify(json));
+						var education_data = "";
+						if(isforUpdate == "true") {
+							education_data = json.education_data;
+						}
+						var dic_data = json.dict_data;
+						// console.log("education_data333:" + JSON.stringify(education_data));
+
+						//教育信息
+						if(education_data) {
+							vump.qualifi_id = qualifi_id;
+							var degree_no = education_data.degree_no;
+							var education_no = education_data.education_no;
+							var special_serial = education_data.special_serial;
+							var end_date = education_data.end_date;
+							var begin_date = education_data.begin_date;
+							if(!degree_no || "undefined" == degree_no || degree_no == null) {
+								degree_no = "";
+							}
+							if(!education_no || "undefined" == education_no || education_no == null) {
+								education_no = "";
+							}
+							if(!special_serial || "undefined" == special_serial || special_serial == null) {
+								special_serial = "";
+							}else{
+							           
+							          // alert("special_serial:"+special_serial);
+							           var s=special_serial.split("/");
+							          // alert(s);
+							           if(s[0]){
+							             document.getElementById("special_serial1").value = s[0];
+							                 vump.special_serial =s[0];   
+							           }
+							            if(s[1]){
+							             document.getElementById("special_serial2").value = s[1];
+							              vump.special_serial=s[1];   
+							           }
+							           if(s[0] && s[1]){
+							                 vump.special_serial=s[0]+"/"+s[1];  
+							           }
+							   
+							}
+							if(!end_date || "undefined" == end_date || end_date == null) {
+								end_date = "";
+							}
+
+							vump.member_id = education_data.member_id;
+							//console.log("begin_datebegin_date:" + begin_date);
+							vump.begin_date = begin_date;
+							//console.log("end_dateend_date:" + end_date);
+							vump.end_date = end_date;
+							vump.recruit_batch = education_data.recruit_batch;
+							vump.learn_form = education_data.learn_form;
+							vump.school_name = education_data.school_name;
+							vump.school_code = education_data.school_code;
+							vump.special_name = education_data.special_name;
+							vump.speciality = education_data.speciality;
+//							vump.course_level = education_data.course_level;
+							vump.research_direc = education_data.research_direc;
+							vump.education = education_data.education;
+							vump.education_no = education_no;
+							vump.degree = education_data.degree;
+							vump.degree_no = degree_no;
+							vump.is_most_education = education_data.is_most_education;
+							vump.disser_title = education_data.disser_title;
+							
+							document.getElementById("show_begin_date").innerText = education_data.begin_date;
+							document.getElementById("show_end_date").innerText = education_data.end_date;
+							document.getElementById("show_school_name").innerText = education_data.school_name;
+							document.getElementById("show_special_name").innerText = education_data.special_name;
+							var is_most_education_value = "否";
+							if(education_data.is_most_education=="X") {
+								is_most_education_value = "是";
+							}
+							document.getElementById("show_is_most_education").innerText = is_most_education_value;
+							if(education_data.special_name) {
+								$("#special_name").text(education_data.special_name);
+							}
+						}
+
+						if(dic_data) {
+							//动态加载学习形式字典
+							var dic_learn_form = dic_data["308004"];
+							var learn_form_value = "";
+							if(dic_learn_form) {
+								//给vue绑定元素赋值
+								if(isforUpdate == "true") {
+									vump.dic_learn_form = dic_learn_form;
+								}
+
+								console.log("dic_learn_form:" + dic_learn_form);
+								//遍历字典，显示中文
+
+								for(var s in dic_learn_form) {
+									if(education_data.learn_form) {
+										if(dic_learn_form[s].k == education_data.learn_form) {
+											learn_form_value = dic_learn_form[s].v;
+											break;
+										}
+									}
+
+									if(isforUpdate != "true") {
+										var arr = {
+											"id": s,
+											"value": dic_learn_form[s]
+										};
+										vump.dic_learn_form.push(arr);
+									}
+								}
+
+								if(learn_form_value) {
+									document.getElementById("show_learn_form").innerText = learn_form_value;
+								}
+
+							}
+
+							//动态加载学历形式字典
+							var dic_education = dic_data["308006"];
+							
+							
+							var education_value = "";
+							if(dic_education) {
+								//给vue绑定元素赋值
+								if(isforUpdate== "true") {
+									vump.dic_education = dic_education;
+								}
+
+								//遍历字典，显示中文
+
+								for(var s in dic_education) {
+									if(education_data.education) {
+										if(dic_education[s].k == education_data.education) {
+											education_value = dic_education[s].v;
+											break;
+										}
+									}
+									if(isforUpdate != "true") {
+										var arr2 = {
+											"id": s,
+											"value": dic_education[s]
+										};
+										vump.dic_education.push(arr2);
+									}
+
+								}
+
+								if(education_value) {
+									document.getElementById("show_education").innerText = education_value;;
+								}
+
+							}
+							// 招生批次 
+							var dic_recruit_batch = dic_data["308032"];
+							var recruit_batch_value = "";
+							if(dic_recruit_batch) {
+								//给vue绑定元素赋值
+								if(isforUpdate == "true") {
+									vump.dic_recruit_batch = dic_recruit_batch;
+								}
+								//遍历字典，显示中文
+								for(var s in dic_recruit_batch) {
+									if(education_data.recruit_batch) {
+										if(dic_recruit_batch[s].k == education_data.recruit_batch) {
+											recruit_batch_value = dic_recruit_batch[s].v;
+											break;
+										}
+									}
+									if(isforUpdate != "true") {
+
+										var arr3 = {
+											"id": s,
+											"value": dic_recruit_batch[s]
+										};
+										vump.dic_recruit_batch.push(arr3);
+									}
+								}
+								if(recruit_batch_value) {
+									document.getElementById("show_recruit_batch").innerText = recruit_batch_value;
+								}
+
+							}
+
+							//加载学位数据字典
+							var dic_degree = dic_data["308009"];
+							var degree_value = "";
+							if(dic_degree) {
+								//给vue绑定元素赋值
+								if(isforUpdate == "true") {
+
+									vump.dic_degree = dic_degree;
+
+								}
+								//遍历字典，显示中文
+								for(var s in dic_degree) {
+									if(education_data.degree) {
+										if(dic_degree[s].k == education_data.degree) {
+											degree_value = dic_degree[s].v;
+											break;
+										}
+									}
+									if(isforUpdate != "true") {
+										var arr4 = {
+											"id": s,
+											"value": dic_degree[s]
+										};
+										vump.dic_degree.push(arr4);
+									}
+								}
+
+								if(degree_value) {
+									document.getElementById("showDegree").innerText = degree_value;
+								}
+
+							}
+							// 学科层次 
+
+							var dic_course_level = dic_data["308026"];
+							var course_level_value = "";
+							if(dic_course_level) {
+								//给vue绑定元素赋值
+								if(isforUpdate == "true") {
+									vump.dic_course_level = dic_course_level;
+								}
+          
+								//遍历字典，显示中文
+								for(var s in dic_course_level) {
+									if(education_data.course_level) {
+										if(dic_course_level[s].k==education_data.course_level) {
+											course_level_value = dic_course_level[s].v;
+											break;
+										}
+									}
+									if(isforUpdate!="true") {
+										var arr5 = {
+											"id": s,
+											"value": dic_course_level[s]
+										};
+										vump.dic_course_level.push(arr5);
+									}
+								}
+								if(course_level_value) {
+									document.getElementById("show_course_level").innerText = course_level_value;
+								}
+							}
+
+						}
+
+			       }else if(data.retcode=='ERRCODE_00017'){
+					  
+	                        toast.setToast(data.retmsg, 'two');
+                            Util.newLocation("two","education_update");
+                     
+					}else {
+	  
+						toast.setToast(data.retmsg, 'five');
+					}
+
+				},
+				error: function(data) {
+					toast.setToast(data.retmsg, 'five');
+				}
+
+			};
+			
+	 
+      		 $.ajax(getresInfo);
+		
+
+		}
+
+		//绑定保存事件
+		var savedata = new Vue({
+			el: '#save',
+			methods: {
+				forSave: function() {
+				 
+					save();
+				}
+			}
+		});
+		//保存方法 
+		//保存方法 
+		function save() {
+			if(checkform()) {
+
+				//var qualifi_id=qualifi_id;
+				var member_id = vump.member_id;
+				var begin_date = vump.begin_date;
+				var end_date = vump.end_date;
+				var recruit_batch = vump.recruit_batch;
+				var learn_form = vump.learn_form;
+				var school_name = vump.school_name;
+				var school_code = vump.school_code;
+				var special_name = vump.special_name;
+//				var course_level = vump.course_level;
+				var research_direc = vump.research_direc;
+				var education = vump.education;
+				var education_no = vump.education_no;
+				var degree = vump.degree;
+				var degree_no = vump.degree_no;
+				var is_most_education = vump.is_most_education;
+				var disser_title = vump.disser_title;
+				var special_serial = vump.special_serial;
+				var speciality = vump.speciality;
+				
+				var s1=document.getElementById("special_serial1").value;
+				var s2=document.getElementById("special_serial2").value;
+				if(s1 && s2){
+				  special_serial=s1+"/"+s2;
+				}else if(s1){
+				  special_serial=s1;
+				}else if(s2){
+				 special_serial=s2;
+				}
+				
+				// alert("vump.special_serial2222:"+special_serial);
+				//alert("course_level:"+course_level);
+				//特殊的参数的处理
+				if(Util.checkValue([begin_date, end_date, recruit_batch, learn_form, school_name, research_direc, education, degree, is_most_education, disser_title])) {
+					toast.setToast('信息内包含特殊字符，请重新输入', 'three');
+					$("#save").attr("disabled", false);
+					return;
+				}
+				$("#save").attr("disabled", true);
+				//显示加载状态
+// 				$("#content_c").html('<br><br><br><div class="laoddiv"  id="load1"></div>');
+// 				Util.showLoadding("load1");
+	            Util.openLoading('保存中...');
+	            
+	            $("#save").attr("disabled",false);
+               $("#save").css("color","#cccccc");
+		
+
+				var dataPam = JSON.stringify({
+					qualifi_id: pk,
+					member_id: member_id,
+					begin_date: begin_date,
+					end_date: end_date,
+					recruit_batch: recruit_batch,
+					learn_form: learn_form,
+					school_name: school_name,
+					school_code: $.trim(school_code),
+					special_name: special_name,
+					speciality: speciality,
+//					course_level: course_level,
+					research_direc: research_direc,
+					education: education,
+					education_no: education_no,
+					degree: degree,
+					degree_no: degree_no,
+					is_most_education: is_most_education,
+					disser_title: disser_title,
+					special_serial: special_serial
+
+				});
+				if(Util.hasToken()){
+				    var saveUrl = $api + "education/" + token;
+					if(isforUpdate == "true") {
+						saveUrl = $api + "education/" + token + '/' + qualifi_id;
+					}
+					var setObj = {
+						url: saveUrl,
+						type: "POST",
+						contentType: 'application/json;charset=utf-8',
+						dataType: "json",
+						data: dataPam,
+						success: function(data) {
+					             Util.closeLoading();
+							if(data.retcode == 200) {
+							    $("#load1").hide();
+								toast.setToast(data.retmsg, 'five');
+								 //  console.log("data:"+JSON.stringify(data));
+								var r=data.retdata.resume_progress;
+								if(r){
+									uap.locStorage.setVal("resume_progress", r);
+								}
+								//停留2000毫秒跳转到首页
+								setTimeout(function() {
+									
+	// 								  Util.closeWin('education_update');
+	// 								  Util.closeWin('education0');
+	// 								  uap.window.open("education0", "education.html");
+								      /*  uap.window.close();
+								       uap.window.open("education0", "education.html"); */
+								     //	location.href = "education.html";
+							             Util.clearStorage("qualifi_id");
+                                         Util.clearStorage("isforUpdate_education");
+                                         uap.window.open("education_0", "education.html");
+	     					             Util.closeWin('education_update');  
+// 								     	 var titHeight = $('#header').offset().height;
+// 										 uap.frame.open("education0", "education.html", 0, titHeight);
+// 											window.onorientationchange = window.onresize = function() {
+// 											uap.frame.resize("education0", 0, titHeight);
+// 										 }
+	
+								}, 2000);
+						    }else if(data.retcode=='ERRCODE_00017'){
+						       //$("#load1").hide();
+		                        toast.setToast(data.retmsg, 'two');
+	                            Util.newLocation("two","education_update");
+							} else {
+								console.log('验证修改简历基本信息的接口是否成功------>success');
+								console.log(data);
+								//  $("#load1").hide();
+								$("#save").attr("disabled", true);
+								toast.setToast(data.retmsg, 'five');
+								
+							}
+						},
+						error: function(e){
+						   // $("#load1").hide();
+						     Util.closeLoading();
+							toast.setToast("网络错误，请重试", 'five');
+	
+						}
+					};
+				   //uap.ready(function() {
+					  uap.ajax(setObj);
+					
+					//});
+				 }else{
+		  
+				      toast.setToast('登录过期已过期，请重新登录！','three');
+				      Util.newLocation('three','education_update');	
+				  
+				  }
+	
+				} else { //错误的判定
+	                $("#load1").hide();
+					//toast.setToast('校验不通过', 'three');
+				}
+			
+			
+
+		}
+
+		function checkform() {
+			var member_id = vump.member_id;
+			var begin_date = vump.begin_date;
+			if(begin_date == null || begin_date == "") {
+				uap.window.alert("提示", '入学时间不能为空！');
+				return false;
+			}
+			var end_date = vump.end_date;
+			if(end_date == null || end_date == "") {
+				uap.window.alert("提示", '毕业时间不能为空！');
+				return false;
+			} else if(begin_date && end_date) {
+
+				if(!Util.compareDate(begin_date, end_date, "毕业时间不能在入学日期之前！")) {
+					return false;
+
+				}
+
+			}
+			if(vump.education != "11" && vump.education != "14"){
+				var recruit_batch = vump.recruit_batch;
+				if(recruit_batch == "" || recruit_batch == null) {
+					uap.window.alert("提示", '招生批次不能为空！');
+					return false;
+				}
+			}
+			var learn_form = vump.learn_form;
+			if(learn_form == null || learn_form == "") {
+				uap.window.alert("提示", '学校形式不能为空！');
+				return false;
+			}
+			var school_name = vump.school_name;
+			if(school_name == null || school_name == "") {
+				uap.window.alert("提示", '学校名称不能为空！');
+				return false;
+			}
+
+//			var course_level = vump.course_level;
+			
+			var education = vump.education;
+			if(education == "" || education == null) {
+				uap.window.alert("提示", '学历不能为空！');
+				return false;
+
+			}
+			var research_direc = vump.research_direc;
+		    if(education=="11" || education=="14"){
+		    	if(research_direc== "" || research_direc == null) {
+					uap.window.alert("提示", '研究方向不能为空！');
+					return false;
+	
+				} 
+		    }
+		    if(research_direc && !Util.AntiSqlValid(research_direc)){
+		        // uap.window.alert("提示",'请您不要输入特殊字符和SQL关键字!');
+			       return false;
+			 }
+			var education_no = vump.education_no;
+			
+		    if(education_no && !Util.AntiSqlValid(education_no)){
+			 // uap.window.alert("提示",'请您不要输入特殊字符和SQL关键字!');
+			  return false;
+		    }
+			var degree = vump.degree;
+			if(degree == null || degree == "") {
+				uap.window.alert("提示", '学位不能为空！');
+			}
+			var degree_no = vump.degree_no;
+		    if(degree_no && !Util.AntiSqlValid(degree_no)){
+			 // uap.window.alert("提示",'请您不要输入特殊字符和SQL关键字!');
+			  return false;
+		    }
+
+			var is_most_education = vump.is_most_education;
+
+			if(is_most_education == null || is_most_education == "") {
+				uap.window.alert("提示", '是否全日制最高学历不能为空！');
+				return false;
+			}
+
+			var special_name = vump.special_name;
+			var speciality = vump.speciality;
+			if(special_name == null || special_name == "" || speciality == "" || speciality == null || document.getElementById("show_special_name").innerText == "请选择") {
+				uap.window.alert("提示", '专业名称不能为空！');
+				return false;
+			} else if(special_name.length > 200) {
+				uap.window.alert("提示", '专业名称太长！');
+				return false;
+			}
+			var disser_title = vump.disser_title;
+			if(disser_title && !Util.AntiSqlValid(disser_title)){
+			  //uap.window.alert("提示",'请您不要输入特殊字符和SQL关键字!');
+			  return false;
+			}
+			
+			
+			var special_serial = vump.special_serial;
+			var speciality = vump.speciality;
+			if(speciality && !Util.AntiSqlValid(speciality)){
+			  //uap.window.alert("提示",'请您不要输入特殊字符和SQL关键字!');
+			  return false;
+			} else if((!/^[0-9]{0,}$/.test(document.getElementById("special_serial1").value)) && (!/^[0-9]{0,}$/.test(document.getElementById("special_serial1").value))) {
+				uap.window.alert("提示", '专业排名内容，请输入数字！');
+				return false;
+			}
+
+			return true;
+
+		}
+
+		function initSchool(name, code) {
+			// var school_code=Util.GetRequest().school_code;
+			if(name && code) {
+				vump.school_name = name;
+				vump.school_code = code;
+				selectSchool(name, code);
+				// alert("school_name:"+vump.school_name);
+				// alert("school_code:"+vump.school_code);
+
+			}
+
+		} 
+
+		function initSpecial(name, code) {
+			// var school_code=Util.GetRequest().school_code;
+
+			if(name && code) {
+				vump.special_name = name;
+				vump.speciality = code;
+				selectSpecial(name, code);
+				// alert("school_name:"+vump.school_name);
+				// alert("school_code:"+vump.school_code);
+
+			}
+
+		}
+
+		//选择学校回调赋值
+		function selectSchool(name, id) {
+
+			document.getElementById("school_name").value = name;
+			document.getElementById("school_code").value = id;
+			document.getElementById("show_school_name").innerText = name;
+
+		}
+
+		//选择专业回调赋值
+		function selectSpecial(name, id) {
+			//show_special_name speciality special_name
+			document.getElementById("special_name").value = name;
+			document.getElementById("speciality").value = id;
+			document.getElementById("show_special_name").innerText = name;
+
+		}
+		
+	
+		
+
+		
+ 
+	</script>
+
+</html>
