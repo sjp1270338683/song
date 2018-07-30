@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title>《诚信承诺》</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="../../css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="../../css/ui-box.css">
+        <link rel="stylesheet" href="../../css/ui-base.css">
+        <link rel="stylesheet" href="../../css/ui-color.css">
+        <link rel="stylesheet" href="../../css/uap.icon.css">
+        <link rel="stylesheet" href="../../css/uap.control.css">
+        <link rel="stylesheet" href="popcommon.css">
+       
+    </head>
+    <body class="um-vp" style="overflow:hidden;" ontouchstart>
+        <div id="page_0" class="up ub ub-ver bc-bg" tabindex="0">
+        
+            <div class="goodFaithCommitment" style="display:none">
+	            <div id="content">
+	                <div class="tit">诚信承诺</div>
+		                <div class="text ub">
+		                    <div class="ico ub">
+		                     <p style="font-size:.8em">未确认</p>
+		                    </div>
+		                    <div class='subTit ub'></div>
+		                </div>
+		                    <div class="share">
+		                    <div class="hasLine"><p>一.</p></div>
+		                    <div class="hasLine"><p>二.</p></div>
+		                    <div class="hasLine"><p>三.</p></div>
+		                    <div class="last_p"><p >四. </p></div>
+		                </div>
+		                <div  class="close" style="padding: .2em;">×</div>
+	            </div>
+            </div>
+            
+            <div class="registrationPolicy" style="display:none">
+	            <div id="content">
+	                <div class="tit">注册须知</div>
+		                <div class="text_rigister ub"></div>
+		               <div class="share" style="height: 85%;">
+		                       <div class="hasLine"> <p>未确认 </p></div>
+                      		   <div class="hasLine"> <p> </p></div>
+                    		   <div><p class="last-p"></p></div>
+		                </div>
+		                <div class="close" style="padding: .2em;">×</div>
+	            </div>
+            </div>
+            
+            <div class="noticeOfApplication" style="display:none">
+	            <div id="content">
+	                <div class="tit">应聘须知</div>
+		                <div class="text ub">
+		                    <div class="ico ub">
+		                     <p style="font-size:.8em">未确认</p>
+		                    </div>
+		                    <div class='subTit ub'></div>
+		                </div>
+		                    <div class="share">
+		                   <div class="hasLine"> <p>一、</p></div>
+                           <div class="hasLine"> <p>二、</p></div>
+		                   <div class="hasLine"> <p>三、</p></div>
+		                   <div class="hasLine"> <p>四、</p></div>
+		                   <div class="hasLine"> <p>五、</p></div>
+		                   <div class="hasLine"> <p>六、</p></div>
+		                   
+		                </div>
+		                <div class="close" style="padding: .2em;">×</div>
+	            </div>
+            </div>
+        </div>
+    <script src="../../lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../lib/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+    <script>
+       //初始化操作
+            var type= localStorage.getItem('popWin');
+            //console.log('存储的类型 ：   '+type);
+            //诚信承诺 goodFaithCommitment
+            if(type =='goodFaithCommitment'){
+              $(".goodFaithCommitment").attr('style','display:block');
+              $(".registrationPolicy").attr('style','display:none');
+              $(".noticeOfApplication").attr('style','display:none');
+            } 
+            //注册须知 registrationPolicy
+            if(type =='registrationPolicy'){
+              $(".registrationPolicy").attr('style','display:block');
+              $(".goodFaithCommitment").attr('style','display:none');
+              $(".noticeOfApplication").attr('style','display:none');
+            } 
+            //应聘须知 noticeOfApplication
+            if(type =='noticeOfApplication'){
+              $(".noticeOfApplication").attr('style','display:block');
+              $(".goodFaithCommitment").attr('style','display:none');
+              $(".registrationPolicy").attr('style','display:none');              
+            } 
+            
+        $(".close").click(function(){
+        	$(window).attr("location","../../views/register.html");; 
+        })
+    </script>
+    
+</html>

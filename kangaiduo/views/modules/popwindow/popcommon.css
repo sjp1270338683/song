@@ -1,0 +1,579 @@
+a{
+	text-decoration: none;
+	color: #2b2b2b;
+}
+#page_0 {
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+	background-color: rgba(0, 0, 0, .5)
+}
+.goodFaithCommitment{
+	height: 100%;
+}
+#content {
+	height: 70%!important;
+	width : 80%;
+	background-color: #fff;
+	margin: 10% auto;
+	border-radius: 0.4em;
+	padding: 0.8em;
+	position: relative;
+	width: 80%;
+}
+.tit {
+	text-align: center;
+	font-size: 1.1em;
+	background: #417fcb;
+	margin-left: -.75em;
+	color: #fff;
+	margin-right: -.75em;
+	padding: .4em 0em;
+	margin-top: -.75em;
+	border-top-left-radius: .25em;
+	border-top-right-radius: .25em;
+}
+.noticeOfApplication{
+	height: 100%;
+}
+.text ub{
+	height: 70%!important;
+}
+.text {
+	padding: 1.2em 0;
+}
+.registrationPolicy{
+	height: 100%;
+}
+.text_rigister {
+	padding: .3em 0;
+}
+
+.ico img {
+	width: 3em;
+	margin-left: 0.5em;
+}
+
+.subTit {
+	margin-left: 1em;
+	width: 70%;
+	font-size: 0.8em;
+}
+
+.share {
+	font-size: 0.75em;
+	text-align: left;
+	margin: 0 -0.5em;
+	height: 65%;
+    overflow: auto !important;
+}
+.share .hasLine {
+	width: 100%;
+	float: left;
+	border-bottom-color: #ddd;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding-bottom: 8px;
+}
+.share img {
+	width: 3em
+}
+.share div img, .share div p {
+	padding: 0.5em 0 0.1em;
+}
+.row2 {
+	margin-top: 1em;
+	padding-bottom: 0.5em;
+}
+.close {
+	position: absolute;
+	right: 0.1em;
+	top: -0.4em;
+	font-size: 2em;
+	color: #fff;
+	cursor: pointer;
+}
+.last_p {
+	border-bottom-color: #fff;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.checkAttachment{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.checkAttachment>#contentCheck{
+	width: 100%;
+	/*height: 100%;*/
+	background-color: #fff;
+	position: absolute;
+	bottom: 0px;
+	margin:  0 auto;
+}
+.checkAttachment>#contentCheck>.checkAttachmentBox>li{
+	height: 2.18em;
+	line-height: 2.18em;
+	margin: 0em 0.75em 0em 0.75em;
+}
+.redBox{
+	width:1em;
+	height: 1em;
+	display: inline-block;
+}
+.redBox>img{
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+.checkTheAttachment{
+	width: 100%;
+	height: 3em;
+	line-height: 3em;
+	color: #169E8C;
+	font-size:0.75em;
+	text-align: center;
+	background-color:#eff0f2;
+}
+/*公司介绍弹框*/
+.textHide{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.link{
+	width: 100%;
+	font-size: 0.7em;
+	background-color: #EFF0F2;
+	padding-left: 0.5em;
+	line-height: 1.6em;
+}
+#footer>.toSignUp{
+	width: 100%;
+	line-height: 2.5em;
+	text-align: center;
+	background-color: #169E8C;
+}
+#footer>.toSignUp>a{
+	color: #fff;
+	font-size: 0.9em;
+}
+.imgTopArrow>img{
+	vertical-align: middle;
+}
+/**我的信息的弹窗  S**/
+.model_wrapper{
+	width: 100%;
+    position: fixed!important;
+    top: 0%;
+    height: 100%;
+    z-index: 100000001;
+    position: inherit;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5);
+}
+#content-wrapper {
+	height: 15em!important;
+	width : 80%;
+	background-color: #fff;
+	margin: 10% auto;
+	border-radius: 0.4em;
+	padding: 0.8em;
+	position: relative;
+	width: 80%;
+}
+.reject,.close_modal{
+  color: #333;
+  font-size:.8em;
+  padding:.5em .5em;
+  border:1px solid  #ccc;
+  background:#fff!important;	
+}
+.deal-btn{
+  font-size:.8em;
+  padding:.5em .5em;
+  background:#169e8c!important;	
+}
+.share .hasLine_messages {
+	width: 100%;
+	float: left;
+/* 	border-bottom-color: #ddd;
+	border-bottom-style: solid;
+	border-bottom-width: 1px; */
+	padding-bottom: 8px;
+}
+.write_response{
+	margin-top: 5em;
+    height: 10em;
+    font-size: .8em;
+}
+.write_wrapper{
+	-ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+}
+.write_infor{
+	margin-top: 2em;
+	height:8em;
+	width:4em;
+    
+}
+.left{
+	flex:.3;
+    -webkit-flex:.3;
+    -moz-flex:.3;
+    -webkit-box-flex: .3;
+	/* border:1px solid #ddd; */
+}
+.right{
+	flex:1.7;
+    -webkit-flex:1.7;
+    -moz-flex:1.7;
+    -webkit-box-flex: 1.7;
+	/* border:1px solid blue; */
+	margin-right: 1.8em;
+}
+.bold{
+   font-family: '微软雅黑 Regular','微软雅黑';
+  	
+}
+.write_information{
+	resize: none;
+	width: 100%;
+	border:1px solid #aaa;
+    height: 100%;
+    font-size: 1.2em;
+}
+/*友情链接弹框*/
+#unit-info .share {
+	font-size: 0.8em;
+	text-align: left;
+	padding-left: 1em;
+	margin: 0 -0.5em;
+	height: 500px;
+    overflow: auto;
+    background-color: #fff;
+}
+/*点击友情链接出来的弹框*/
+.companyIntroduction{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.companyIntroduction>#contentCompany{
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+	bottom: 0px;
+	margin:  0 auto;
+}
+/*点击友情链接出来的弹框中的li样式*/
+.checkAttachmentBox>li{
+	height: 2.18em;
+	line-height: 2.18em;
+	font-size: 0.9em;
+	margin: 0em 0.75em 0em 0.75em;
+	border-bottom:1px solid #eff0f2;
+	border-top:1px solid #eff0f2;
+}
+.redBox{
+	width:1em;
+	height: 1em;
+	display: inline-block;
+}
+.redBox>img{
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+.checkTheAttachment{
+	width: 100%;
+	height: 3em;
+	line-height: 3em;
+	color: #169E8C;
+	font-size:0.75em;
+	text-align: center;
+	background-color:#eff0f2;
+}
+/*公司介绍弹框*/
+.textHide{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.linkCom{
+	width: 100%;
+	font-size: 0.7em;
+	background-color: #EFF0F2;
+	padding: 0.5em;
+	line-height: 1.6em;
+	color: #169E8C;
+}
+#footer>.toSignUp{
+	width: 100%;
+	line-height: 2.5em;
+	text-align: center;
+	background-color: #169E8C;
+}
+#footer>.toSignUp>a{
+	color: #fff;
+	font-size: 0.9em;
+}
+.imgTopArrow>img{
+	vertical-align: middle;
+}
+/*取消查看*/
+#checkTheAttachment{
+	padding: 0.5em 0em 0.5em 0em;
+	background-color: #EFF0F2;
+	font-size: 0.8em;
+}
+#checkTheAttachment>p{
+	color: #169E8C;
+	text-align: center;
+}
+#unit-info>.model-dialog{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+#unit-info{
+	width: 100%;
+    position: fixed!important;
+    top: 0%;
+    height: 100%;
+    z-index: 100000001;
+    position: inherit;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5);
+}
+/*点击清空历史搜索样式*/
+#search-info>.model-dialog{
+	width: 85%;
+	top: 30%;
+	background-color: #fff;
+	margin:0 auto;
+	padding-bottom: 1em;
+    border-radius: 1em;
+}
+#search-info>.model-dialog>.model-content>.model-header{
+	width: 100%;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+}
+#search-info>.model-dialog>.model-content>.modal-body{
+	height: 4em !important;
+	line-height: 6em;
+	font-size: 1em;
+	text-align: center;
+	font-size: 0.8em;
+}
+#search-info>.model-dialog>.model-content>.modal-footer{
+	width: 100%;
+	height: 2em;
+	line-height: 2em;
+    padding-bottom: 3em;
+	text-align: center;
+	margin-top: 2em;
+}
+#search-info>.model-dialog>.model-content>.modal-footer>ul{
+	width: 100%;
+	overflow: hidden;
+}
+#search-info>.model-dialog>.model-content>.modal-footer>ul>li{
+	width: 50%;
+	float: left;
+}
+#search-info>.model-dialog>.model-content>.modal-footer>ul>.true>p{
+	width: 40%;
+	border: 1px solid rgba(121, 121, 121, 1);
+	border-radius: 0.5em;
+	color: rgba(121, 121, 121, 1);
+	margin: auto;
+}
+#search-info>.model-dialog>.model-content>.modal-footer>ul>.error>p:last-child{
+	width: 40%;
+	background-color: #169E8C;
+	border-radius: 0.5em;
+	color: #FFFFFF;
+	margin: auto;
+}
+/*工作申请中撤销、撤销原因、删除弹框的样式*/
+/*撤销 confirm/撤销原因 reasonModal/删除弹框 confirm1*/
+#confirm1>.model-dialog{
+	width: 85%;
+	top: 25%;
+	background-color: #fff;
+	margin:0 auto;
+	padding-bottom: 1em;
+    border-radius: 1em;
+}
+#confirm1>.model-dialog>.model-content>.model-header{
+	width: 100%;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+}
+#confirm1>.model-dialog>.model-content>.modal-body{
+	height: 10em !important;
+	line-height: 2em;
+	font-size: 1em;
+	text-align: center;
+	font-size: 0.8em;
+	padding: 0.5em;
+}
+#confirm1>.model-dialog>.model-content>.modal-body{
+	line-height: 10em;
+}
+#confirm1>.model-dialog>.model-content>.modal-footer{
+	width: 100%;
+	height: 2em;
+	line-height: 2em;
+    padding-bottom: 1em;
+	text-align: center;
+	margin-top: 1em;
+}
+#confirm1>.model-dialog>.model-content>.modal-footer>ul{
+	width: 100%;
+	overflow: hidden;
+}
+#confirm1>.model-dialog>.model-content>.modal-footer>ul>li{
+	width: 50%;
+	float: left;
+}
+#confirm1>.model-dialog>.model-content>.modal-footer>ul>.true>p{
+	width: 40%;
+	border: 1px solid rgba(121, 121, 121, 1);
+	border-radius: 0.5em;
+	color: rgba(121, 121, 121, 1);
+	margin: auto;
+}
+#confirm1>.model-dialog>.model-content>.modal-footer>ul>.error>p:last-child{
+	width: 40%;
+	background-color: #169E8C;
+	border-radius: 0.5em;
+	color: #FFFFFF;
+	margin: auto;
+}
+/*撤销弹框*/
+#confirm>.model-dialog{
+	width: 85%;
+	top: 25%;
+	background-color: #fff;
+	margin:0 auto;
+	padding-bottom: 1em;
+    border-radius: 1em;
+}
+#confirm>.model-dialog>.model-content>.model-header{
+	width: 100%;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+}
+#confirm>.model-dialog>.model-content>.modal-body{
+	height: 10em !important;
+	line-height: 2em;
+	font-size: 1em;
+	text-align: center;
+	font-size: 0.8em;
+	padding: 0.8em;
+}
+#confirm>.model-dialog>.model-content>.modal-footer{
+	width: 100%;
+	height: 2em;
+	line-height: 2em;
+    padding-bottom: 2em;
+	text-align: center;
+	margin-top: 3em;
+}
+#confirm>.model-dialog>.model-content>.modal-footer>ul{
+	width: 100%;
+	overflow: hidden;
+}
+#confirm>.model-dialog>.model-content>.modal-footer>ul>li{
+	width: 50%;
+	float: left;
+}
+#confirm>.model-dialog>.model-content>.modal-footer>ul>.true>p{
+	width: 40%;
+	border: 1px solid rgba(121, 121, 121, 1);
+	border-radius: 0.5em;
+	color: rgba(121, 121, 121, 1);
+	margin: auto;
+}
+#confirm>.model-dialog>.model-content>.modal-footer>ul>.error>p:last-child{
+	width: 40%;
+	background-color: #169E8C;
+	border-radius: 0.5em;
+	color: #FFFFFF;
+	margin: auto;
+}
+/*撤销确定弹框*/
+#reasonModal>.model-dialog{
+	width: 85%;
+	top: 25%;
+	background-color: #fff;
+	margin:0 auto;
+	padding-bottom: 1em;
+    border-radius: 1em;
+}
+#reasonModal>.model-dialog>.model-content>.model-header{
+	width: 100%;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+}
+#reasonModal>.model-dialog>.model-content>.modal-body{
+	height: 10em !important;
+	line-height: 2em;
+	font-size: 1em;
+	text-align: center;
+	font-size: 0.8em;
+	padding: 0.8em;
+}
+#reasonModal>.model-dialog>.model-content>.modal-footer{
+	width: 100%;
+	height: 2em;
+	line-height: 2em;
+    padding-bottom: 2em;
+	text-align: center;
+	margin-top: 3em;
+}
+#reasonModal>.model-dialog>.model-content>.modal-footer>ul{
+	width: 100%;
+	overflow: hidden;
+}
+#reasonModal>.model-dialog>.model-content>.modal-footer>ul>li{
+	width: 50%;
+	float: left;
+}
+#reasonModal>.model-dialog>.model-content>.modal-footer>ul>.true>p{
+	width: 40%;
+	border: 1px solid rgba(121, 121, 121, 1);
+	border-radius: 0.5em;
+	color: rgba(121, 121, 121, 1);
+	margin: auto;
+}
+#reasonModal>.model-dialog>.model-content>.modal-footer>ul>.error>p:last-child{
+	width: 40%;
+	background-color: #169E8C;
+	border-radius: 0.5em;
+	color: #FFFFFF;
+	margin: auto;
+}
+#reasonModal>.model-dialog>.model-content>.modal-body>textarea{
+	margin-top: 4em;
+	width: 50%;
+	height: 5em;
+	font-size: 1.2em;
+}
