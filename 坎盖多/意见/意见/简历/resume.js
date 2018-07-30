@@ -15,7 +15,6 @@
 		}else{
 			$("#head_img").attr("src",imgurl);
 		}
-	if (token){
 		var dataList = [];
 		var url = $api + 'resume/center/' + token + '?dict_codes=308011,308001,308002,308012' + new Date().getTime();
 		var getresInfo = {
@@ -237,7 +236,7 @@
 				toast.setToast(data.retmsg, 'five');
 			}
 
-		};
+		
 
 		$.ajax(getresInfo);
 
