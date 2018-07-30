@@ -1,5 +1,6 @@
 (function($) {
-		var token = localStorage.getItem('token');
+//		var token = localStorage.getItem('token');
+ var token="807a43d67fb34f6b97e6d71da3c85cd7";
 		var imgurl = localStorage.getItem('attach_url');
 		var user_name = localStorage.getItem('user_name');
 		var resume_base,resume_progress;
@@ -36,7 +37,8 @@
 					var s1 = (resume_progress.substring(0, 1) + resume_progress.substring(0, 3)).split('');
 					var s2 = award_progress.split('');
 					var s3 = (resume_progress.substring(4)).split('');
-					var s4 = "base,lx,edu,lau," + resume_order;
+//					var s4 = "base,lx,edu,lau," + resume_order;
+					var s4 = "base,lx,edu,lau,fam";
 					var p1 = s4.split(',');
 					var rA = resume_order.split(',');
 					var PA = project_progress.split('');
@@ -111,33 +113,36 @@
 						} else if(p == "lau") {
 							s_all[j] = s1[3];
 
-						} else if(p == "cert") {
-							s_all[j] = s2[1];
-
-						} else if(p == "prize") {
-							s_all[j] = s2[2];
-
-						} else if(p == "file") {
-							s_all[j] = rp_A[7];
-
-						} else if(p == "computer") {
-							s_all[j] = s2[0];
-
-						} else if(p == "fam") {
+						} 
+//						else if(p == "cert") {
+//							s_all[j] = s2[1];
+//
+//						} else if(p == "prize") {
+//							s_all[j] = s2[2];
+//
+//						} else if(p == "file") {
+//							s_all[j] = rp_A[7];
+//
+//						} else if(p == "computer") {
+//							s_all[j] = s2[0];
+//
+//						} 
+						else if(p == "fam") {
 							s_all[j] = rp_A[3];
 
-						} else if(p == "sociPrac") {
-							s_all[j] = rp_A[4];
-
-						} else if(p == "achiev") {
-							s_all[j] = PA[0];
-
-						} else if(p == "achiev1") {
-							s_all[j] = PA[1];
-
-						} else if(p == "explain") {
-							s_all[j] = rp_A[8];
-						}
+						} 
+//						else if(p == "sociPrac") {
+//							s_all[j] = rp_A[4];
+//
+//						} else if(p == "achiev") {
+//							s_all[j] = PA[0];
+//
+//						} else if(p == "achiev1") {
+//							s_all[j] = PA[1];
+//
+//						} else if(p == "explain") {
+//							s_all[j] = rp_A[8];
+//						}
 						p_all.push(p1[j]);
 
 					}
@@ -165,39 +170,42 @@
 							label = "学习经历";
 
 						} else if(name == "lau") {
-							label = "外语能力";
+							label = "语言能力";
 
-						} else if(name == "cert") {
-							label = "资格证书";
+						} 
+//						else if(name == "cert") {
+//							label = "资格证书";
 
-						} else if(name == "prize") {
-							label = "获奖情况";
-
-						} else if(name == "file") {
-							label = "上传电子附件";
-
-						} else if(name == "computer") {
-							label = "计算机能力";
-
-						} else if(name == "fam") {
+//						} else if(name == "prize") {
+//							label = "获奖情况";
+//
+//						} else if(name == "file") {
+//							label = "上传电子附件";
+//
+//						} else if(name == "computer") {
+//							label = "计算机能力";
+//
+//						} 
+						else if(name == "fam") {
 							label = "家庭成员";
 
-						} else if(name == "sociPrac") {
-							label = "主要社会实践经历/工作经历";
-
-						} else if(name == "achiev") {
-							label = "学术成果-论文";
-
-						} else if(name == "achiev1") {
-							label = "学术成果-科研";
-
-						} else if(name == "explain") {
-							label = "其他";
-
 						}
-						var required = "(必填)";
+//						else if(name == "sociPrac") {
+//							label = "主要社会实践经历/工作经历";
+//
+//						} else if(name == "achiev") {
+//							label = "学术成果-论文";
+//
+//						} else if(name == "achiev1") {
+//							label = "学术成果-科研";
+//
+//						} else if(name == "explain") {
+//							label = "其他";
+//
+//						}
+						var required = "";
 						if(i > 3) {
-							required = "(非必填)";
+							required = "";
 						}
 						var list = {
 							"id": i,
@@ -290,6 +298,17 @@
 	
 		}
 	}
+	function ckEdu() {
+		var s = "";
+		if(resume_progress) {
+			s2 = resume_progress.substring(1, 2);
+			if(s2 != "1") {
+				toast.setToast('请先填写教育经历信息！', 'three');
+				return false;
+			}
+		}
+		return true;
+	}
 	$(document).on("click", "#login_section ul", function() {
 		//定义变量
 		var index = $("#login_section ul").index(this);
@@ -307,60 +326,19 @@
 				$(window).attr("location","./education.html");
 			}
 	
-		} else if(list_liname.indexOf("外语能力") != -1) {
+		} else if(list_liname.indexOf("语言能力") != -1) {
 			if(ckBase2()  && ckEdu() ) {
-				alert('你点击了  外语能力');
+				$(window).attr("location","./language.html");
 			}
 	
-		} else if(list_liname.indexOf("上传电子附件") != -1) {
-			if(ckBase()) {
-				alert('你点击了     上传电子附件');
-				uap.window.open("uploadFileAttach0", "views/resume/uploadFileAttach.html");
-			}
-	
-		} else if(list_liname.indexOf("计算机能力") != -1) {
-			if(ckBase()) {
-				alert('你点击了     计算机能力');
-			}
-	
-		} else if(list_liname.indexOf("资格证书") != -1) {
-			if(ckBase()) {
-				alert('你点击了   资格证书');
-			}
-	
-		} else if(list_liname.indexOf("获奖情况") != -1) {
-			if(ckBase()) {
-				alert('你点击了   获奖情况');
-			}
-	
-		} else if(list_liname.indexOf("主要社会实践经历") != -1) {
-			if(ckBase()) {
-				alert('你点击了   主要社会经验');
-			}
-	
-		} else if(list_liname.indexOf("家庭成员") != -1) {
+		}
+		else if(list_liname.indexOf("家庭成员") != -1) {
 	
 			if(ckBase()) {
 				alert('你点击了   家庭成员');
 			}
 	
-		} else if(list_liname.indexOf("学术成果-论文") != -1) {
-			if(ckBase()) {
-				alert('你点击了   学术成果-论文');
-			}
-	
-		} else if(list_liname.indexOf("学术成果-科研") != -1) {
-			if(ckBase()) {
-				alert('你点击了   学术成果-科研');
-			}
-	
-		} else if(list_liname.indexOf("其他") != -1) {
-			if(ckBase()) {
-				alert('你点击了   其他');
-			}
-	
-		}
-	
+		} 
 	});
 	
 	$("#exit_login").on("click", function() {
