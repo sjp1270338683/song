@@ -1,0 +1,350 @@
+/*登录  S*/
+.b-gra{
+	border-color:#b7b7b7;
+}
+/*背景图片*/
+.login-bg{
+    /*background-image: url('myImg/background.jpg');*/
+}
+/*图片*/
+.login_logo{
+	min-width:8em;
+	min-height:8em;
+}
+.error_infor{
+	background: rgb(255,128,64)!important;
+}
+.t-gra
+{
+	color:#a1a1a1;
+}
+.addfont{
+	font-weight:bold;
+}
+.t-blu
+{
+	color:#177fc7;
+}
+.t-wh{
+	font-size:0.75em!important;
+}
+.uinnh5
+{
+	padding:0.8em 0.5em;
+	margin:0;
+}
+.login_line{
+	border-bottom-color:#ddd;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+}
+.upload_line{
+
+	border-top-color:#ddd;
+	border-top-width:1px;
+	border-top-style:solid;
+}
+/*登录按钮*/
+.login_button{
+	border-radius: .3em!important;
+	/*box-shadow: 0 3px 5px #169E8C;*/
+	background-color: #417fcb;
+    height: 2.3em;
+    line-height: 2.3em;
+}
+/*验证码*/
+.form_code{
+	width: 45%!important;
+	margin-right: 5px!important;
+	display:inline-block!important;
+}
+
+.form-control{
+	margin-right: 5px!important;
+	display:inline-block!important;
+}
+.user_name{
+	margin-left:2.1em;
+}
+.user_pwd{
+	margin-left:2.1em;
+}
+.user_code{
+	margin-left:1.4em;
+}
+.code_wrap{
+	width: 5.8em;
+	height: 1.5em;
+	position: absolute;
+	right: .2em;
+	top: .48em;
+}
+.code_wrap input{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 1.2em;
+	border: 1px solid #5f93d2;
+	border-radius: 5em;
+	font-size: .7em;
+}
+.code_wrap1{
+	border: 0;
+}
+.l-changeOne{
+	color: #5f93d2;
+	/*margin-right: -1em;*/
+    /*display: inline-block;*/
+    font-size: .8em;
+    /*margin-top: 0.55em;*/
+}
+.code_pic{
+	margin-top: 0.2em;
+    vertical-align: middle;
+    display: inline-block;
+    min-height: 1.3em;
+}
+.bottom_wrap{
+	
+	display:-webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flex-box!important;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-pack:space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    box-align: center;
+    font-size: .65em;
+}
+.bottom_wrap1{
+	font-size: .8em;
+}
+.section_wrap{
+	    margin: -0.4em 0.4em 0.4em 0.4em!important;
+}
+.umhw{
+	min-height:1em;
+	min-width:1em;
+}
+.umhw1{
+	min-height:3.16em;
+	min-width:11.5em;
+}
+.umhw2{
+	min-height:1.6em;
+	min-width:1.6em;
+}
+.ulab .uinput
+{
+	margin-left:3px
+}
+.b-wh{
+    border-color: white;
+}
+/*登录 E*/
+
+
+/*注册 S*/
+
+.licese_account{
+    margin-left: 1.5em;
+    display: inline-block;
+    margin-top: .2em;
+}
+.licese_account1{
+    margin-top: .2em;
+    color: #417fcb;
+    font-size: .89em;
+}
+.register_read{
+   color:#0099FF;
+}
+/*找回密码*/
+.email_find,.phone_find{
+	width: 96%;
+}
+.save-data,.reset-data{
+	border-radius: .3em!important;
+	/*box-shadow: 0 3px 5px #169E8C;*/
+	background-color: #169E8C;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+.mustWrite{
+	color: red;
+    /* margin-top: 4.5em; */
+    vertical-align: middle;
+    margin-right: 0.2em;
+}
+.notMustWrite{
+    margin-left:.6em;	
+}
+.notMustweChat{
+	margin-left:.8em;
+}
+/*学籍认证*/
+.right_arrow{
+	color:#999;
+}
+
+/*我要报到*/
+.tip-content-wrapper{
+	padding:.5em .5em!important;
+}
+.red_tip{
+	display:inline-block!important;
+	color:#FF0000!important;
+	
+}
+.tip-content{
+	width: 100%;
+	color:#169e8c;
+	font-size: .7em;
+	display:inline-block;
+}
+
+/*意见反馈*/
+.resetData{
+	background:#fff;
+	color:rgb(153,153,153);
+	border:1px solid rgb(121,121,121);
+}
+.dashed_line{
+	border:1px dashed #169e8c;
+}
+.reback_wrapper{
+	margin-top:.5em;
+	color:#169e8c;
+}
+/*我的成绩*/
+
+/*分割线*/
+.split_line{
+	height:.5em;
+	background:#ececec;
+}
+.table{
+	color: rgb(102, 102, 102);
+    border-collapse: collapse;
+    border-spacing: 0;
+	width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.thead{
+	background:#ececec;
+	text-align:center;
+}
+.fill_data{
+	text-align:center;
+}
+.thead_th{
+
+	padding:.5em 0;
+	font-size:.8em;
+	color:rgb(84,84,84);
+	white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    text-overflow: ellipsis;
+}
+.padding_left{
+	padding-left:.5em!important;
+}
+.tbody_td{
+	font-size:.8em;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding:.7em 0;
+    border: none;
+    color: rgb(102, 102, 102);
+}
+.scores_tip{
+	color: rgb(22, 158, 140);
+}
+.textHide {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.no-infoTip {
+    height: 40%;
+    width:40%;
+    text-align: center;
+    color: #999;
+    background-size: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)!important;
+    -ms-transform: translate(-50%,-50%)!important;
+    -moz-transform: translate(-50%,-50%)!important;
+    -webkit-transform: translate(-50%,-50%)!important;
+    -o-transform: translate(-50%,-50%)!important;
+}
+.no-text{
+	font-size: .8em;
+    top: 25%;
+    left: 3%;
+    position: relative;
+}
+tr.odd{
+    background:#f2f2f2;
+}
+
+/*上传电子附件*/
+.select_wrapper{
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+.upload_wrapper{
+	min-height: 2em;
+}
+.upload_text{
+	margin-left: 1.0em;
+}
+.upload_right_angle{
+	color: #999;
+	margin-right:0.6em;
+}
+.choose_type{
+   
+    margin-left:1.5em;
+}
+.base_a{
+	
+    margin-left:1.5em;
+}
+.text_wrapper{
+	padding: 0.3em;
+    margin: 0;
+}
+.right_angle{
+	color:#999;
+}
+.upload_tip{
+	color:red;
+	font-size:0.6em;
+	margin-left:2.4em;
+	width:100%;
+}
+.upload_btn{
+	margin-top: -0.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

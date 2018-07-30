@@ -1,0 +1,189 @@
+.tab
+{
+	height:3em;
+}
+.uinn-a13{
+	padding:0.1em 0 0.2em 0;
+}
+
+input[type="radio"]:checked + div.tab-act-bg
+{
+	background-color:#cacaca;
+}
+
+.footer{
+	border-top-color: #D7D7D7;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-top: 15px;
+}
+/*底部的图片*/
+input[type="radio"]:checked + div>div.act-col{
+	color:#169E8C;
+}
+
+input[type="radio"] + div>div.tp-map{
+	background-image: url(../assets/images/home.png);
+}
+div.tp-map{
+	background-image: url(../assets/images/home.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1em!important;
+    height: 1em!important;
+    font-size: 1.56em!important;
+}
+div.sc-text-active .tp-map{
+	background-image: url(../assets/images/home_act.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1em!important;
+    height: 1em!important;
+    font-size: 1.56em!important;
+}
+input[type="radio"]:checked + div>div.tp-map{
+	background-image: url(../assets/images/home_act.png);
+}
+input[type="radio"] + div>div.tp-talk{
+	background-image: url(../assets/images/bulletinDynamics.png);
+}
+input[type="radio"]:checked + div>div.tp-talk{
+	background-image: url(../assets/images/bulletinDynamics_act.png);
+}
+
+input[type="radio"] + div>div.tp-dyn{
+	background-image: url(../assets/images/unitList.png);
+}
+div.tp-dyn{
+	background-image: url(../assets/images/unitList.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1em!important;
+    height: 1em!important;
+    font-size: 1.56em!important;
+}
+div.sc-text-active .tp-dyn{
+	background-image: url(../assets/images/unitList_act.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1em!important;
+    height: 1em!important;
+    font-size: 1.56em!important;
+}
+input[type="radio"]:checked + div>div.tp-dyn{
+	background-image: url(../assets/images/unitList_act.png);
+}
+
+input[type="radio"] + div>div.tp-set{
+	background-image: url(../assets/images/personal.png);
+}
+input[type="radio"]:checked + div>div.tp-set{
+	background-image: url(../assets/images/personal_act.png);
+}
+div.tp-set{
+	background-image: url(../assets/images/personal.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1em!important;
+    height: 1em!important;
+    font-size: 1.56em!important;
+}
+
+div.sc-text-active .tp-set{
+	background-image: url(../assets/images/personal_act.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1em!important;
+    height: 1em!important;
+    font-size: 1.56em!important;
+}
+div.tp-talk{
+	background-image: url(../assets/images/bulletinDynamics.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1em!important;
+    height: 1em!important;
+    font-size: 1.56em!important;
+}
+
+div.sc-text-active .tp-talk{
+	background-image: url(../assets/images/bulletinDynamics_act.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1em!important;
+    font-size: 1.56em!important;
+}
+input[type="radio"] + div>div.tp-my{
+	background-image: url(../assets/images/resume.png);
+}
+div.tp-my{
+	background-image: url(../assets/images/resume.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1em!important;
+    height: 1em!important;
+    font-size: 1.56em!important;
+}
+div.sc-text-active .tp-my{
+	background-image: url(../assets/images/resume_act.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1em!important;
+    height: 1em!important;
+    font-size: 1.56em!important;
+}
+input[type="radio"]:checked + div>div.tp-my{
+	background-image: url(../assets/images/resume_act.png);
+}
+input[type="radio"]:checked + div.tab-act-bg>div.tp-my{
+	background-image: url(footer-btn/footerImg5.png);
+}
+
+
+input[type="radio"]:checked + div.tab-act-bg>div.tp-search{
+	background-image: url(footer-btn/footerImg3.png);
+}
+#nav-left-1{
+	display: inline-block !important;
+	float: left;
+	color: #fff;
+}
+.bulletinHead{
+	overflow: hidden;
+	padding: 0.2em 0em 0.2em 0em;
+}
+.bulletinHead>h1{
+	display: inline-block !important;
+	width: 9em;
+	line-height: 1.8em;
+	display: inline-block;
+	color:#fff;
+}
+.comyHead{
+	width: 100%;
+	height: 100%;
+}
+#nav-right-1{
+	color: #fff;
+	/*float: right;*/
+	/*display: inline-block !important;*/
+}
+#nav-right-1>div{
+	font-size: 1.5em;
+	padding-top: 0.2em;
+}
+.bulletinHead{
+	background-color: #169E8C !important;
+	text-align: center;
+}
+

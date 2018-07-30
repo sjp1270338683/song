@@ -1,0 +1,22 @@
+/*提示信息*/
+.m-tips {
+    display: none;
+    padding: .5em .5em;
+    width: 60%;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)!important;
+    -ms-transform: translate(-50%,-50%)!important;
+    -moz-transform: translate(-50%,-50%)!important;
+    -webkit-transform: translate(-50%,-50%)!important;
+    -o-transform: translate(-50%,-50%)!important;
+    color: #fff;
+    font-size: .8em;
+    border-radius: 3em;
+    background: rgba(0, 0, 0, .7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#b2000000,endcolorstr=#b2000000);
+    z-index: 9999999999;
+    cursor: pointer;
+}
