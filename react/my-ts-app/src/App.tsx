@@ -1,29 +1,26 @@
-import React, { useEffect } from 'react';
-import MyPromise from './components/demo/MyPromise';
-import FromList from './components/demo/FormList';
-import './App.css';
+/**
+ * @name 主页组件
+ * @time 2024-11-11
+ * @author jixianda.jxd
+ */
+import { useRef } from 'react';
 
-function App() {
-
-  useEffect(() => {
-    const promise = new MyPromise((resolve: any, reject: any) => {
-      setTimeout(() => {
-        resolve('成功');
-      }, 1000);
-    });
-
-    promise.then((value: any) => {
-      console.log(value);
-    }, (reason: any) => {
-      console.log(reason);
-    });
-  }, []);
+export default function Home() {
+  
 
   return (
-    <div className="App">
-      <FromList />
-    </div>
+   <div>123</div>
   );
 }
 
-export default App;
+var a = 1;
+function fn1() {
+  console.log(a);
+}
+
+function fn2() {
+  var a = 2;
+  fn1();
+}
+
+fn2(); 

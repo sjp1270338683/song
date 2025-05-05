@@ -1,0 +1,131 @@
+// 垂直水平居中
+.center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  // 垂直排列水平居中
+  .horizontally {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  // 正圆型90度圆角
+  .br-50() {
+    border-radius: 50%;
+  }
+  
+  // 椭圆90度圆角
+  .br-100() {
+    border-radius: 100000rpx;
+  }
+  
+  // 背景图
+  .background(@img) {
+    background-image: url(@img);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  // 热区点击组件
+  .hotButton(@scaleX: 1.5, @scaleY: 1.5) {
+    position: relative;
+  
+    &:after {
+      content: '';
+      /* 父元素需要position: relative; */
+      position: absolute;
+      z-index: 9;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transform: perspective(1px) scale(@scaleX, @scaleY);
+    }
+  }
+  
+  .font-regular() {
+    font-family: PingFangSC-Regular;
+  }
+  
+  .font-medium() {
+    font-family: PingFangSC-Medium;
+  }
+  
+  .font-bold() {
+    font-family: PingFangSC-Semibold;
+  }
+  
+  @font-face {
+    font-family: AlibabaSans102v1TaoBaoMd;
+    src: url('https://g.alicdn.com/eva-assets/47351a26ee77ace81183f42840c06fd2/0.0.1/tmp/b52fe6c/94ea3eea-ab1e-4aaa-aed0-a97981201dfd.otf');
+  }
+  
+  @font-face {
+    font-family: AlibabaSans102v1TaoBaoBd;
+    src: url('https://g.alicdn.com/eva-assets/dbfb4e2fbc9743e10cd28fb5bfbec70e/0.0.1/tmp/d882fe8/96b297e8-ead9-4e37-a295-a8761770fe7e.ttf');
+  }
+  
+  @font-face {
+    font-family: Dingdingjinbuti;
+    src: url('https://g.alicdn.com/eva-assets/e44a2138720f5965f91a1eeb47d4c7b0/0.0.1/tmp/9be6d33/826c04f0-3755-487a-bb6b-1f59962ab54a.ttf');
+  }
+  
+  // 快速应用字体
+  .font(@size, @lineHeight, @color: #fff, @align: center) {
+    font-size: @size;
+    line-height: @lineHeight;
+    color: @color;
+    text-align: @align;
+    .font-regular;
+  }
+  
+  .size(@width, @height: @width) {
+    width: @width;
+    height: @height;
+  }
+  
+  // 多行溢出文字3个点隐藏
+  .text-overflow-line(@line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @line;
+  }
+  
+  // 溢出文字3个点隐藏
+  .text-overflow() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  // 水平居中绝对定位
+  .absoluteCenterX {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  // 水平居中绝对定位
+  .absoluteCenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .absoluteCenterY {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .image_viewer_mask {
+    background-color: rgba(0, 0, 0, 1) !important;
+    z-index: 10000
+  }
+  
